@@ -56,3 +56,13 @@ Los 332 registros se distribuyen en 271 del subtipo barrio y 61 del subtipo vere
 3. Generar mapas comparables y la serie temporal anual por fase ENSO.
 4. Calcular la precipitación municipal con `exact_extract`: `P = sum(Pi * Ai) / sum(Ai)`.
 5. Crear una ficha de minería del paper de E. Aristizábal y verificar cualquier hallazgo antes de incorporarlo al texto.
+
+## Fuente de relieve incorporada, 2026-09-17
+
+Se seleccionó el Modelo Digital del Terreno DTM-LiDAR de Medellín de 2021, resolución de 1 m y escala 1:1.000, publicado en el Banco de Imágenes de GeoMedellín. Es un modelo de terreno desnudo y resulta preferible al DSM para describir altitud, pendientes, formas del valle y perfiles topográficos.
+
+El archivo original usa `MAGNA_Medellín_Antioquia_2010` (EPSG:6257 / WKID 102768). Conservarlo sin modificación como fuente; recortar y reproyectar únicamente copias derivadas a MAGNA-SIRGAS / Origen Nacional (EPSG:9377). El ráster original no se versiona en GitHub.
+
+La licencia es Semilibre: no permite compartir ni comercializar la información con empresas privadas o personas naturales. El metadato indica además que los productos derivados requieren citación del titular y contacto previo. Antes de publicar cualquier figura derivada se debe confirmar el amparo contractual o la autorización aplicable.
+
+Fuente: [Modelo Digital de Terreno DTM-LiDAR de Medellín, 2021](https://www.medellin.gov.co/giscatalogacion/srv/resources/datasets/440571dd-7f89-40aa-bcf9-0b99b311ca1d).

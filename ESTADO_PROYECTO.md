@@ -1,6 +1,14 @@
 # Estado del acompañamiento PAC 2026
 
-Actualizado: 2026-09-15.
+Actualizado: 2026-09-17.
+
+## Relieve: DTM LiDAR oficial localizado
+
+Se descargó el DTM-LiDAR oficial de Medellín de 2021, resolución de 1 m y escala 1:1.000, desde el Banco de Imágenes de GeoMedellín. El original está en `C:/Users/marco/Downloads/imagen960_DTM_2021_11_07.zip` y no se versiona en GitHub. El ráster usa `MAGNA_Medellín_Antioquia_2010` (EPSG:6257 / WKID 102768); los derivados deberán reproyectarse a EPSG:9377.
+
+La licencia es Semilibre. El archivo original no se puede redistribuir ni comercializar y debe permanecer en el almacenamiento restringido del proyecto. Los productos derivados requieren citación del titular y el metadato solicita contacto previo. Antes de publicar mapas se debe verificar que el uso se encuentre cubierto por el contrato o convenio vigente con el Distrito.
+
+Pendiente inmediato: almacenar el ZIP en Drive, extraerlo, verificar el GeoTIFF, recortarlo al límite municipal y producir elevación, pendiente, relieve sombreado, curvas de nivel, perfiles y estadísticas territoriales.
 
 ## Repositorio institucional de cambio climático inventariado
 

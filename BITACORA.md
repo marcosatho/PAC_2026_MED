@@ -65,3 +65,14 @@ Se inició la descarga directa en Drive de 984 recortes mensuales CHELSA v2.1 (`
 - Se corrigió el desfase en la asignación de las temporadas móviles: DJF corresponde a enero, JFM a febrero y así sucesivamente hasta NDJ en diciembre.
 - Se generó `CHELSA_ENSO_MESES_ANUALIZADO_1981_2021_MAGNA_SIRGAS_layout_v4.png`, con una barra de color por variable, fases en el margen izquierdo e isolíneas recortadas a Medellín.
 - También se generó una versión nueva del mapa POMCA de temperatura con la paleta `RdYlBu_r` de CHELSA, sin sobrescribir el original: `23_temperatura_medellin_carta_paleta_CHELSA.png` y PDF.
+
+## 2026-09-17 — Incorporación del relieve: DTM LiDAR de Medellín
+
+- Se localizó y descargó desde el Banco de Imágenes de GeoMedellín el Modelo Digital del Terreno DTM-LiDAR de Medellín de 2021, escala 1:1.000 y resolución espacial de 1 m.
+- El ZIP original se encuentra temporalmente en `C:/Users/marco/Downloads/imagen960_DTM_2021_11_07.zip`. Pesa 1,90 GB comprimido y contiene el GeoTIFF, archivo mundial, pirámides y metadatos. No se incorporará a GitHub.
+- Validación de metadatos: ráster continuo de una banda, `Float32`, compresión LZW, `NoData=-32767`, extensión nativa 816953.591551–846021.591551 E y 1172948.854256–1198028.854256 N, píxel de 1 m y aproximadamente 29.068 x 25.080 celdas.
+- Sistema de referencia original: `MAGNA_Medellín_Antioquia_2010`, WKID 102768 / EPSG:6257. Los productos cartográficos del proyecto deberán reproyectarse a MAGNA-SIRGAS / Origen Nacional, EPSG:9377.
+- Estadísticas incluidas: elevación mínima 1107,49 m, máxima 3141,18 m, media 2084,69 m y desviación estándar 414,03 m. Estas cifras corresponden al ráster completo y deberán recalcularse después del recorte municipal.
+- Restricción crítica: la licencia es Semilibre. Prohíbe compartir o comercializar el insumo con empresas privadas o personas naturales; el metadato también indica no modificar, distribuir ni comercializar sin autorización expresa y permite productos derivados con citación y contacto previo. Mantener el original fuera de GitHub y documentar la fuente en toda figura derivada.
+- Productos previstos: mapa hipsométrico, pendiente, relieve sombreado, curvas de nivel, perfiles topográficos y estadísticas por comuna/corregimiento.
+- Próximo paso: mover el ZIP al área de datos restringidos en Drive, extraerlo allí, recortar el DTM con el límite oficial, reproyectar derivados a EPSG:9377 y generar una primera figura de control.
