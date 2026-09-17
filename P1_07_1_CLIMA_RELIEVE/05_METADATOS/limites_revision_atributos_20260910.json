@@ -1,0 +1,21 @@
+{
+  "barrios_veredas": {
+    "records": 332,
+    "unnamed": [],
+    "duplicate_codes": []
+  },
+  "comunas_corregimientos": {
+    "records": 23,
+    "unnamed": [
+      {
+        "codigo": "SN02",
+        "nombre": ""
+      },
+      {
+        "codigo": "SN01",
+        "nombre": ""
+      }
+    ],
+    "duplicate_codes": []
+  }
+}

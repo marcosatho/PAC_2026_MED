@@ -1,0 +1,83 @@
+﻿codigo,estacion,tipo,periodo,datos_mensuales,datos_faltantes,porcentaje_faltantes
+2308021,La Fe,PG,Ene 70-Dic 09,480.0,0.0,0.0
+2308022,La Severa,PG,Ene 70-Dic 08,468.0,0.0,0.0
+2308023,Las Palmas,PG,Ene 70-Dic 09,480.0,0.0,0.0
+2308024,Vasconia,PG,Ene 70-Dic 09,480.0,0.0,0.0
+2308025,El Retito,PG,Ene 70-Dic 09,480.0,0.0,0.0
+2308026,La Mosca,PG,Ene 70-Dic 09,480.0,0.0,0.0
+2308027,Rionegro La Macarena,PG,Ene 70-Dic 09,480.0,0.0,0.0
+2308029,Montijo,PM,Ene 70-Dic 95,315.0,3.0,0.95
+2308030,El Carmén,PM,Ene 70-Dic 09,480.0,1.0,0.21
+2308033,Sto Domingo,PM,Ene 70-Dic 97,300.0,0.0,0.0
+2308034,Río Abajo,PG,Ene 70-Dic 02,396.0,0.0,0.0
+2308035,Santuario,PM,Ene 70-Dic 09,458.0,22.0,4.58
+2308036,Concepción,PM,Ene 70-Dic 97,336.0,0.0,0.0
+2308037,Guatape,PM,Ene 70-Dic 09,480.0,3.0,0.63
+2308038,San Vicente,PM,Ene 70-Dic 09,396.0,0.0,0.0
+2308039,Sto Domingo,PG,Ene 70-Abr 15,460.0,14.0,3.04
+2308044,Corrientes,PG,Ene 70-Dic 09,480.0,0.0,0.0
+2308045,Remango,PG,Ene 70-Sep 95,309.0,0.0,0.0
+2308047,El Combo,PG,Ene 70-Dic 94,300.0,1.0,0.33
+2308060,Los Salados,PM,Ene 80-Jul 97,211.0,0.0,0.0
+2308064,Marinilla,PM,Jun 73-Ago 15,507.0,0.0,0.0
+2308065,Campoalegre,PM,Jun 73-Jun 15,505.0,2.0,0.4
+2308074,Concepción,PM,Jun 75-Jul 15,482.0,0.0,0.0
+2308084,Tocaima,PM,Ene 88-Dic 09,264.0,2.0,0.76
+2308092,Santuario,PG,Jun 92-Abr 15,275.0,2.0,0.73
+2308095,El Viento,PG,Oct 92-Ene 03,124.0,3.0,2.42
+2308505,Sta Rita,CP,Ene 70-Ene 14,529.0,8.0,1.51
+2308511,El Peñol,CO,Ene 70-Dic 09,480.0,0.0,0.0
+2308516,Corrientes,CO,Jun73-Jul 15,506.0,14.0,2.77
+2308517,El Peñol,CP,May 75-Jun 15,482.0,4.0,0.83
+2308520,Apto J M Córdova,SP,Ene 70-Dic 93,288.0,0.0,0.0
+2308530,Alejandría,CO,Feb 78-Ago 15,451.0,1.0,0.22
+2308504,La Selva,AM,Sep 88-Jun 15,322.0,1.0,0.31
+2618017,La Unión,PM,Jul 70-Jun 15,540.0,3.0,0.56
+2620012,Otramina,PM,Nov 70-Ene 16,544.0,6.0,1.1
+2620014,Armenia,PM,Abr 75-Feb 16,491.0,19.0,3.87
+2620015,Fredonia,PM,May 75-Ene 16,489.0,12.0,2.45
+2620508,La Aldea,ME,Oct 90-Jun 15,296.0,3.0,1.01
+2621009,Anza,PM,Nov 70-Jun 15,535.0,0.0,0.0
+2623018,Llanos de San Juan,PM,Ene 91-Jun 15,294.0,10.0,3.4
+2701036,Caldas,PG,Ene 70-Dic 09,480.0,0.0,0.0
+2701037,Fabricato,PG,Ene 70-Dic 09,480.0,1.0,0.21
+2701038,San Antonio de Prado,PG,Ene 70-Dic 83,168.0,0.0,0.0
+2701040,Rio Grande Almacén,PM,Ene 70-Jul 98,343.0,0.0,0.0
+2701042,Río Grande Bocacero,PG,Ene 70-Dic 01,384.0,6.0,1.56
+2701043,Río Grande Bocatoma,PM,Ene 70-Jul 98,343.0,0.0,0.0
+2701044,Río Grande Mocorong,PM,Ene 70-Jun 98,342.0,0.0,0.0
+2701045,Villahermosa,PG,Ene 70-Dic 09,480.0,0.0,0.0
+2701046,San Cristóbal,PG,Ene 70-Dic 09,480.0,0.0,0.0
+2701047,Medellin MI,PG,Ene 70-Dic 09,480.0,3.0,0.62
+2701048,Tasajera,PG,Ago 84-Mar 97,151.0,1.0,0.66
+2701053,Alto San Andrés,PG,Ene 70-Dic 09,480.0,0.0,0.0
+2701056,Girardota,PM,Ene 70-Dic 09,480.0,24.0,5.0
+2701057,Barbosa,PM,Ene 70-Dic 09,480.0,0.0,0.0
+2701058,Rionegrito,PG,Ene 70-Dic 02,396.0,1.0,0.25
+2701060,Gómez Plata,PM,Ene 75-Dic 09,420.0,0.0,0.0
+2701062,Boquerón,PM,Ene 70-Dic 92,277.0,40.0,14.4
+2701065,Donm atias,PM,Ene 70-Jul 98,343.0,0.0,0.0
+2701070,Haiton,PG,Ene 70-Dic 09,480.0,0.0,0.0
+2701073,Medina,PG,Ene 70-Dic 09,480.0,0.0,0.0
+2701076,Niquia,PG,Sep 84-Dic 09,304.0,2.0,0.66
+2701077,El Chuscal,PM,Sep 70-Dic 15,537.0,3.0,0.56
+2701080,San Pedro La Meseta,PM,Sep 70-Abr 15,537.0,2.0,0.37
+2701081,Sta Helena,PM,Sep 70-Abr 15,537.0,10.0,1.86
+2701082,La Cuchilla,PM,Sep 70- Jun 15,537.0,1.0,0.19
+2701083,San Isidro,PM,Sep 70- Abr 15,537.0,2.0,0.37
+2701084,San Pablo,PM,Nov 70- Jul 15,537.0,3.0,0.56
+2701087,Belmira,PM,Nov 70- Jul 15,537.0,3.0,0.06
+2701090,Gómez Plata,PM,Nov 70- Jul 15,536.0,2.0,0.37
+2701093,Ayura,PG,Mar 72-Dic 08,444.0,2.0,0.45
+2701111,Astilleros,PG,Ene 91-Dic 15,292.0,0.0,0.0
+2701112,La Iguana,PG,Oct 90-Nov 15,299.0,7.0,2.34
+2701114,Cucaracho,PG,Feb92-Dic 09,215.0,0.0,0.0
+2701115,Astillero,PG,Oct 90-Dic 09,231.0,1.0,0.43
+2701122,El Convento Copacabana,PG,Ene 95-Dic 09,180.0,0.0,0.0
+2701123,San Antonio,PM,Oct 95-Oct 14,181.0,1.0,0.55
+2701507,Apto Olaya Herrera,SP,Ene 70- Dic 15,548.0,1.0,0.18
+2701509,Tulio Ospina,CP,Ene 70- Jul 15,547.0,5.0,0.91
+2701515,Hda Progreso,CO,May 70- Jul 15,507.0,20.0,3.94
+2701519,Guayabito,CO,May 70- Jul 15,543.0,3.0,0.55
+2701524,Riogrande,CP,Ene 82-May 98,197.0,11.0,5.58
+2701526,La Salada,AM,Ago 84- Jun 15,368.0,3.0,0.81

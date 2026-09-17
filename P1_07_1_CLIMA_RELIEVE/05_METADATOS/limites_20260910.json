@@ -1,0 +1,114 @@
+{
+  "service": "https://www.medellin.gov.co/servidormapas/rest/services/mapas_nacionales/VC_Limite_Politico_Admtivo/MapServer",
+  "download_utc": "2026-09-10T05:26:21.233080+00:00",
+  "layers": {
+    "barrios_veredas": {
+      "count": 332,
+      "crs": "EPSG:9377",
+      "invalid": 0,
+      "bounds": [
+        4699257.3504,
+        2239727.34,
+        4726590.8543,
+        2263174.2037000004
+      ],
+      "description": "",
+      "types": [
+        {
+          "domains": {},
+          "id": 1,
+          "name": "Barrio"
+        },
+        {
+          "domains": {},
+          "id": 2,
+          "name": "Vereda"
+        }
+      ],
+      "actualizaciones": {
+        "2014-12-17 00:00:00+00:00": 332
+      }
+    },
+    "comunas_corregimientos": {
+      "count": 23,
+      "crs": "EPSG:9377",
+      "invalid": 0,
+      "bounds": [
+        4699257.3504,
+        2239727.34,
+        4726590.8543,
+        2263174.2037000004
+      ],
+      "description": "",
+      "types": [
+        {
+          "domains": {},
+          "id": 1,
+          "name": "Comuna"
+        },
+        {
+          "domains": {},
+          "id": 2,
+          "name": "Corregimiento"
+        }
+      ],
+      "actualizaciones": {
+        "2014-12-17 00:00:00+00:00": 23
+      }
+    },
+    "limite_medellin": {
+      "count": 1,
+      "crs": "EPSG:9377",
+      "invalid": 0,
+      "bounds": [
+        4699257.3504,
+        2239727.34,
+        4726590.8543,
+        2263174.2037000004
+      ],
+      "description": "Capa Limite del Municipio de Medellín 2014",
+      "types": null,
+      "actualizaciones": {
+        "2014-12-17 00:00:00+00:00": 1
+      }
+    },
+    "barrios": {
+      "count": 271,
+      "derived_from": "barrios_veredas",
+      "filter": "subtipo_barriovereda=1"
+    },
+    "veredas": {
+      "count": 61,
+      "derived_from": "barrios_veredas",
+      "filter": "subtipo_barriovereda=2"
+    },
+    "comunas": {
+      "count": 17,
+      "derived_from": "comunas_corregimientos",
+      "filter": "subtipo_comunacorregimiento=1"
+    },
+    "corregimientos": {
+      "count": 6,
+      "derived_from": "comunas_corregimientos",
+      "filter": "subtipo_comunacorregimiento=2"
+    }
+  },
+  "sha256": {
+    "02_DATOS_ORIGINALES\\limites_medellin\\20260910\\barrios_veredas_metadatos.json": "99eccb2926f749522b12430d3a9f46113ae16ffe757268b6d14ba82bef0c2c2f",
+    "02_DATOS_ORIGINALES\\limites_medellin\\20260910\\barrios_veredas_original_9377.esrijson": "112ee6ca7b9ee28bedb9e94751440f5ee318c89102bbe54ae39a09bd46c80c0c",
+    "02_DATOS_ORIGINALES\\limites_medellin\\20260910\\comunas_corregimientos_metadatos.json": "f8838ea79846c55e92f8d2a61479f18f9c932771302a3a19116714709e4adb23",
+    "02_DATOS_ORIGINALES\\limites_medellin\\20260910\\comunas_corregimientos_original_9377.esrijson": "d872f5680c321076fffff5388d7b445e43300ff91b2fa23fea9bf00205c3c947",
+    "02_DATOS_ORIGINALES\\limites_medellin\\20260910\\limite_medellin_metadatos.json": "afd965c77901df8a913e78d844aef4431da7aa12430ba9dd804995516bb9c798",
+    "02_DATOS_ORIGINALES\\limites_medellin\\20260910\\limite_medellin_original_9377.esrijson": "8927c45784c279102625dd2646897cecbed4b38c4e343f68c637a9b5fd91b293",
+    "03_DATOS_PREPARADOS\\20260910\\barrios_veredas_4326.geojson": "c1f3e2d8b570c5a217f4e41bc53650bff877d9177e6c6e156a72d4e7caf3a214",
+    "03_DATOS_PREPARADOS\\20260910\\comunas_corregimientos_4326.geojson": "3e79a205e9c381559a58e980d6d6b14ab02ef0bac0784ea8b44bb06e8f121c45",
+    "03_DATOS_PREPARADOS\\20260910\\limites_medellin_9377.gpkg": "a93d70b507e6568046dbf19e9fd405781e3c3331ec12bf24cc2bb1936cde7d4f",
+    "03_DATOS_PREPARADOS\\20260910\\limite_medellin_4326.geojson": "92ffb45e45045bb724e63ee919e11a4b3f6f49181dc6123cfd2304cd9b30e33f"
+  },
+  "area_municipal_km2": 376.3966437553136,
+  "coverage_check_km2": {
+    "barrios_veredas": 2.441142716876534e-06,
+    "comunas_corregimientos": 2.4572968387304773e-06
+  },
+  "caveat": "La descripción del límite menciona 2014. Descarga actual del servicio no equivale a certificación de vigencia jurídica 2026."
+}

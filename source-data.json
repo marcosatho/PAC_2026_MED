@@ -1,0 +1,247 @@
+{
+  "Bibliografía 8.1": [
+    [
+      "ID",
+      "Año",
+      "Tipo de fuente",
+      "Autores / Institución",
+      "Título",
+      "Factor climático",
+      "Factores secundarios",
+      "Ámbito territorial",
+      "Aporte para el numeral 8.1",
+      "DOI",
+      "URL",
+      "Criterio temporal"
+    ],
+    [
+      "F01",
+      2021,
+      "Documento técnico",
+      "Alcaldía de Medellín / C40",
+      "Plan de Acción Climática de Medellín 2020–2050",
+      "Precipitación",
+      "Islas de calor; Deslizamientos; Avenidas torrenciales",
+      "Medellín",
+      "Documento base del PAC. Caracteriza efectos del cambio climático sobre precipitación y temperatura y territorializa riesgos climáticos relevantes.",
+      "No aplica",
+      "https://www.medellin.gov.co/es/centro-documental/plan-de-accion-climatica-medellin-2020-2050/",
+      "Incluida"
+    ],
+    [
+      "F02",
+      2018,
+      "Documento técnico",
+      "AMVA / Corantioquia / Cornare",
+      "POMCA río Aburrá – 2.7. Caracterización de las condiciones de riesgo",
+      "Avenidas torrenciales",
+      "Deslizamientos; Precipitación",
+      "Cuenca del río Aburrá",
+      "Caracteriza y espacializa amenazas y eventos históricos; útil para el análisis territorial de avenidas torrenciales, movimientos en masa e inundaciones.",
+      "No aplica",
+      "https://www.metropol.gov.co/ambiental/recurso-hidrico/pomca/2018/2.Fase_Diagnostico/2.7.Caract_CondiRiesgo_vf.pdf",
+      "Incluida"
+    ],
+    [
+      "F03",
+      2019,
+      "Artículo científico",
+      "Martínez González, M. F.; Peña Serna, C.; Restrepo Betancur, L. F.",
+      "Cambio climático en la ciudad de Medellín – Colombia, en un periodo de cincuenta años (1960–2010)",
+      "Precipitación",
+      null,
+      "Medellín",
+      "Analiza cambios de variables climáticas de largo plazo en Medellín y sirve como antecedente observacional para tendencias locales.",
+      "10.15446/dyna.v86n209.69531",
+      "https://revistas.unal.edu.co/index.php/dyna/article/view/69531",
+      "Incluida"
+    ],
+    [
+      "F04",
+      2019,
+      "Artículo científico",
+      "Bedoya-Soto, J. M.; Aristizábal, E.; Carmona, A. M.; Poveda, G.",
+      "Seasonal Shift of the Diurnal Cycle of Rainfall Over Medellin's Valley, Central Andes of Colombia (1998–2005)",
+      "Precipitación",
+      null,
+      "Valle de Aburrá y altiplano de San Nicolás",
+      "Caracteriza la variabilidad espacial, estacional y diurna de la precipitación y la influencia de la topografía y la circulación atmosférica.",
+      "10.3389/feart.2019.00092",
+      "https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2019.00092/full",
+      "Incluida"
+    ],
+    [
+      "F05",
+      2025,
+      "Artículo científico",
+      "Zapata, E.; Carmona, A. M.; Barco, J.",
+      "Hydrological Impacts of Urban Expansion and Rainfall Spatial Distribution in Urban Subcatchments: A Scenario-Based Assessment Using EPA-SWMM Model",
+      "Precipitación",
+      null,
+      "Medellín",
+      "Evalúa cuatro subcuencas urbanas de Medellín y relaciona distribución espacial de la lluvia, urbanización, impermeabilización y respuesta hidrológica.",
+      "10.1002/hyp.70344",
+      "https://onlinelibrary.wiley.com/doi/10.1002/hyp.70344",
+      "Incluida"
+    ],
+    [
+      "F06",
+      2026,
+      "Artículo científico",
+      "Ruiz-Carrascal, D. et al.",
+      "The Early Warning System of the City of Medellín and the Aburrá Valley – SIATA, Colombia: a +20-year prolific journey",
+      "Precipitación",
+      "Deslizamientos; Avenidas torrenciales",
+      "Medellín y Valle de Aburrá",
+      "Síntesis reciente de capacidades de monitoreo hidrometeorológico y sistemas de alerta en el territorio; útil para identificar variables y amenazas observadas.",
+      "10.1016/j.cliser.2026.100653",
+      "https://www.sciencedirect.com/science/article/pii/S240588072600021X",
+      "Incluida"
+    ],
+    [
+      "F07",
+      2019,
+      "Artículo científico",
+      "Soto-Estrada, E.",
+      "Estimación de la isla de calor urbana en Medellín, Colombia",
+      "Islas de calor",
+      null,
+      "Medellín / Valle de Aburrá",
+      "Estima la UHI mediante imágenes Landsat de 1986–2016 y muestra su distribución espacial, con mayores temperaturas superficiales en sectores centrales del valle.",
+      "10.20937/RICA.2019.35.02.13",
+      "https://www.revistascca.unam.mx/rica/index.php/rica/article/view/RICA.2019.35.02.13/0",
+      "Incluida"
+    ],
+    [
+      "F08",
+      2017,
+      "Artículo científico",
+      "Soto-Estrada, E.; Correa-Echeveri, S.; Posada-Posada, M. I.",
+      "Thermal Analysis of Urban Land Cover Using an Unmanned Aerial Vehicle (UAV) in Medellin, Colombia",
+      "Islas de calor",
+      null,
+      "Medellín",
+      "Caracteriza temperatura superficial de coberturas naturales y artificiales con UAV y sensor térmico, aportando detalle a microescala sobre UHI.",
+      "10.4090/juee.2017.v11n2.142-149",
+      "https://periodicos.ufpb.br/index.php/juee/article/view/31871",
+      "Incluida"
+    ],
+    [
+      "F09",
+      2018,
+      "Tesis de maestría",
+      "Guzmán Echavarría, Gisel – Universidad Nacional de Colombia, Sede Medellín",
+      "Análisis de la influencia del diseño urbano en la meteorología del Valle de Aburrá",
+      "Islas de calor",
+      null,
+      "Valle de Aburrá",
+      "Relaciona clima urbano, temperatura superficial, geometría del dosel urbano, confort térmico y configuración espacial; es una fuente local directa para UHI.",
+      "No localizado",
+      "https://redcol.minciencias.gov.co/Record/UNACIONAL2_f43ac94cc837366e182f7cef31609571",
+      "Incluida"
+    ],
+    [
+      "F10",
+      2019,
+      "Artículo científico",
+      "Guerrero Hoyos, L. A.; Aristizábal Giraldo, E.",
+      "Estimación y análisis de umbrales críticos de lluvia para la ocurrencia de avenidas torrenciales en el Valle de Aburrá (Antioquia)",
+      "Avenidas torrenciales",
+      "Precipitación",
+      "Valle de Aburrá",
+      "Define umbrales críticos de lluvia detonante para avenidas torrenciales usando datos horarios de estaciones e inventarios históricos.",
+      "10.24050/reia.v16i32.1281",
+      "https://www.redalyc.org/articulo.oa?id=149259728007",
+      "Incluida"
+    ],
+    [
+      "F11",
+      2020,
+      "Artículo científico",
+      "Aristizábal, E.; Arango, M.; García, C.",
+      "Definición y clasificación de las avenidas torrenciales y su impacto en los Andes colombianos",
+      "Avenidas torrenciales",
+      null,
+      "Andes colombianos",
+      "Aporta definición, clasificación y análisis de distribución espacial y temporal de avenidas torrenciales; útil para establecer categorías consistentes en el PAC.",
+      "10.15446/rcdg.v29n1.72612",
+      "https://revistas.unal.edu.co/index.php/rcg/article/view/72612",
+      "Incluida"
+    ],
+    [
+      "F12",
+      2016,
+      "Artículo científico",
+      "Aristizábal, E.; Vélez, J. I.; Martínez, H.",
+      "Influencia de la lluvia antecedente y la conductividad hidráulica en la ocurrencia de deslizamientos detonados por lluvias utilizando el modelo SHIA_LANDSLIDE",
+      "Deslizamientos",
+      "Precipitación",
+      "Antioquia / caso de estudio hidrológico-geotécnico",
+      "Analiza la relación entre lluvia antecedente, conductividad hidráulica y ocurrencia de deslizamientos mediante un modelo distribuido de base física.",
+      "10.24050/reia.v13i26.863",
+      "https://revistas.eia.edu.co/index.php/reveia/article/download/863/987/3508",
+      "Incluida"
+    ],
+    [
+      "F13",
+      2026,
+      "Artículo científico",
+      "Aristizábal, E. V.; Sanchez, O. I.; Korup, O.",
+      "Landslide timing and rainfall regimes in a rapidly urbanizing tropical mountain valley in Colombia",
+      "Deslizamientos",
+      "Precipitación",
+      "Valle de Aburrá",
+      "Relaciona ocurrencia temporal de deslizamientos con regímenes de lluvia desde escalas horarias hasta decenales, incorporando ENSO y urbanización.",
+      "10.1007/s11069-026-08028-6",
+      "https://link.springer.com/article/10.1007/s11069-026-08028-6",
+      "Incluida"
+    ]
+  ],
+  "Fuera de criterio": [
+    [
+      "Año",
+      "Autores",
+      "Título",
+      "Factor climático",
+      "DOI",
+      "URL",
+      "Motivo"
+    ],
+    [
+      2014,
+      "Muñoz, E.; Martínez-Carvajal, H.; Arévalo, J.; Alvira, D.",
+      "Quantification of the effect of precipitation as a triggering factor for landslides on the surroundings of Medellín – Colombia",
+      "Deslizamientos",
+      "10.15446/dyna.v81n187.40640",
+      "https://revistas.unal.edu.co/index.php/dyna/article/view/40640",
+      "Excluida del listado principal porque es anterior al criterio temporal 2015–2026."
+    ]
+  ],
+  "Resumen": [
+    [
+      "Factor climático",
+      "N.º de fuentes",
+      "Criterio"
+    ],
+    [
+      "Precipitación",
+      5,
+      "2015–2026"
+    ],
+    [
+      "Islas de calor",
+      3,
+      "2015–2026"
+    ],
+    [
+      "Deslizamientos",
+      2,
+      "2015–2026"
+    ],
+    [
+      "Avenidas torrenciales",
+      3,
+      "2015–2026"
+    ]
+  ]
+}

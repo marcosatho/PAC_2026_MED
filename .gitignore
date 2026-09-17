@@ -1,0 +1,55 @@
+# Entornos, caches y archivos del sistema
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.runtime-p1/
+.mapdeps/
+.mpl-p1/
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Credenciales y configuracion privada
+.env
+*.key
+*.pem
+credentials*.json
+service-account*.json
+token*.json
+
+# Material sincronizado o temporal de Codex
+sources/
+outputs/
+tmp/
+--help/
+.agents/
+.codex/
+AGENTS.md
+**/.matplotlib/
+
+# Datos originales, preparados y descargas masivas
+**/02_DATOS/
+**/02_DATOS_ORIGINALES/
+**/03_DATOS_PREPARADOS/
+**/capas_climaticas_renderizadas/
+**/recortes_medellin/
+
+# Formatos pesados o regenerables
+*.tif
+*.tiff
+*.nc
+*.grib
+*.grb
+*.zip
+*.rar
+*.7z
+*.aux.xml
+*.ovr
+*.gpkg-wal
+*.gpkg-shm
+
+# Informes exportados; se conservan sus fuentes y metadatos
+*.pdf
