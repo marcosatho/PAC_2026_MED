@@ -87,3 +87,11 @@ Se inició la descarga directa en Drive de 984 recortes mensuales CHELSA v2.1 (`
 - Estadísticas del recorte municipal: elevación mínima 1170,06 m s. n. m.; máxima 3138,22 m s. n. m.; media 2054,87 m s. n. m.
 - Se generaron `relieve_hipsometrico_medellin_DTM_2021.png` (elevación, sombreado y curvas cada 100 m) y `pendiente_medellin_DTM_2021.png` (rangos 0–5°, 5–15°, 15–30°, 30–45° y >45°), ambas con límite municipal y comunas/corregimientos.
 - El script reproducible `11_RELIEVE_DTM_LIDAR.py` se guardó tanto en el repositorio como en `09_RELIEVE_DTM_LIDAR/03_CODIGO` en Drive. Falta producir estadísticas por unidad administrativa, perfiles topográficos y acordar si estas previsualizaciones pasan a ser figuras de publicación.
+
+## 2026-09-17 — Composición cartográfica del relieve con estilo POMCA
+
+- Se creó `12_RELIEVE_LAYOUT_POMCA.py` como versión de publicación, sin sobrescribir las previsualizaciones anteriores.
+- Se trasladó al relieve la composición aprobada para los mapas POMCA: formato compacto para página carta, leyenda dentro del espacio libre al norte, escala gráfica de 5 km centrada, flecha norte, ejes en MAGNA-SIRGAS / Origen Nacional, divisiones políticas, límite municipal y fuente al pie.
+- El mapa de elevación usa intervalos discretos de 250 m presentes en Medellín, relieve sombreado y curvas de nivel cada 200 m. El mapa de pendiente conserva las clases 0–5°, 5–15°, 15–30°, 30–45° y >45°.
+- Se revisaron visualmente las salidas y se corrigieron la superposición entre leyenda y flecha norte y el recorte del título del mapa de pendiente.
+- Productos finales, en PNG y PDF: `04_FIGURAS/publicacion_carta/elevacion_medellin_DTM_2021_carta_v2` y `04_FIGURAS/publicacion_carta/pendiente_medellin_DTM_2021_carta_v2`.

@@ -71,3 +71,7 @@ Controles: no usar un promedio anual que haya perdido la información mensual pa
 ## Seguimiento
 
 Actualizar BITACORA.md en cada sesión y este documento cuando haya cambios. Comunicar errores y limitaciones de manera explícita. La carpeta acordada de acompañamiento es PAC_2026_MED_ACOMP_IA dentro de C1_01_EVIDENCIA_DIAGNOSTICO_PROSPECTIVA.
+
+## Relieve — estado vigente
+
+El DTM LiDAR oficial de Medellín 2021 ya fue recortado al municipio, reproyectado a EPSG:9377 y preparado a 10 m para los productos derivados. Las figuras de publicación vigentes son las versiones `carta_v2` de elevación y pendiente, compuestas con el mismo esquema visual de los mapas POMCA (leyenda al norte, escala centrada, norte, límites políticos y fuente). El código reproducible es `12_RELIEVE_LAYOUT_POMCA.py`; los datos originales y derivados pesados permanecen fuera de GitHub por tamaño y restricciones de licencia.
