@@ -10,6 +10,8 @@ La licencia es Semilibre. El archivo original no se puede redistribuir ni comerc
 
 Pendiente inmediato: almacenar el ZIP en Drive, extraerlo, verificar el GeoTIFF, recortarlo al límite municipal y producir elevación, pendiente, relieve sombreado, curvas de nivel, perfiles y estadísticas territoriales.
 
+Actualización: el ZIP fue respaldado y verificado por SHA-256, el DTM fue extraído y se generó el derivado municipal `DTM_Medellin_2021_10m_EPSG9377.tif` (EPSG:9377, 10 m). Están disponibles dos previsualizaciones: relieve hipsométrico con curvas cada 100 m y pendiente clasificada. Pendientes: estadísticas por comuna/corregimiento, perfiles topográficos y definición editorial de las figuras finales.
+
 ## Repositorio institucional de cambio climático inventariado
 
 Se revisó la carpeta compartida de SharePoint `Doc_Cambio climático MED` de la Alcaldía de Medellín. La raíz contiene 33 elementos: 10 carpetas, 21 PDF, 1 DOCX y 1 ZIP. El inventario jerárquico y la clasificación funcional están en [DICCIONARIO_DATOS_SHAREPOINT_CAMBIO_CLIMATICO_MED.md](DICCIONARIO_DATOS_SHAREPOINT_CAMBIO_CLIMATICO_MED.md).

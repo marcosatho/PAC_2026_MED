@@ -76,3 +76,14 @@ Se inició la descarga directa en Drive de 984 recortes mensuales CHELSA v2.1 (`
 - Restricción crítica: la licencia es Semilibre. Prohíbe compartir o comercializar el insumo con empresas privadas o personas naturales; el metadato también indica no modificar, distribuir ni comercializar sin autorización expresa y permite productos derivados con citación y contacto previo. Mantener el original fuera de GitHub y documentar la fuente en toda figura derivada.
 - Productos previstos: mapa hipsométrico, pendiente, relieve sombreado, curvas de nivel, perfiles topográficos y estadísticas por comuna/corregimiento.
 - Próximo paso: mover el ZIP al área de datos restringidos en Drive, extraerlo allí, recortar el DTM con el límite oficial, reproyectar derivados a EPSG:9377 y generar una primera figura de control.
+
+## 2026-09-17 — Procesamiento inicial de relieve
+
+- Se creó en Drive `P1_Caracterizacion_Socioeconomica_Ambiental/02_DOCUMENTOS_EN_ELABORACION/07_1_CLIMA_RELIEVE/09_RELIEVE_DTM_LIDAR`, con subcarpetas para datos originales, preparados, código, figuras y metadatos.
+- El ZIP original se copió a `01_DATOS_ORIGINALES`; la comparación SHA-256 entre la descarga y la copia en Drive fue exacta: `2625F3441776450C048241E4378560CDA26EC9EF6DA4CE6CA8516DB8FF30A632`.
+- Se extrajo el GeoTIFF original en el área restringida y se conservó intacto. Para evitar la lentitud de lectura sobre Drive, se creó temporalmente una copia operativa local; solo los derivados fueron escritos de regreso en Drive.
+- Se identificó un error inicial: la resolución objetivo de 10 m no estaba siendo aplicada y se generó un derivado incompleto de 672 MB a aproximadamente 1 m. Se verificó su resolución, se eliminó únicamente ese derivado de prueba y se corrigió el script con una transformación y dimensiones explícitas.
+- Producto válido: `DTM_Medellin_2021_10m_EPSG9377.tif`, 2.734 x 2.346 celdas, resolución 10 m, EPSG:9377, compresión DEFLATE y tamaño 8,09 MB. Se recortó al límite municipal oficial.
+- Estadísticas del recorte municipal: elevación mínima 1170,06 m s. n. m.; máxima 3138,22 m s. n. m.; media 2054,87 m s. n. m.
+- Se generaron `relieve_hipsometrico_medellin_DTM_2021.png` (elevación, sombreado y curvas cada 100 m) y `pendiente_medellin_DTM_2021.png` (rangos 0–5°, 5–15°, 15–30°, 30–45° y >45°), ambas con límite municipal y comunas/corregimientos.
+- El script reproducible `11_RELIEVE_DTM_LIDAR.py` se guardó tanto en el repositorio como en `09_RELIEVE_DTM_LIDAR/03_CODIGO` en Drive. Falta producir estadísticas por unidad administrativa, perfiles topográficos y acordar si estas previsualizaciones pasan a ser figuras de publicación.
