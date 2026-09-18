@@ -20,6 +20,7 @@ DRIVE_ROOT = Path(
 PROCESS_ROOT = DRIVE_ROOT / "09_RELIEVE_DTM_LIDAR"
 DATA_DIR = PROCESS_ROOT / "02_DATOS_PREPARADOS"
 OUTPUT_DIR = PROCESS_ROOT / "04_FIGURAS" / "publicacion_carta"
+MAP_MARGIN_M = 750
 
 LOCAL_LIMITS = Path(__file__).resolve().parent / "P1_07_1_CLIMA_RELIEVE" / "03_DATOS_PREPARADOS" / "20260910"
 DRIVE_LIMITS = DRIVE_ROOT / "03_DATOS_PREPARADOS" / "20260910"
@@ -48,9 +49,13 @@ def interval_label(low: float, high: float, unit: str = "") -> str:
 
 def decorate_axis(ax, extent):
     xmin, xmax, ymin, ymax = extent
+    view_xmin = xmin - MAP_MARGIN_M
+    view_xmax = xmax + MAP_MARGIN_M
+    view_ymin = ymin - MAP_MARGIN_M
+    view_ymax = ymax + MAP_MARGIN_M
     ax.set_aspect("equal")
-    ax.set_xlim(xmin, xmax)
-    ax.set_ylim(ymin, ymax)
+    ax.set_xlim(view_xmin, view_xmax)
+    ax.set_ylim(view_ymin, view_ymax)
     ax.set_xlabel("Este (m) — MAGNA-SIRGAS / Origen Nacional")
     ax.set_ylabel("Norte (m)")
     ax.grid(color="#9ca3af", linewidth=0.45, alpha=0.35)
@@ -71,12 +76,12 @@ def decorate_axis(ax, extent):
         arrowprops={"arrowstyle": "->", "lw": 1.3, "color": "black"},
     )
     scale_m = 5_000
-    start_x = (xmin + xmax) / 2 - scale_m / 2
-    start_y = ymin + (ymax - ymin) * 0.045
+    start_x = (view_xmin + view_xmax) / 2 - scale_m / 2
+    start_y = view_ymin + (view_ymax - view_ymin) * 0.045
     ax.plot([start_x, start_x + scale_m], [start_y, start_y], color="black", lw=2.4, zorder=10)
     ax.text(
         start_x + scale_m / 2,
-        start_y + (ymax - ymin) * 0.016,
+        start_y + (view_ymax - view_ymin) * 0.016,
         "5 km",
         ha="center",
         fontsize=9,
@@ -158,7 +163,7 @@ def elevation_map(elevation, extent, transform, divisions, boundary):
         "Fuente: Alcaldía de Medellín — DTM-LiDAR 2021, 1 m (AeroEstudios). Elaboración propia.",
         ha="center", fontsize=7.3, color="#444444",
     )
-    save_figure(fig, "elevacion_medellin_DTM_2021_carta_v2")
+    save_figure(fig, "elevacion_medellin_DTM_2021_carta_v3")
 
 
 def slope_map(slope, extent, divisions, boundary):
@@ -188,7 +193,7 @@ def slope_map(slope, extent, divisions, boundary):
         "Fuente: Alcaldía de Medellín — DTM-LiDAR 2021, 1 m (AeroEstudios). Elaboración propia.",
         ha="center", fontsize=7.3, color="#444444",
     )
-    save_figure(fig, "pendiente_medellin_DTM_2021_carta_v2")
+    save_figure(fig, "pendiente_medellin_DTM_2021_carta_v3")
 
 
 def main():
