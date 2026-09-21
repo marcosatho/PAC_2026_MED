@@ -1,6 +1,6 @@
 # Estado del acompañamiento PAC 2026
 
-Actualizado: 2026-09-17.
+Actualizado: 2026-09-21.
 
 ## Relieve: DTM LiDAR oficial localizado
 
@@ -75,3 +75,17 @@ Actualizar BITACORA.md en cada sesión y este documento cuando haya cambios. Com
 ## Relieve — estado vigente
 
 El DTM LiDAR oficial de Medellín 2021 ya fue recortado al municipio, reproyectado a EPSG:9377 y preparado a 10 m para los productos derivados. Las figuras de publicación vigentes son las versiones `carta_v3` de elevación y pendiente, compuestas con el mismo esquema visual de los mapas POMCA (leyenda al norte, escala centrada, norte, límites políticos y fuente) y con un margen exterior de 750 m para evitar el recorte del límite municipal. El código reproducible es `12_RELIEVE_LAYOUT_POMCA.py`; los datos originales y derivados pesados permanecen fuera de GitHub por tamaño y restricciones de licencia.
+
+## Amenazas — numeral 8.1, estado vigente
+
+Se retomó el numeral 8.1 (Amenazas climáticas relevantes), hasta ahora un esqueleto en `Entregable_P1_v1_equipo_coordinacion.docx`: tabla introductoria con 8 familias de amenaza, subsecciones 8.1.2–8.1.10 vacías, y una taxonomía sin validar por el equipo (niveles causales + familias de riesgo, ya construida en `PAC_2026_clasificacion_amenazas.xlsx`). Dos preguntas quedan pendientes de Juliana/Marcos antes de redactar contenido que dependa de ellas: fuente oficial de zonificación de amenaza (Evaluación 2020 C40/Alcaldía vs. POT 2026) y adopción de esa taxonomía.
+
+Subsección 8.1.2 (precipitación extrema y cambios proyectados) tiene un primer borrador de 500 palabras, lenguaje semitécnico con citas APA, basado en SIATA (2019, Convenio 4600082037) y Universidad de Antioquia (2026a/2026b, Contrato 4600105139 de 2025).
+
+Los 146 archivos geoespaciales del Convenio DAGRD-SIATA (`Archivos_Soporte`) se descargaron completos desde SharePoint y quedaron en Drive, `P1_.../08_1_AMENAZAS/01_DAGRD_SIATA_ESCENARIOS/01_DATOS_ORIGINALES` (fuera de GitHub por tamaño, 116 MB). Los 6 ráster de `3_Precip_extrema` (P90/P95, 1990/2030/2040) ya están reproyectados de la proyección nativa del convenio (WRF, "PCS MAG Ant Medellín") a EPSG:9377.
+
+Hallazgo metodológico relevante sobre el geodatabase de riesgo de la UdeA (`C4600105139_2025_CCMED.gdb.zip`): la amenaza climática (`H_precip`) es constante (valor máximo, 5 de 5) en las 24 comunas/corregimientos para precipitación extrema, porque Medellín queda cubierto por apenas ~4 píxeles del modelo climático. El "riesgo" que muestran esos mapas refleja casi exclusivamente exposición y vulnerabilidad, no variación real de la amenaza dentro de la ciudad — hay que tenerlo presente antes de citar esas categorías como si describieran diferencias de amenaza intraurbana.
+
+Dos figuras nuevas, en el estilo cartográfico del proyecto y recortadas al polígono exacto del límite municipal (`all_touched=True`, sin huecos internos junto al borde): diferencia de precipitación extrema horaria 2040 vs. 2030 (P90/P95), y réplica de la comparación 1990/2030/2040 del informe DAGRD-SIATA para Medellín. Código en `P1_08_1_AMENAZAS/DAGRD_SIATA_ESCENARIOS/` de este repositorio.
+
+Pendiente: subsecciones 8.1.3 en adelante con el mismo formato; resolver con el equipo las dos preguntas abiertas; revisar `Directorio de documentos.docx`, `Diccionario Anexos.xlsx` y `31. Islas de calor AMVA.zip` (todavía sin abrir, ver diccionario de datos de SharePoint).
