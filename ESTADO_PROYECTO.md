@@ -1,6 +1,6 @@
 # Estado del acompañamiento PAC 2026
 
-Actualizado: 2026-09-21.
+Actualizado: 2026-09-25.
 
 ## Relieve: DTM LiDAR oficial localizado
 
@@ -88,4 +88,19 @@ Hallazgo metodológico relevante sobre el geodatabase de riesgo de la UdeA (`C46
 
 Dos figuras nuevas, en el estilo cartográfico del proyecto y recortadas al polígono exacto del límite municipal (`all_touched=True`, sin huecos internos junto al borde): diferencia de precipitación extrema horaria 2040 vs. 2030 (P90/P95), y réplica de la comparación 1990/2030/2040 del informe DAGRD-SIATA para Medellín. Código en `P1_08_1_AMENAZAS/DAGRD_SIATA_ESCENARIOS/` de este repositorio.
 
-Pendiente: subsecciones 8.1.3 en adelante con el mismo formato; resolver con el equipo las dos preguntas abiertas; revisar `Directorio de documentos.docx`, `Diccionario Anexos.xlsx` y `31. Islas de calor AMVA.zip` (todavía sin abrir, ver diccionario de datos de SharePoint).
+Pendiente: resolver con el equipo las dos preguntas abiertas; revisar `Directorio de documentos.docx` y `Diccionario Anexos.xlsx`. El zip `31. Islas de calor AMVA.zip` ya se abrió (ver abajo).
+
+## Numeral 8.1 — estado al 2026-09-25
+
+Redactados con textos, figuras y Word (carpeta `P1_08_1_AMENAZAS/`): 8.1.2 (borrador anterior), 8.1.3 inundaciones, 8.1.4 avenidas torrenciales, 8.1.5 movimientos en masa, 8.1.6 escasez hídrica y déficit alimentario, 8.1.7 calor urbano y extremos térmicos, 8.1.8 incendios y 8.1.9 problemas de salud sensibles al clima. No existe 8.1.10 (se fusionó en 8.1.6).
+
+- **Guía de redacción vigente:** [GUIA_REDACCION_PAC_2026.md](GUIA_REDACCION_PAC_2026.md). Los textos se escriben sobre la ciudad y no sobre los estudios; las limitaciones van aparte.
+- **Base espacial:** POT 2026 (versión de julio de 2026, radicada ante el Concejo; adopción por confirmar) como referencia principal y POT 2014 como continuidad. Los mapas de amenaza de 2026 se extrajeron de láminas en PDF; no son capas oficiales y sus pies de figura lo dicen.
+- **Referencias:** [INDICE_REFERENCIAS_7.1_8.1.md](INDICE_REFERENCIAS_7.1_8.1.md) (22 referencias; los archivos están en la carpeta `PAC_2026_Referencias_7.1_8.1` de Descargas, por tamaño no se versionan).
+- **Sin mapa de incendios:** falta la ubicación de los 1.357 eventos (Universidad de Antioquia/SIATA) o la capa del DAGRD (requiere autorización).
+- **Pendientes de texto:** integrar en los archivos los párrafos reescritos de 8.1.5.1, 8.1.5.2, 8.1.6.2 y 8.1.3 (hoy solo en la conversación); leer el Tomo III del plan de salud (plan estratégico de acción); reducir 8.1.3, 8.1.7 y 8.1.9 a unas 500 palabras.
+- **Datos por conseguir para 8.1.7:** series observadas de temperatura del aire (SIATA o IDEAM) y lectura de Soto-Estrada (2019), Landsat 1986–2016.
+
+## Siguiente numeral: 8.5 Cuantificación de los eventos
+
+Series históricas de eventos, magnitud y pérdidas económicas y humanas, con la estructura de amenazas de 8.1. Fuentes identificadas en el documento maestro: SIRMED (eventos históricos 1880–2025 e histórico de emergencias con descarga en CSV), Geohazards (5.246 movimientos en masa de Antioquia, 1871–2026), Atlas de riesgo de Colombia (UNGRD e INGENIAR) y MEData. Además la hemeroteca del proyecto (`PAC_2026_hemeroteca_extendida.xlsm`, 34 noticias y 56 referencias técnicas) y las tablas de eventos del DAGRD por comuna, 2005–2018, del Tomo I del plan de salud. Responsables según el documento maestro: Juliana y Marcos.
