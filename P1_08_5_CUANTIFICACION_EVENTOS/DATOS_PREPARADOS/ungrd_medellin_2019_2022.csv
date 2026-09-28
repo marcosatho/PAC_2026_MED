@@ -1,0 +1,97 @@
+﻿fecha,year,month,evento,familia_es,climatico,fallecidos,heridos,desaparecidos,personas,familias,viviendas_destruidas,viviendas_averiadas,vias_averiadas,acueducto,alcantarillado,centros_educativos,centros_de_salud,hectareas,recursos_ejecutados,valor_total_apoyo_del_fngrd,otros_afectacion
+2019-01-01,2019,1,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,20,,,No registra
+2019-01-16,2019,1,ACCIDENTE TRANSPORTE TERRESTRE,otros eventos (no climáticos),False,0,29,0,29,0,0,0,0,0,0,0,0,0,,,No registra
+2019-01-29,2019,1,COLAPSO ESTRUCTURAL,otros eventos (no climáticos),False,0,1,0,1,0,0,0,0,0,0,0,0,0,,,No registra
+2019-02-08,2019,2,ACCIDENTE TRANSPORTE TERRESTRE,otros eventos (no climáticos),False,0,23,0,23,0,0,0,0,0,0,0,0,0,,,No registra
+2019-03-25,2019,3,INUNDACION,inundación,True,0,0,0,10,2,0,2,1,0,0,0,0,0,,,"3 POSTES, 35 DESPLOMES DE ÁRBOLES, CAÍDA DE CUBIERTA EN EDIFICIO PLAZA DE LA LIBERTAD"
+2019-04-05,2019,4,VENDAVAL,vendaval,True,0,0,0,69,22,2,23,0,0,1,0,0,0,,,No registra
+2019-04-25,2019,4,ACCIDENTE TRANSPORTE TERRESTRE,otros eventos (no climáticos),False,3,9,0,12,0,0,0,0,0,0,0,0,0,,,10 VEHICULOS
+2019-05-24,2019,5,ACCIDENTE TRANSPORTE TERRESTRE,otros eventos (no climáticos),False,1,10,0,11,0,0,0,0,0,0,0,0,0,,,9. VEHICULOS
+2019-05-24,2019,5,ACCIDENTE TRANSPORTE TERRESTRE,otros eventos (no climáticos),False,0,8,0,8,0,0,0,0,0,0,0,0,0,,,2. VEHICULOS
+2019-05-29,2019,5,INUNDACION,inundación,True,0,0,0,35,7,4,3,0,0,0,0,0,0,,,No registra
+2019-07-04,2019,7,COLAPSO ESTRUCTURAL,otros eventos (no climáticos),False,3,3,0,6,1,1,0,0,0,0,0,0,0,,,No registra
+2019-07-14,2019,7,ACCIDENTE TRANSPORTE TERRESTRE,otros eventos (no climáticos),False,0,17,0,17,0,0,0,0,0,0,0,0,0,,,No registra
+2019-07-31,2019,7,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2019-08-11,2019,8,ACCIDENTE AÉREO,otros eventos (no climáticos),False,2,0,0,2,0,0,0,0,0,0,0,0,0,,,No registra
+2019-08-30,2019,8,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2019-09-03,2019,9,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2019-09-04,2019,9,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2019-09-10,2019,9,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2019-10-09,2019,10,COLAPSO ESTRUCTURAL,otros eventos (no climáticos),False,1,3,0,4,0,0,0,0,0,0,0,0,0,,,Bodega de plásticos
+2019-10-12,2019,10,ACCIDENTE TRANSPORTE TERRESTRE,otros eventos (no climáticos),False,0,3,0,3,0,0,0,0,0,0,0,0,0,,,No registra
+2019-10-18,2019,10,MOVIMIENTO EN MASA,movimiento en masa,True,1,1,0,2,0,0,0,0,0,0,0,0,0,,,No registra
+2019-10-23,2019,10,FALLA ESTRUCTURAL,otros eventos (no climáticos),False,0,0,0,750,248,0,248,0,0,0,0,0,0,,,90 mascotas
+2019-10-27,2019,10,EXPLOSION,otros eventos (no climáticos),False,1,3,0,4,0,0,0,0,0,0,0,0,0,,,No registra
+2019-10-30,2019,10,INCENDIO ESTRUCTURAL,otros eventos (no climáticos),False,0,0,0,50,11,1,0,0,0,0,0,0,0,,,No registra
+2019-11-14,2019,11,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2019-12-19,2019,12,MOVIMIENTO EN MASA,movimiento en masa,True,2,2,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2020-01-12,2020,1,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2020-01-18,2020,1,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,15,,,No registra
+2020-02-06,2020,2,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,9,,,No registra
+2020-02-07,2020,2,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2020-02-11,2020,2,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2020-02-18,2020,2,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,2,,,No registra
+2020-02-20,2020,2,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2020-03-14,2020,3,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,3,,,No registra
+2020-03-16,2020,3,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,1,,,No registra
+2020-04-03,2020,4,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,10,,,No registra
+2020-04-28,2020,4,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,1,,,No registra
+2020-05-13,2020,5,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,1,,,No registra
+2020-07-11,2020,7,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,12,3,0,3,0,1,0,0,0,0,,,No registra
+2020-08-08,2020,8,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,2,,,No registra
+2020-08-20,2020,8,INCENDIO ESTRUCTURAL,otros eventos (no climáticos),False,0,0,0,4,1,0,1,0,0,0,0,0,0,,,No registra
+2020-09-01,2020,9,INUNDACION,inundación,True,0,2,0,24,6,0,6,0,0,0,0,0,0,,,No registra
+2020-09-18,2020,9,INUNDACION,inundación,True,0,0,0,176,44,0,44,0,0,0,0,0,0,,,No registra
+2020-11-03,2020,11,INUNDACION,inundación,True,0,0,0,15,3,0,3,1,0,0,0,0,0,,,"1 LOCAL COMERCIAL,"
+2020-11-14,2020,11,COLAPSO ESTRUCTURAL,otros eventos (no climáticos),False,0,3,0,11,3,0,3,0,0,0,0,0,0,,,1 CANINO
+2020-12-14,2020,12,MOVIMIENTO EN MASA,movimiento en masa,True,2,3,0,5,0,0,0,0,0,0,0,0,0,,,No registra
+2020-12-20,2020,12,INCENDIO ESTRUCTURAL,otros eventos (no climáticos),False,1,2,0,3,0,0,0,0,0,0,0,0,0,,,No registra
+2021-01-17,2021,1,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2021-01-28,2021,1,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,8,2,0,2,0,0,0,0,0,0,,,No registra
+2021-02-07,2021,2,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,3,,,No registra
+2021-03-04,2021,3,EXPLOSION,otros eventos (no climáticos),False,0,8,0,8,1,1,0,0,0,0,0,0,0,,,No registra
+2021-03-09,2021,3,COLAPSO ESTRUCTURAL,otros eventos (no climáticos),False,0,0,0,28,7,0,7,0,0,0,0,0,0,,,No registra
+2021-03-16,2021,3,COLAPSO ESTRUCTURAL,otros eventos (no climáticos),False,0,2,0,10,1,1,0,0,0,0,0,0,0,,,No registra
+2021-03-21,2021,3,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,0,0,0,0,0,0,0,0,0,0,,,1 VIA FERREA
+2021-03-24,2021,3,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,0,0,0,0,1,0,0,0,0,0,,,No registra
+2021-03-25,2021,3,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,0,0,0,0,1,0,0,0,0,0,,,No registra
+2021-03-25,2021,3,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,176,44,0,44,0,0,0,0,0,0,,,No registra
+2021-03-26,2021,3,COLAPSO ESTRUCTURAL,otros eventos (no climáticos),False,0,1,0,1,0,0,0,0,0,0,0,0,0,,,2 LOCALES COMERCIALES
+2021-04-05,2021,4,INUNDACION,inundación,True,0,0,0,116,29,0,29,1,0,0,0,0,0,,,No registra
+2021-04-22,2021,4,INCENDIO ESTRUCTURAL,otros eventos (no climáticos),False,0,1,0,4,1,0,1,0,0,0,0,0,0,,,No registra
+2021-05-01,2021,5,INCENDIO ESTRUCTURAL,otros eventos (no climáticos),False,0,1,0,4,1,0,1,0,0,0,0,0,0,,,No registra
+2021-05-03,2021,5,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2021-05-06,2021,5,INUNDACION,inundación,True,0,0,0,0,0,0,1,0,0,0,2,0,0,,,"COLAPSO PARCIAL DE TECHO EN EL RESTAURANTE: LÍFORMO- SAN LUCAS, CENTRO COMERCIAL: EL TESORO"
+2021-05-12,2021,5,COLAPSO ESTRUCTURAL,otros eventos (no climáticos),False,0,3,0,4,1,0,1,0,0,0,0,0,0,,,No registra
+2021-05-31,2021,5,INCENDIO ESTRUCTURAL,otros eventos (no climáticos),False,0,0,0,0,0,0,0,0,0,0,0,0,0,,,1 BODEGA
+2021-06-02,2021,6,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,60,15,10,5,0,0,0,0,0,0,,,No registra
+2021-06-11,2021,6,MOVIMIENTO EN MASA,movimiento en masa,True,1,3,0,12,4,1,3,0,0,0,0,0,0,,,No registra
+2021-06-12,2021,6,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,6,1,0,1,0,0,0,0,0,0,,,No registra
+2021-06-14,2021,6,INCENDIO ESTRUCTURAL,otros eventos (no climáticos),False,0,0,0,0,0,0,0,0,0,0,0,0,0,,,BODEGA DE SERVICIO LOGÍSTICO
+2021-06-30,2021,6,MOVIMIENTO EN MASA,movimiento en masa,True,0,1,0,1,0,0,0,0,0,0,0,0,0,,,No registra
+2021-08-04,2021,8,COLAPSO ESTRUCTURAL,otros eventos (no climáticos),False,0,1,0,4,1,0,1,0,0,0,0,0,0,,,No registra
+2021-08-06,2021,8,INCENDIO DE COBERTURA VEGETAL,incendio de cobertura vegetal,True,0,0,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2021-08-28,2021,8,INCENDIO ESTRUCTURAL,otros eventos (no climáticos),False,0,0,0,3,1,1,0,0,0,0,0,0,0,,,No registra
+2021-10-22,2021,10,INUNDACION,inundación,True,1,0,0,92,23,0,23,0,0,0,0,0,0,,,1 ESTABLECIMIENTO COMERCIAL
+2021-10-25,2021,10,INCENDIO ESTRUCTURAL,otros eventos (no climáticos),False,0,0,0,0,0,0,0,0,0,0,0,0,0,,,No registra
+2021-11-05,2021,11,INCENDIO ESTRUCTURAL,otros eventos (no climáticos),False,0,0,0,26,8,0,8,0,0,0,0,0,0,,,No registra
+2021-11-13,2021,11,INUNDACION,inundación,True,0,0,0,120,30,0,30,1,0,0,0,0,0,,,No registra
+2021-11-23,2021,11,MOVIMIENTO EN MASA,movimiento en masa,True,1,2,0,15,5,2,1,0,0,0,0,0,0,,,2 VIVIENDAS UBICADAS EN ZONA DE ALTO RIESGO
+2021-11-30,2021,11,INUNDACION,inundación,True,1,0,0,297,98,0,98,0,0,0,0,0,0,,,DOS RESCATES ANIMALES MASCOTAS Y SE RECUPERARON CUATRO CUERPOS SIN VIDA DE OTROS CUATRO ANIMALES.
+2022-03-01,2022,3,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,24,6,3,3,0,0,0,0,0,0,,,No registra
+2022-03-04,2022,3,INCENDIO ESTRUCTURAL,otros eventos (no climáticos),False,0,3,0,3,0,0,0,0,0,0,0,0,0,,,1 FABRICA
+2022-04-06,2022,4,INUNDACION,inundación,True,0,0,0,150,30,0,30,0,0,0,0,0,2,,,No registra
+2022-05-16,2022,5,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,16,4,4,0,0,0,0,0,0,0,,,No registra
+2022-06-05,2022,6,COLAPSO ESTRUCTURAL,otros eventos (no climáticos),False,0,0,0,0,0,0,0,0,0,0,0,0,0,,,1 CENTRO COMERCIAL
+2022-06-14,2022,6,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,16,4,0,4,0,0,0,0,0,0,,,No registra
+2022-06-20,2022,6,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,15,9,4,5,0,0,0,0,0,0,,,1 CRIADERO DE CERDOS DESTRUIDO- PÉRDIDA DE 23 CERDOS.
+2022-06-27,2022,6,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,0,23,23,2,0,0,0,0,0,0,,,5
+2022-07-13,2022,7,MOVIMIENTO EN MASA,movimiento en masa,True,2,0,0,0,1,1,0,0,0,0,0,0,0,,,"5 GALPONES DESTRUIDOS, PÉRDIDA APROXIMADA DE 4.000 POLLOS."
+2022-08-02,2022,8,CRECIENTE SUBITA,creciente súbita,True,0,1,0,291,98,0,97,0,0,1,0,0,1000,,,No registra
+2022-09-07,2022,9,AVENIDA TORRENCIAL,avenida torrencial,True,0,0,0,0,45,1,44,0,0,0,0,0,0,,,No registra
+2022-09-09,2022,9,AMENAZAS CONCATENADAS O COMPLEJAS,amenazas concatenadas,True,0,0,0,297,127,0,140,0,0,0,0,0,0,,,No registra
+2022-09-21,2022,9,MOVIMIENTO EN MASA,movimiento en masa,True,0,0,0,0,0,0,0,1,0,0,0,0,0,,,No registra
+2022-09-29,2022,9,INUNDACION,inundación,True,0,0,0,0,0,0,0,0,0,0,1,0,0,,,No registra
+2022-11-20,2022,11,INUNDACION,inundación,True,0,0,0,250,50,0,50,0,0,0,0,0,0,,,No registra
+2022-11-21,2022,11,ACCIDENTE TRANSPORTE AEREO,otros eventos (no climáticos),False,8,0,0,72,14,0,14,0,0,0,0,0,0,,,No registra
+2022-12-29,2022,12,ACCIDENTE TRANSPORTE AEREO,otros eventos (no climáticos),False,0,0,0,0,0,0,0,0,0,0,0,0,0,,,1 AERONAVE

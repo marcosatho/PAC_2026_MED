@@ -47,7 +47,7 @@ El documento es en el fondo una revisión bibliográfica, pero el lector no nece
 - Los cuadernos, el código y sus comentarios van en inglés; los textos del entregable y las figuras, en español.
 - Comunicación directa: hechos y correcciones, sin frases de relleno.
 - Los Word se arman sobre el documento maestro (`build_docx_8_1.py`, estilos Heading 3 y 4 y Normal) para que el pegado no cambie el formato; sin control de cambios.
-- Cada entrega guarda texto, figuras, scripts y datos preparados en la carpeta del numeral, y se actualiza `INDICE_REFERENCIAS_7.1_8.1.md`.
+- Cada entrega guarda texto, figuras, scripts y datos preparados en la carpeta del numeral, y se actualiza `INDICE_REFERENCIAS.md`.
 
 ## 6. Lista de chequeo antes de entregar un numeral
 

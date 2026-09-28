@@ -1,0 +1,738 @@
+﻿serial,evento,departamento,municipio,fecha,lugar,muertos,heridos,desaparecidos,viv_destruidas,viv_averiadas,afectados_directos,afectados_indirectos,reubicados,evacuados,perdidas_usd,perdidas_cop,centros_educativos,hospitales,cultivos_ha,ganado_perdido,vias_m,glide,anio,fuente_serial
+UNGRD-2016-0339,LANDSLIDE,Antioquia,Medellín,2016-12-10,,,,,1.0,2.0,,15.0,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0334,FIRE,Antioquia,Medellín,2016-12-01,,,2.0,,,,,,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0288,LANDSLIDE,Antioquia,Medellín,2016-09-22,,,,,,,,,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0275,FIRE,Antioquia,Medellín,2016-09-09,Cra 16 X 56; Barrio Villatina,3.0,1.0,,12.0,8.0,,100.0,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0272,STRUCTURE,Antioquia,Medellín,2016-09-06,Parque El Tesoro,,2.0,,,,,,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0262,LANDSLIDE,Antioquia,Medellín,2016-08-26,,1.0,1.0,,,,,2.0,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0243,STRONGWIND,Antioquia,Medellín,2016-08-18,,,,,,15.0,,60.0,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0236,FORESTFIRE,Antioquia,Medellín,2016-08-12,Sector de Moravia,,,,,12.0,,60.0,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0203,FORESTFIRE,Antioquia,Medellín,2016-06-27,,,,,,,,,,,0,0,,,1.0,0,,,2016,UNGRD
+UNGRD-2016-0192,FIRE,Antioquia,Medellín,2016-06-04,Barrio Manrique,,,,15.0,,75.0,,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0175,LANDSLIDE,Antioquia,Medellín,2016-05-10,,,,,,2.0,,10.0,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0120,FORESTFIRE,Antioquia,Medellín,2016-03-23,CERRO EL VOLADOR,,,,,,,,,,0,0,,,5.0,0,,,2016,UNGRD
+UNGRD-2016-0092,FIRE,Antioquia,Medellín,2016-03-05,,,3.0,,,,,,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0090,FIRE,Antioquia,Medellín,2016-03-04,,,4.0,,33.0,8.0,,205.0,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0090,FORESTFIRE,Antioquia,Medellín,2016-03-04,BARRIO OLAYA HERRERA COMUNA LA 13,,,,2.0,,,10.0,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0063,FORESTFIRE,Antioquia,Medellín,2016-02-16,,,,,,,,,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0061,FIRE,Antioquia,Medellín,2016-02-15,HIDROELÉCTRICA DE GUATAPE - ANTIOQUIA.,,,,,,,,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2016-0045,FORESTFIRE,Antioquia,Medellín,2016-02-03,,,,,,,,,,,0,0,,,,0,,,2016,UNGRD
+UNGRD-2017-0297,LANDSLIDE,Antioquia,Medellín,2017-12-31,Sector La Aldea en la Vía al Mar,,,,,,,,,,0,0,,,,0,,,2017,UNGRD
+UNGRD-2017-0286,LANDSLIDE,Antioquia,Medellín,2017-12-14,,,,,4.0,9.0,20.0,45.0,20.0,45.0,0,0,,,,0,,,2017,UNGRD
+UNGRD-2017-0281,FIRE,Antioquia,Medellín,2017-12-06,,,1.0,,,4.0,,20.0,,,0,0,,,,0,,,2017,UNGRD
+UNGRD-2017-0243,STRUCTURE,Antioquia,Medellín,2017-10-02,,1.0,,,,,,,,,0,0,,,,0,,,2017,UNGRD
+UNGRD-2017-0242,STRUCTURE,Antioquia,Medellín,2017-10-01,,,2.0,,1.0,,,2.0,,,0,0,,,,0,,,2017,UNGRD
+UNGRD-2017-0232,FIRE,Antioquia,Medellín,2017-09-21,Calle 54A con Carrera 7 ESTE,,,,,1.0,,1.0,,,0,0,,,,0,,,2017,UNGRD
+UNGRD-2017-0206,FIRE,Antioquia,Medellín,2017-08-18,,,4.0,,,,,1441.0,,,0,0,,,,0,,,2017,UNGRD
+UNGRD-2017-0166,LANDSLIDE,Antioquia,Medellín,2017-06-16,Barrio Cruz,,,,,20.0,,57.0,,,0,0,,,,0,,,2017,UNGRD
+UNGRD-2017-0163,LANDSLIDE,Antioquia,Medellín,2017-06-12,BARRIO BELLO ORIENTE CRA 21 CON 46,,,,7.0,,38.0,,,,0,0,,,,0,,,2017,UNGRD
+UNGRD-2017-0116,FIRE,Antioquia,Medellín,2017-04-18,,1.0,,,,1.0,,5.0,,,0,0,,,,0,,,2017,UNGRD
+UNGRD-2017-0104,FIRE,Antioquia,Medellín,2017-03-29,,,,,,,,,,,0,0,,,,0,,,2017,UNGRD
+UNGRD-2017-0098,LANDSLIDE,Antioquia,Medellín,2017-03-23,,,,,,,,,,,0,0,,,,0,,,2017,UNGRD
+UNGRD-2017-0069,FORESTFIRE,Antioquia,Medellín,2017-02-18,Cerro Pan de Azucar,,,,,,,,,,0,0,,,,0,,,2017,UNGRD
+UNGRD-2017-0043,FORESTFIRE,Antioquia,Medellín,2017-01-31,,,,,,,,,,,0,0,,,1.0,0,,,2017,UNGRD
+UNGRD-2015-0361,FORESTFIRE,Antioquia,Medellín,2015-12-25,CORREGIMIENTO SANTA HELENA SECTOR LAS PALMAS,,,,,,,,,,0,0,,,,0,,,2015,UNGRD
+UNGRD-2015-0320,STRONGWIND,Antioquia,Medellín,2015-10-06,CORREGIMIENTO DE SANTA ELENA Y EN LOS BARRIOS LA PASTORA; MI,,,,,,,,,,0,0,,,,0,,,2015,UNGRD
+UNGRD-2015-0303,FORESTFIRE,Antioquia,Medellín,2015-09-23,,,,,,,,,,,0,0,,,1.0,0,,,2015,UNGRD
+UNGRD-2015-0191,STRUCTURE,Antioquia,Medellín,2015-07-16,BARRIO ENCISO COMUNA 8,2.0,,,1.0,,,2.0,,,0,0,,,,0,,,2015,UNGRD
+UNGRD-2015-0179,FORESTFIRE,Antioquia,Medellín,2015-07-02,,,,,,,,,,,0,0,,,,0,,,2015,UNGRD
+UNGRD-2015-0176,FIRE,Antioquia,Medellín,2015-06-30,Sector Ditaires,,,,,,,,,,0,0,,,,0,,,2015,UNGRD
+UNGRD-2015-0166,FORESTFIRE,Antioquia,Medellín,2015-06-24,Sector Media Luna_ Santa Helena,,,,,,,,,,0,0,,,,0,,,2015,UNGRD
+UNGRD-2015-0142,FORESTFIRE,Antioquia,Medellín,2015-05-14,Cerro de la Tres Cruces,,,,,,,,,,0,0,,,1.0,0,,,2015,UNGRD
+UNGRD-2015-0141,FORESTFIRE,Antioquia,Medellín,2015-05-14,Comuna 8. Sector La Golondrina,,,,,,,,,,0,0,,,15.0,0,,,2015,UNGRD
+UNGRD-2015-0139,FORESTFIRE,Antioquia,Medellín,2015-05-12,Corregimiento Santa Helena,,,,,,,,,,0,0,,,25.0,0,,,2015,UNGRD
+UNGRD-2015-0129,FORESTFIRE,Antioquia,Medellín,2015-05-01,Sector Belén; Cerro Las Tres Cruces,,,,,,,,,,0,0,,,7.0,0,,,2015,UNGRD
+UNGRD-2015-0113,LANDSLIDE,Antioquia,Medellín,2015-04-09,Barrio Santa Lucia y Francia,,,,4.0,7.0,,55.0,,,0,0,,,,0,,,2015,UNGRD
+UNGRD-2015-0106,HAILSTORM,Antioquia,Medellín,2015-03-31,Comuna Belén,,,,,,,,,,0,0,,,,0,,,2015,UNGRD
+UNGRD-2015-0078,LANDSLIDE,Antioquia,Medellín,2015-03-10,Barrio Pilarica,1.0,2.0,,,,,3.0,,,0,0,,,,0,,,2015,UNGRD
+UNGRD-2015-0053,FORESTFIRE,Antioquia,Medellín,2015-02-22,Sector del Cerro Quirasol,,,,,,,,,,0,0,,,,0,,,2015,UNGRD
+UNGRD-2015-0039,FIRE,Antioquia,Medellín,2015-02-08,Carrera 47 con calle 123. Comuna 1. Sector Los Chorros,,,,,2.0,,10.0,,,0,0,,,,0,,,2015,UNGRD
+UNGRD-2015-0017,FORESTFIRE,Antioquia,Medellín,2015-01-11,Vereda San Cristóbal; Cerro Tres Cruces,,,,,,,,,,0,0,,,3.0,0,,,2015,UNGRD
+UNGRD-2015-0011,FORESTFIRE,Antioquia,Medellín,2015-01-07,Barrio La Cruz,,,,,,,,,,0,0,,,1.0,0,,,2015,UNGRD
+UNGRD-2015-0001,FORESTFIRE,Antioquia,Medellín,2015-01-02,Comuna 8 de Medellín; Cerro de Pan de Azúcar; Barrio Villant,,,,,,,,,,0,0,,,3.0,0,,,2015,UNGRD
+UNGRD-2014-0333,FLOOD,Antioquia,Medellín,2014-10-29,"Estadio América, Castilla, centro comercial Florida",,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0326,FIRE,Antioquia,Medellín,2014-12-14,CALLE 50 (COLOMBIA) CON CARRERA 53,,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0324,LANDSLIDE,Antioquia,Medellín,2014-12-11,,,,,4.0,,,18.0,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0324,LANDSLIDE,Antioquia,Medellín,2014-12-10,,,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0312,LANDSLIDE,Antioquia,Medellín,2014-11-12,BARRIO LA CRUZ,,,,,1.0,,5.0,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0311,FIRE,Antioquia,Medellín,2014-11-11,BARRIO MANRIQUE,2.0,1.0,,1.0,,,5.0,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0300,HAILSTORM,Antioquia,Medellín,2014-10-29,,,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0269,FIRE,Antioquia,Medellín,2014-09-21,,,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0264,LANDSLIDE,Antioquia,Medellín,2014-09-15,,,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0216,FIRE,Antioquia,Medellín,2014-08-12,,,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0184,FORESTFIRE,Antioquia,Medellín,2014-07-24,VEREDA: SAN CRISTOBAL,,,,,,,,,,0,0,,,2.0,0,,,2014,UNGRD
+UNGRD-2014-0179,FORESTFIRE,Antioquia,Medellín,2014-07-21,CERRO: EL VOLADOR,,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0170,LANDSLIDE,Antioquia,Medellín,2014-07-14,,,,,4.0,15.0,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0160,FIRE,Antioquia,Medellín,2014-07-05,,,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0157,FORESTFIRE,Antioquia,Medellín,2014-07-02,Barrio La Cruz ; Comuna 13,,,,,,,,,,0,0,,,1.0,0,,,2014,UNGRD
+UNGRD-2014-0157,FIRE,Antioquia,Medellín,2014-07-02,Carrera 115 con calle 39. Barrio Los Conquistadores; Comuna,,,,2.0,,,10.0,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0144,STRUCTURE,Antioquia,Medellín,2014-06-11,,,,,1.0,,,5.0,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0130,FLOOD,Antioquia,Medellín,2014-05-17,,,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0117,FIRE,Antioquia,Medellín,2014-05-04,Cra 44 con Calle 41; Barrio San Diego,,,,,1.0,,6.0,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0109,LANDSLIDE,Antioquia,Medellín,2014-04-24,Barrio Juan 23,,,,,14.0,,70.0,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0103,FORESTFIRE,Antioquia,Medellín,2014-04-14,,,,,,,,,,,0,0,,,2.0,0,,,2014,UNGRD
+UNGRD-2014-0088,FORESTFIRE,Antioquia,Medellín,2014-03-31,,,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0060,FLOOD,Antioquia,Medellín,2014-03-07,,,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0060,OTHER,Antioquia,Medellín,2014-03-06,Edificio Platinum; Barrio El Tesoro en el Poblado.,,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0034,FIRE,Antioquia,Medellín,2014-02-12,Carrera 54 con calle 51,,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+UNGRD-2014-0007,LANDSLIDE,Antioquia,Medellín,2014-01-13,,,,,,,,,,,0,0,,,,0,,,2014,UNGRD
+2014-00120,RAIN,Antioquia,Medellín,2014-10-29,,,,,,,,,,,0,0,,,,0,,,2014,
+2014-00039,EXPLOSION,Antioquia,Medellín,2014-07-05,"Sector conocido como El Raudal, los hechos ocurrieron en la",1.0,32.0,,,,,,,,0,0,,,,0,,,2014,
+2014-00020,LANDSLIDE,Antioquia,Medellín,2014-04-25,,,,,,,,,,70.0,0,0,,,,0,,,2014,
+2013-00065,FLOOD,Antioquia,Medellín,2013-12-03,,,,,,,,,,,0,0,,,,0,,,2013,
+2013-00063,FIRE,Antioquia,Medellín,2013-12-02,,,41.0,,,,,,,,0,0,,,,0,,,2013,
+2012-00037,LANDSLIDE,Antioquia,Medellín,2012-04-23,,,,,,,,,,,0,0,,,,0,,,2012,
+UNGRD-03694,FIRE,Antioquia,Medellín,2013-12-31,SECTOR CENTRO DE LA CIUDAD,,,,,,,,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-03678,FIRE,Antioquia,Medellín,2013-12-27,,,4.0,,,4.0,,20.0,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-03526,FLOOD,Antioquia,Medellín,2013-12-03,,,,,,13.0,,65.0,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-03473,FIRE,Antioquia,Medellín,2013-11-27,CENTRO (CALLE ZEA),,,,,,,,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-03438,FIRE,Antioquia,Medellín,2013-11-21,,,,,1.0,,5.0,5.0,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-03407,LANDSLIDE,Antioquia,Medellín,2013-11-19,,,,,,,,,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-03366,LANDSLIDE,Antioquia,Medellín,2013-11-14,,,,,,12.0,,60.0,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-03296,LANDSLIDE,Antioquia,Medellín,2013-11-03,,,,,,5.0,,25.0,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-03240,HAILSTORM,Antioquia,Medellín,2013-10-29,,,,,,,,,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-03123 *,STRUCTURE,Antioquia,Medellín,2013-10-13,,11.0,2.0,,,,,525.0,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-02908,FORESTFIRE,Antioquia,Medellín,2013-09-24,,,1.0,,,,,,,,0,0,,,70.0,0,,,2013,UNGRD
+UNGRD-02727,LANDSLIDE,Antioquia,Medellín,2013-09-06,,,,,8.0,40.0,40.0,155.0,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-02493,LANDSLIDE,Antioquia,Medellín,2013-08-13,,2.0,,,,,,,,,0,0,,,,0,1.0,,2013,UNGRD
+UNGRD-02465,LANDSLIDE,Antioquia,Medellín,2013-08-10,,,,,,9.0,,35.0,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-02327,FORESTFIRE,Antioquia,Medellín,2013-07-29,,,,,,,,,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-02318,FORESTFIRE,Antioquia,Medellín,2013-07-28,,,,,,,,,,,0,0,,,3.0,0,,,2013,UNGRD
+UNGRD-02131,FORESTFIRE,Antioquia,Medellín,2013-07-11,,,,,,,,,,,0,0,,,6.0,0,,,2013,UNGRD
+UNGRD-02064,FIRE,Antioquia,Medellín,2013-06-30,,,4.0,,,,,,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-02019,LANDSLIDE,Antioquia,Medellín,2013-06-25,,,,,,,,,,,0,0,,,,0,1.0,,2013,UNGRD
+UNGRD-01749,FLOOD,Antioquia,Medellín,2013-05-22,,,,,,,,,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-01730,LANDSLIDE,Antioquia,Medellín,2013-05-21,,,,,,6.0,,30.0,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-01714,STRONGWIND,Antioquia,Medellín,2013-05-19,,1.0,,,,,,,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-01691,LANDSLIDE,Antioquia,Medellín,2013-05-17,,,,,3.0,,15.0,15.0,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-01596,LANDSLIDE,Antioquia,Medellín,2013-05-05,,,,,5.0,,25.0,25.0,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-01119,LANDSLIDE,Antioquia,Medellín,2013-03-21,,,,,3.0,,15.0,15.0,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-00255,FORESTFIRE,Antioquia,Medellín,2013-01-18,,,,,,,,,,,0,0,,,60.0,0,,,2013,UNGRD
+UNGRD-00254,FIRE,Antioquia,Medellín,2013-01-18,,1.0,2.0,,1.0,,5.0,4.0,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-00211,FORESTFIRE,Antioquia,Medellín,2013-01-15,,,,,,,,,,,0,0,,,20.0,0,,,2013,UNGRD
+UNGRD-00101,FORESTFIRE,Antioquia,Medellín,2013-01-09,,,,,,,,,,,0,0,,,,0,,,2013,UNGRD
+UNGRD-2012-0344,FIRE,Antioquia,Medellín,2012-12-24,,,1.0,,,2.0,,1.0,,,0,0,,,,0,,,2012,UNGRD
+UNGRD-2012-0342,FIRE,Antioquia,Medellín,2012-12-20,CERCA A LA ESTACIÓN CISNEROS,,,,,,,,,,0,0,,,,0,,,2012,UNGRD
+UNGRD-2012-0264,FORESTFIRE,Antioquia,Medellín,2012-09-08,,,,,,,,,,,0,0,,,10.0,0,,,2012,UNGRD
+UNGRD-2012-0180,LANDSLIDE,Antioquia,Medellín,2012-06-26,,,,,,,,,,,0,0,,,,0,1.0,,2012,UNGRD
+UNGRD-2012-0163,FORESTFIRE,Antioquia,Medellín,2012-06-07,,,,,,,,,,,0,0,,,4.0,0,,,2012,UNGRD
+UNGRD-2012-0085,FIRE,Antioquia,Medellín,2012-03-29,BARRIO CHAGUAROS,,,,,,,,,,0,0,,,,0,,,2012,UNGRD
+UNGRD-2012-0071,FORESTFIRE,Antioquia,Medellín,2012-03-15,,,,,,,,,,,0,0,,,50.0,0,,,2012,UNGRD
+UNGRD-2012-0068,FORESTFIRE,Antioquia,Medellín,2012-03-13,,,,,,,,,,,0,0,,,3.0,0,,,2012,UNGRD
+DGR-2011-02841,STRUCTURE,Antioquia,Medellín,2011-12-29,BARRIO VILLA TINA,1.0,1.0,,,,,,,,0,0,,,,0,,,2011,DGR
+DGR-2011-02804,FLOOD,Antioquia,Medellín,2011-12-18,COMUNAS 13; 16;Y LA 70 BARRIOS: BELENCITO CORAZON; BELEN; LA,,,1.0,,45.0,,225.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-02710,LANDSLIDE,Antioquia,Medellín,2011-12-08,BARRIOS SAN NICOLAS; VILLA CELINA Y RETIRO DE LOS INDIOS,,,,3.0,20.0,,115.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-02662,LANDSLIDE,Antioquia,Medellín,2011-12-05,BARRIO LA CRUZ,,2.0,,1.0,5.0,,30.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-02638,LANDSLIDE,Antioquia,Medellín,2011-12-02,BARRIOS MANRIQUE AMERICA,,,,3.0,4.0,,24.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-02446,LANDSLIDE,Antioquia,Medellín,2011-11-18,BARRIO LA CRUZ,,,,4.0,,,20.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-02181,LANDSLIDE,Antioquia,Medellín,2011-10-17,BARRIO LA CRUZ,,,,2.0,3.0,,15.0,,,0,0,,,,0,,,2011,DGR
+2012-00013,LANDSLIDE,Antioquia,Medellín,2012-03-26,Sector Chirapotó-Vía Manizales-Medellín,,,,,,,,,,0,0,,,,0,,,2012,
+DGR-2011-01863,LANDSLIDE,Antioquia,Medellín,2011-10-04,CORREGIMIENTO DE SAN ANTONIO DE PRADO,,,,,3.0,,15.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-01862,FLOOD,Antioquia,Medellín,2011-10-03,AL SUR DE LA CIUDAD.,,,,1.0,10.0,,55.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-01858,STRONGWIND,Antioquia,Medellín,2011-09-24,Barrio Moravia,,,,1.0,12.0,,65.0,,,0,0,,,,0,,,2011,DGR
+2010-00134,LANDSLIDE,Antioquia,Medellín,2010-12-07,Vía Medellín - Las Palmas,,,,,,,,,,0,0,,,,0,,,2010,
+DGR-2011-01544,FLOOD,Antioquia,Medellín,2011-06-30,,,,,,,,10400.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-01354,FLOOD,Antioquia,Medellín,2011-06-06,BARRIO SINAI.,,,,2.0,35.0,,185.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-01345,FLOOD,Antioquia,Medellín,2011-06-05,BARRIOS MORAVIA Y EL BOSQUE,,,,,40.0,,200.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-00902,LANDSLIDE,Antioquia,Medellín,2011-04-30,,,,,5.0,22.0,,135.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-00854,LANDSLIDE,Antioquia,Medellín,2011-04-27,BARRIO SANTO DOMINGO.,1.0,1.0,,2.0,3.0,,25.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-00853,LANDSLIDE,Antioquia,Medellín,2011-04-27,BARRIO ANDALUCIA DE FRANCIA,2.0,,,1.0,,,5.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-00850,FLOOD,Antioquia,Medellín,2011-04-27,BARRIO EL PESEBRE.,,,,9.0,20.0,,145.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-00832,FLOOD,Antioquia,Medellín,2011-04-26,COMUNA 1.,1.0,,,,,,,,,0,0,,,,0,,,2011,DGR
+DGR-2011-00810,FIRE,Antioquia,Medellín,2011-04-25,SECTOR: CAÑADA NEGRA.,,,,11.0,,,30.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-00589,LANDSLIDE,Antioquia,Medellín,2011-04-17,BARRIO: CARAMBOLAS SECTOR MANRIQUE.,,,,3.0,47.0,,200.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-00438,LANDSLIDE,Antioquia,Medellín,2011-04-10,BARRIO LA SIERRA.,4.0,,,5.0,7.0,,60.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-00116,FIRE,Antioquia,Medellín,2011-02-24,"BARRIO LA FLORESTA, CARRERA 68 B CON 45",,,,,,,,,,0,0,,,,0,,,2011,DGR
+DGR-2011-00106,FIRE,Antioquia,Medellín,2011-02-21,,,,,5.0,8.0,,65.0,,,0,0,,,,0,,,2011,DGR
+DGR-2011-00075,LANDSLIDE,Antioquia,Medellín,2011-02-10,COMUNA OCCIDENTAL,,,1.0,3.0,,,15.0,,,0,0,,,,0,,,2011,DGR
+2010-00091,FLOOD,Antioquia,Medellín,2010-02-12,Barrio Belén Fatima,,,,,,,,,,0,0,,,,0,,,2010,
+DGR-2010-02040,FLOOD,Antioquia,Medellín,2010-12-25,,,,,,20.0,,100.0,,,0,0,,,,0,,,2010,DGR
+DGR-2010-01791,STRONGWIND,Antioquia,Medellín,2010-11-30,BARRIOS VILLA MAGDALENA Y LA GAVIOTA.,,,,,,,,,,0,0,,,,0,,,2010,DGR
+DGR-2010-01582,LANDSLIDE,Antioquia,Medellín,2010-11-14,,4.0,,,7.0,19.0,,130.0,,,0,0,,,,0,,,2010,DGR
+DGR-2010-01542,LANDSLIDE,Antioquia,Medellín,2010-11-11,,1.0,1.0,,2.0,15.0,,85.0,,,0,0,,,,0,,,2010,DGR
+DGR-2010-01470,FLOOD,Antioquia,Medellín,2010-11-08,Sector Cola del Zorro. El Poblado.,,,,2.0,5.0,,35.0,,,0,0,,,,0,400.0,,2010,DGR
+DGR-2010-01380,LANDSLIDE,Antioquia,Medellín,2010-11-03,,,,,,2.0,,10.0,,,0,0,,,,0,,,2010,DGR
+DGR-2010-01207,LANDSLIDE,Antioquia,Medellín,2010-10-04,,,,,2.0,,,10.0,,,0,0,,,,0,,,2010,DGR
+DGR-2010-01051,LANDSLIDE,Antioquia,Medellín,2010-09-07,,,,,1.0,2.0,,15.0,,,0,0,,,,0,,,2010,DGR
+DGR-2010-00824,FLOOD,Antioquia,Medellín,2010-07-17,CORREGIMIENTO SAN ANTONIO DEL PRADO.,,,,,10.0,,50.0,,,0,0,,,,0,,,2010,DGR
+DGR-2010-00810,LANDSLIDE,Antioquia,Medellín,2010-07-16,COMUNA 13 BARRIO BLANQUISAL.,,,,,1.0,,5.0,,,0,0,,,,0,,,2010,DGR
+DGR-2010-00617 *,FIRE,Antioquia,Medellín,2010-06-03,,,,,144.0,,,531.0,,,0,0,,,,0,,,2010,DGR
+DGR-2010-00429,FIRE,Antioquia,Medellín,2010-04-24,,,,,3.0,,,15.0,,,0,0,,,,0,,,2010,DGR
+DGR-2010-00354,LANDSLIDE,Antioquia,Medellín,2010-04-13,BARRIOS ROBLEDO; OLAYA HERRERA; ANTONIO NARIÑO Y SAN JAVIER.,,,,,18.0,,90.0,,,0,0,,,,0,,,2010,DGR
+2009-00042,EPIDEMIC,Antioquia,Medellín,2009-07-19,,1.0,,,,,,79.0,,,0,0,,,,0,,,2009,
+2009-00033,STRUCTURE,Antioquia,Medellín,2009-05-12,Zona bancaria y hotelera de Medellín. Avenida El Poblado.,,,,,,,,,,0,0,,,,0,,,2009,
+2009-00017,ACCIDENT,Antioquia,Medellín,2009-01-02,Vía Medellín - Quibdó.,14.0,,,,,,26.0,,,0,0,,,,0,1.0,,2009,
+2009-00015,SPATE,Antioquia,Medellín,2009-01-25,Km 13 de la vía las Palmas.,,1.0,,,,,,,,0,0,,,,0,,,2009,
+2008-01702,STRUCTURE,Antioquia,Medellín,2008-11-23,Barrio Santa Cecilia,,,,,,,,,64.0,0,0,,,,0,,,2008,
+2008-01631,LANDSLIDE,Antioquia,Medellín,2008-07-17,,8.0,,,,,,,,,0,0,,,,0,,,2008,
+DGR-2009-00996,FIRE,Antioquia,Medellín,2009-12-28,,,,,1.0,,,5.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00981,LANDSLIDE,Antioquia,Medellín,2009-12-09,,,1.0,,1.0,2.0,,15.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00950,FLOOD,Antioquia,Medellín,2009-11-16,,,,1.0,,5.0,,25.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00941,LANDSLIDE,Antioquia,Medellín,2009-11-08,,,,,2.0,2.0,,23.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00893,STRONGWIND,Antioquia,Medellín,2009-10-19,,,,,,35.0,,124.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00879,FIRE,Antioquia,Medellín,2009-10-14,,,,,1.0,,,5.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00856,STRONGWIND,Antioquia,Medellín,2009-10-03,,,,,,28.0,,140.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00605,FLOOD,Antioquia,Medellín,2009-06-10,"CORREGIMIENTO SAN ANTONIO DE PRADO,",,,,,,,,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00514,LANDSLIDE,Antioquia,Medellín,2009-05-07,"BARRIOS MORAVIA, LA CRUZ Y VILLATINA.",,,,,16.0,,96.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00487,LANDSLIDE,Antioquia,Medellín,2009-05-03,SECTOR LA CRUZ.,,,,2.0,,,10.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00371,FIRE,Antioquia,Medellín,2009-04-13,BARRIO SANTO DOMINGO SABIO.,,,,4.0,,,55.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00319,FIRE,Antioquia,Medellín,2009-04-05,,,,,,,,,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00312,FLOOD,Antioquia,Medellín,2009-04-04,SAN ANTONIO DE PRADO.,2.0,,,3.0,50.0,,265.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00198,LANDSLIDE,Antioquia,Medellín,2009-03-23,CORREGIMIENTO SANTA HELENA. FINCA LA CASCADA,,,,1.0,,,5.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00197,FLOOD,Antioquia,Medellín,2009-03-23,"BARRIOS BELEN, LAURELES, CAMPO VALDES.",,,,,8.0,,40.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00192,LANDSLIDE,Antioquia,Medellín,2009-03-22,,,,,,,,,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00190,FLOOD,Antioquia,Medellín,2009-03-22,Corregimiento de San Cristobal,2.0,,,,,,,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00187,FLOOD,Antioquia,Medellín,2009-03-21,CORREGIMIENTO DE SAN ANTONIO DE PRADO.,1.0,,,,,,,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00161,FIRE,Antioquia,Medellín,2009-03-15,BARRIO BERLIN.,1.0,1.0,,1.0,,,5.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00080,FIRE,Antioquia,Medellín,2009-02-11,,1.0,,,3.0,,,10.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00020 *,LANDSLIDE,Antioquia,Medellín,2009-01-16,Villatina,,,,,,,173.0,,,0,0,,,,0,,,2009,DGR
+DGR-2009-00017,FIRE,Antioquia,Medellín,2009-01-15,BARRIO FRANCIA.,,,,,4.0,,13.0,,,0,0,,,,0,,,2009,DGR
+DGR-2008-01537,FIRE,Antioquia,Medellín,2008-12-14,,1.0,,,5.0,,,25.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-01467,LANDSLIDE,Antioquia,Medellín,2008-12-04,Vereda García,,2.0,1.0,,,,,,,0,0,,,,0,1.0,,2008,DGR
+DGR-2008-01095,LANDSLIDE,Antioquia,Medellín,2008-11-16,Urbanización Alto Verde - Poblado,12.0,,,6.0,,,30.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00910,LANDSLIDE,Antioquia,Medellín,2008-10-09,,,,,,4.0,,22.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00896,LANDSLIDE,Antioquia,Medellín,2008-10-06,,,,,,,,,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00844,LANDSLIDE,Antioquia,Medellín,2008-09-27,,,,,,2.0,,8.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00842,FIRE,Antioquia,Medellín,2008-09-26,,,,,25.0,,,125.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00739,FLOOD,Antioquia,Medellín,2008-08-26,"Vía las Palmas, deprimidos y vías de la ciudad",,3.0,,,47.0,,250.0,,280.0,0,0,,,,0,,,2008,DGR
+2008-01630,LANDSLIDE,Antioquia,Medellín,2008-07-16,"Carretera Medellín - Manizales, km 102 y 104 cerca a la Pint",,,,,,,,,,0,0,,,,0,,,2008,
+DGR-2008-00578,LANDSLIDE,Antioquia,Medellín,2008-06-28,,,,,6.0,,,60.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00530,FLOOD,Antioquia,Medellín,2008-06-10,,,,,,50.0,,250.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00524,LANDSLIDE,Antioquia,Medellín,2008-06-07,,,1.0,,,2.0,,12.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00478,SPATE,Antioquia,Medellín,2008-05-31,Barrio El Socorro,27.0,16.0,,20.0,,100.0,,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00453 *,FLOOD,Antioquia,Medellín,2008-05-29,Barrio Marco Fidel Suárez,,,,,100.0,,500.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00265 *,FLOOD,Antioquia,Medellín,2008-05-05,Robledo Miramar,,,1.0,,80.0,,1750.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00199,FLOOD,Antioquia,Medellín,2008-04-11,,,,,,26.0,,130.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00166,FIRE,Antioquia,Medellín,2008-04-01,,,,,3.0,,,12.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00114,LANDSLIDE,Antioquia,Medellín,2008-03-14,,,3.0,,3.0,,,15.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00056,LANDSLIDE,Antioquia,Medellín,2008-02-22,,,1.0,,1.0,,,5.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00055,LANDSLIDE,Antioquia,Medellín,2008-02-22,,,4.0,,3.0,37.0,,130.0,,,0,0,,,,0,,,2008,DGR
+DGR-2008-00019,FIRE,Antioquia,Medellín,2008-01-22,,,,,,5.0,,25.0,,,0,0,,,,0,,,2008,DGR
+1984-0458,FLOOD,Antioquia,Medellín,1984-10-21,,,,,3.0,,,30.0,,,0,0,,,,0,,,1984,
+1984-0451,LANDSLIDE,Antioquia,Medellín,1984-10-19,,,,,,,,,,,0,0,,,,0,,,1984,
+1984-0376,LANDSLIDE,Antioquia,Medellín,1984-09-20,Santa fe de Antioquia,,,,,,,,,,0,0,,,,0,120.0,,1984,
+1984-0369,LANDSLIDE,Antioquia,Medellín,1984-09-18,,,,,,12.0,,,,56.0,0,0,,,,0,,,1984,
+1984-0319,FLOOD,Antioquia,Medellín,1984-08-15,,3.0,,,8.0,,,,,,0,0,,,,0,,,1984,
+1984-0304,LANDSLIDE,Antioquia,Medellín,1984-08-01,B.20 julio,1.0,1.0,,7.0,,,,,,0,0,,,,0,,,1984,
+1984-0279,FIRE,Antioquia,Medellín,1984-07-23,B. Antioquia.,3.0,,,,1.0,,,,,0,0,,,,0,,,1984,
+1984-0273,LANDSLIDE,Antioquia,Medellín,1984-07-15,B. Santo Domingo Savio y Aanjues.,,,,,,15.0,,,,0,0,,,,0,,,1984,
+1984-0267,LANDSLIDE,Antioquia,Medellín,1984-07-15,Cll 101 A con Crr 31A,,,,3.0,,,,,,0,0,,,,0,,,1984,
+1984-0271,LANDSLIDE,Antioquia,Medellín,1984-07-15,B. Manrrique.,,,,2.0,,,,,,0,0,,,,0,,,1984,
+1984-0272,LANDSLIDE,Antioquia,Medellín,1984-07-15,Cll 58 con Crr 53,,2.0,,4.0,,,,,,0,500000,,,,0,,,1984,
+1984-0205,FIRE,Antioquia,Medellín,1984-06-18,,3.0,9.0,,,,,,,,0,0,,,,0,,,1984,
+1984-0203,RAIN,Antioquia,Medellín,1984-06-17,B. Civival,,,,4.0,6.0,,,,42.0,0,0,,,,0,,,1984,
+1984-0100,FLOOD,Antioquia,Medellín,1984-05-08,,,,,,,,,,,0,0,,,,0,,,1984,
+1984-0070,FLOOD,Antioquia,Medellín,1984-04-22,,,,,,,,,,,0,200000,,,,0,,,1984,
+1983-0274,FLOOD,Antioquia,Medellín,1983-10-24,,1.0,,,,,,,,207.0,0,0,,,,0,,,1983,
+1983-0273,LANDSLIDE,Antioquia,Medellín,1983-10-24,,1.0,,,,,,,,207.0,0,0,,,,0,,,1983,
+1983-0228,INTOXICACION,Antioquia,Medellín,1983-08-15,Cra. 35# 40-22,,8.0,,,,,,,,0,0,,,,0,,,1983,
+1983-0199,EXPLOSION,Antioquia,Medellín,1983-07-21,Cra. 88 y calle 43,,4.0,,,,,,,,0,4000000,,,,0,,,1983,
+1983-0162,EXPLOSION,Antioquia,Medellín,1983-05-12,,1.0,5.0,,,,,,,,0,0,,,,0,,,1983,
+1983-0098,FIRE,Antioquia,Medellín,1983-04-07,,,1.0,,,,,,,,0,1300000,,,,0,,,1983,
+1983-0088,POLLUTION,Antioquia,Medellín,1983-04-05,,,28.0,,,,,,,,0,0,,,,0,,,1983,
+1983-0075,STORM,Antioquia,Medellín,1983-03-27,,1.0,5.0,,,,,,,,0,0,,,,0,,,1983,
+1983-0073,PLAGUE,Antioquia,Medellín,1983-03-23,,,,,,,,,,,0,0,,,,0,,,1983,
+1983-0062,LANDSLIDE,Antioquia,Medellín,1983-03-02,,,,,,,,,,,0,0,,,,0,,,1983,
+1983-0026,DROUGHT,Antioquia,Medellín,1983-01-31,,,,,,,,,,,0,0,,,,0,,,1983,
+1983-0025,STRUCTURE,Antioquia,Medellín,1983-01-27,B. 12 de octubre,,,,30.0,630.0,30.0,20500.0,,,0,0,,,,0,,,1983,
+1982-0498,INTOXICACION,Antioquia,Medellín,1982-10-28,,,152.0,,,,,,,,0,0,,,,0,,,1982,
+1982-0446,FLOOD,Antioquia,Medellín,1982-09-26,14 Bs.,,,,3.0,,,,,,0,0,,,,0,,,1982,
+1982-0442,INTOXICACION,Antioquia,Medellín,1982-09-21,,2.0,12.0,,,,,,,,0,0,,,,0,,,1982,
+1982-0418,FIRE,Antioquia,Medellín,1982-08-21,Camioneta,10.0,1.0,,,,,,,,0,0,,,,0,,,1982,
+1982-0415,INTOXICACION,Antioquia,Medellín,1982-08-18,,,892.0,,,,,,,,0,0,,,,0,,,1982,
+1982-0412,FIRE,Antioquia,Medellín,1982-08-11,Tugurio situado en una orilla del rio Medellin al sur,3.0,,,1.0,,,,,,0,0,,,,0,,,1982,
+1982-0411,FIRE,Antioquia,Medellín,1982-08-11,Fabrica de muebles barrio San Diego,,,,,,,,,,0,30000000,,,,0,,,1982,
+1982-0407,FIRE,Antioquia,Medellín,1982-08-09,Sector centrico,,,,,,,,,,0,54000000,,,,0,,,1982,
+1982-0394,FIRE,Antioquia,Medellín,1982-07-24,Tugurio situado en cercanías del basurero municipal,3.0,,,6.0,,,,,,0,200000,,,,0,,,1982,
+1982-0385,FIRE,Antioquia,Medellín,1982-07-06,La Iguana,,,,5.0,,,,,,0,0,,,,0,,,1982,
+1982-0384,LANDSLIDE,Antioquia,Medellín,1982-07-06,,1.0,1.0,,,,,,,,0,0,,,,0,,,1982,
+1982-0355,STRUCTURE,Antioquia,Medellín,1982-06-09,B. La America,11.0,8.0,2.0,,,,,,,0,0,,,,0,,,1982,
+1982-0317,LANDSLIDE,Antioquia,Medellín,1982-05-27,Km 511,,,,,,,,,,0,0,,,,0,,,1982,
+1982-0299,FIRE,Antioquia,Medellín,1982-05-23,,,,,,,,,,,0,0,,,,0,,,1982,
+1982-0280,LANDSLIDE,Antioquia,Medellín,1982-05-15,B. Los Alpes,,,,8.0,,,,,,0,0,,,,0,,,1982,
+1982-0261,FLOOD,Antioquia,Medellín,1982-05-04,La Iguana,,,,2.0,10.0,,,,,0,0,,,,0,,,1982,
+1982-0220,FIRE,Antioquia,Medellín,1982-04-23,Carrera Palacé en el sector centrico de la ciudad,,,,,,,,,,0,30000000,,,,0,,,1982,
+1982-0197,LANDSLIDE,Antioquia,Medellín,1982-04-15,,,,,,,,,,,0,0,,,,0,,,1982,
+1982-0052,FIRE,Antioquia,Medellín,1982-01-19,B. Fidel Castro,,,,50.0,,,,,,0,0,,,,0,,,1982,
+1982-0012,LANDSLIDE,Antioquia,Medellín,1982-01-06,Km 48,,,,,,,,,,0,0,,,,0,500.0,,1982,
+1981-0601,LANDSLIDE,Antioquia,Medellín,1981-10-22,,,,,,,,,,,0,0,,,,0,,,1981,
+1981-0556,PLAGUE,Antioquia,Medellín,1981-10-04,Sector residencial en la calle 35 entre Cra.s 80 y 82,,5.0,,,,,,,,0,0,,,,0,,,1981,
+1981-0515,FIRE,Antioquia,Medellín,1981-08-13,grill Palacio de México,,,,,,,,,,0,25000000,,,,0,,,1981,
+1981-0512,EXPLOSION,Antioquia,Medellín,1981-08-08,B. Manrrique,,7.0,,,,,,,,0,0,,,,0,,,1981,
+1981-0501,FIRE,Antioquia,Medellín,1981-08-06,central de abastos de Guayabal,,,,,,6.0,,,,0,20000000,,,,0,,,1981,
+1981-0466,FLOOD,Antioquia,Medellín,1981-07-01,B.s de Santo Domingo Savio San Pablo Sexto Manrique...,,,,,65.0,,,,117.0,0,0,,,,0,,,1981,
+1981-0458,LANDSLIDE,Antioquia,Medellín,1981-07-01,B.s San Pablo y Santo Domingo,2.0,4.0,,2.0,,,,,,0,0,,,,0,,,1981,
+1981-0450,LANDSLIDE,Antioquia,Medellín,1981-06-20,Carretera Medellín-Ituango,,,,,,,,,,0,0,,,,0,,,1981,
+1981-0405,LANDSLIDE,Antioquia,Medellín,1981-06-08,Bs. Caicedo El Salado y Santa Cruz,,1.0,,3.0,,,,,,0,0,,,,0,,,1981,
+1981-0249,LANDSLIDE,Antioquia,Medellín,1981-05-05,,,,,2.0,,,,,,0,0,,,,0,,,1981,
+1981-0216,FLOOD,Antioquia,Medellín,1981-05-02,sur de la ciudad,1.0,,,,,,,,,0,0,,,,0,,,1981,
+1981-0029,DROUGHT,Antioquia,Medellín,1981-02-01,norte y noroeste de la ciudad,,,,,,,,,,0,0,,,,0,,,1981,
+1981-0009,EXPLOSION,Antioquia,Medellín,1981-01-09,Puente de Carabineros,,,,,,,,,,0,0,,,,0,,,1981,
+1980-0191,LANDSLIDE,Antioquia,Medellín,1980-10-20,B. Villatina,30.0,,,,,,,,,0,0,,,,0,,,1980,
+1980-0193,LANDSLIDE,Antioquia,Medellín,1980-10-20,B. San Antonio,13.0,,,8.0,,,,,,0,0,,,,0,,,1980,
+1980-0172,FLOOD,Antioquia,Medellín,1980-10-04,B. Santo Domingo,1.0,,,,,,,,,0,0,,,,0,,,1980,
+1980-0171,LANDSLIDE,Antioquia,Medellín,1980-10-04,B. 20 de Julio,,,,3.0,,,100.0,,,0,0,,,,0,,,1980,
+1980-0170,FLOOD,Antioquia,Medellín,1980-10-04,B. Castilla,,,1.0,,,,,,,0,0,,,,0,,,1980,
+1980-0156,FIRE,Antioquia,Medellín,1980-09-15,Km 43 al norte de Mmedellin,,15.0,,,,,,,,0,1500000,,,,0,,,1980,
+1980-0105,LANDSLIDE,Antioquia,Medellín,1980-06-15,B.El Pinal,,,,38.0,,,195.0,,,0,0,,,,0,,,1980,
+1980-0051,LANDSLIDE,Antioquia,Medellín,1980-05-05,,1.0,1.0,,,,,,,,0,0,,,,0,,,1980,
+1980-0050,LANDSLIDE,Antioquia,Medellín,1980-05-04,,4.0,,,1.0,,,,,,0,0,,,,0,,,1980,
+1980-0041,EARTHQUAKE,Antioquia,Medellín,1980-04-15,,,,,,,,,,,0,0,,,,0,,,1980,
+1980-0032,FIRE,Antioquia,Medellín,1980-03-19,Fabrica de aceites Gravetal,,,,,,,,,,0,0,,,,0,,,1980,
+1979-0627,LANDSLIDE,Antioquia,Medellín,1979-11-28,B.Caycedo,2.0,,,,,,,,,0,0,,,,0,,,1979,
+1979-0525,EARTHQUAKE,Antioquia,Medellín,1979-11-23,,,,,2.0,,,,,,0,0,,1.0,,0,,,1979,
+1979-0366,FLOOD,Antioquia,Medellín,1979-11-01,Aeropuerto Olaya Herrera y varios barrios de la ciudad.,,,,,,,,,,0,0,,,,0,,,1979,
+1979-0363,LANDSLIDE,Antioquia,Medellín,1979-10-31,Tramo entre Medellin y La Pintada kilómetro 48,,,,,,,,,,0,0,,,,0,,,1979,
+1979-0330,RAIN,Antioquia,Medellín,1979-10-28,,,,,,,,,,,0,0,,,,0,,,1979,
+1979-0238,LANDSLIDE,Antioquia,Medellín,1979-09-06,B. Caycedo,2.0,1.0,,7.0,,,,,,0,0,,,,0,,,1979,
+1979-0231,RAIN,Antioquia,Medellín,1979-09-01,,,,,2.0,,,,,,0,0,,,,0,,,1979,
+1979-0225,FIRE,Antioquia,Medellín,1979-08-17,,,,,,,,,,,0,5000000,,,,0,,,1979,
+1979-0151,LANDSLIDE,Antioquia,Medellín,1979-05-20,B. San Pablo,1.0,2.0,,1.0,,,,,,0,0,,,,0,,,1979,
+1979-0132,LANDSLIDE,Antioquia,Medellín,1979-04-29,B. San Pablo,,,,3.0,,189.0,,,,0,100000,,,,0,,,1979,
+1979-0111,RAIN,Antioquia,Medellín,1979-04-24,,2.0,,,,,,,,,0,0,,,,0,,,1979,
+1979-0112,FLOOD,Antioquia,Medellín,1979-04-24,,1.0,,,,,,,,,0,0,,,,0,,,1979,
+1979-0096,FLOOD,Antioquia,Medellín,1979-04-19,,3.0,,,,,,1000.0,,,0,9000000,1.0,,,0,,,1979,
+1979-0085,SPATE,Antioquia,Medellín,1979-04-08,Zona Nororiental,3.0,,,16.0,,,,,,0,0,,,,0,,,1979,
+1979-0079,SPATE,Antioquia,Medellín,1979-04-04,,,,,,,,,,,0,0,,,,0,,,1979,
+1979-0064,OTHER,Antioquia,Medellín,1979-03-22,,,,,,,,,,,0,0,,,,0,,,1979,
+1979-0062,FLOOD,Antioquia,Medellín,1979-03-19,,,,,,,,,,,0,0,,,,0,,,1979,
+1979-0060,SPATE,Antioquia,Medellín,1979-03-15,Zona Nororiental,,,,,,,,,,0,0,,,,0,,,1979,
+1979-0056,STRUCTURE,Antioquia,Medellín,1979-03-10,B. El Corazon,3.0,3.0,,,,,,,,0,0,,,,0,,,1979,
+1979-0052,FIRE,Antioquia,Medellín,1979-03-03,,,,,,,,,,,0,0,,,,0,,,1979,
+1979-0046,DROUGHT,Antioquia,Medellín,1979-02-24,,,,,,,,,,,0,0,,,,0,,,1979,
+1979-0042,STRONGWIND,Antioquia,Medellín,1979-02-08,B. Guayabal,,7.0,,,,,,,,0,200000,,,,0,,,1979,
+1979-0041,FLOOD,Antioquia,Medellín,1979-02-08,Sector occidental,,,,,,,,,,0,0,,,,0,,,1979,
+1979-0038,FIRE,Antioquia,Medellín,1979-02-05,,,2.0,,15.0,,100.0,,,,0,0,,,,0,,,1979,
+1978-0231,FIRE,Antioquia,Medellín,1978-12-14,B. El Guayabal.,,,,,,,,,,0,30000000,,,,0,,,1978,
+1978-0183,FLOOD,Antioquia,Medellín,1978-10-31,Barrios de Las Americas y San Javier,,,,3.0,50.0,,,,,0,0,,,,0,,,1978,
+1978-0176,LANDSLIDE,Antioquia,Medellín,1978-10-23,,,,,,,,,,,0,0,,,,0,,,1978,
+1978-0160,FIRE,Antioquia,Medellín,1978-10-02,Guayaquil en Tenerife con Maturin,,,,,,,,,,0,3000000,,,,0,,,1978,
+1978-0155,FIRE,Antioquia,Medellín,1978-09-14,,,,,,,,,,,0,0,,,,0,,,1978,
+1978-0133,FIRE,Antioquia,Medellín,1978-07-09,Una joyería ubicada en el tercer piso del edificio San Roque,,,,,,,,,,0,0,,,,0,,,1978,
+1978-0069,FLOOD,Antioquia,Medellín,1978-04-19,,1.0,,,,,,,,,0,0,,,,0,,,1978,
+1978-0062,FLOOD,Antioquia,Medellín,1978-04-18,,,,,,,,,,,0,0,,,,0,,,1978,
+1977-0225,FIRE,Antioquia,Medellín,1977-11-24,,,,,6.0,,,,,,0,0,,,,0,,,1977,
+1977-0165,FIRE,Antioquia,Medellín,1977-09-16,,,,,,,,,,,0,7000000,,,,0,,,1977,
+1977-0158,FIRE,Antioquia,Medellín,1977-09-12,Aeropuerto Olaya Herrera,,,,,,,,,,0,1000000,,,,0,,,1977,
+1977-0140,EARTHQUAKE,Antioquia,Medellín,1977-08-15,,,70.0,,,,,,,,0,0,,,,0,,,1977,
+1977-0136,FIRE,Antioquia,Medellín,1977-08-07,Fabrica de tejidos Leticia S.A,,,,,,,,,,0,0,,,,0,,,1977,
+1977-0118,FIRE,Antioquia,Medellín,1977-06-28,El Pedrero,,,,,,,,,,0,2000000,,,,0,,,1977,
+1977-0108,LANDSLIDE,Antioquia,Medellín,1977-06-01,B.S.Domingo,4.0,,,1.0,,,,,,0,0,,,,0,,,1977,
+1977-0090,INTOXICACION,Antioquia,Medellín,1977-04-13,,25.0,,,,,,,,,0,0,,,,0,,,1977,
+1977-0079,FLOOD,Antioquia,Medellín,1977-03-30,,,,,,,,,,,0,0,,,,0,,,1977,
+1977-0066,FIRE,Antioquia,Medellín,1977-03-02,Fabrica de Produccion Petro Quimicos,1.0,,,1.0,10.0,,,,,0,10000000,,,,0,,,1977,
+1977-0038,FIRE,Antioquia,Medellín,1977-01-21,Fredonia 58 klm suroeste de la ciudad.,,,,,,,,,,0,5000000,,,,0,,,1977,
+1977-0024,DROUGHT,Antioquia,Medellín,1977-01-16,,,,,,,,,,,0,0,,,,0,,,1977,
+1976-0388,FIRE,Antioquia,Medellín,1976-12-25,Fábrica Coltejer,,,,,,,,,,0,2000000,,,,0,,,1976,
+1976-0366,EXPLOSION,Antioquia,Medellín,1976-11-15,Calle 16 con carrera 70 B. B. Belén,3.0,8.0,,,,,,,,0,0,,,,0,,,1976,
+1976-0360,INTOXICACION,Antioquia,Medellín,1976-11-09,B. Belén,,150.0,,,,,,,,0,0,,,,0,,,1976,
+1976-0296,DROUGHT,Antioquia,Medellín,1976-09-08,,,,,,,,,,,0,0,,,,0,,,1976,
+1976-0232,FIRE,Antioquia,Medellín,1976-07-27,Hospital Universitario San Vicente de Paul,,,,,,,,,,0,0,,,,0,,,1976,
+1976-0220,FIRE,Antioquia,Medellín,1976-07-20,,,,,,,,,,,0,3000000,,,,0,,,1976,
+1976-0204,FIRE,Antioquia,Medellín,1976-07-10,Calle 26 con carrera 45 B. Colombia,2.0,,,,,,,,,0,0,,,,0,,,1976,
+1976-0089,ELECTRICSTORM,Antioquia,Medellín,1976-04-27,,,,,,,,,,,0,0,,,,0,,,1976,
+1976-0047,FIRE,Antioquia,Medellín,1976-03-20,,,,,,,,,,,0,3000000,,,,0,,,1976,
+1976-0011,FIRE,Antioquia,Medellín,1976-01-21,almacén Isaza y Ochoa ubicado en la calle 46 Maturin.,,,,,,,,,,0,3000000,,,,0,,,1976,
+1975-0507,LANDSLIDE,Antioquia,Medellín,1975-11-11,Via al mar,,,,,,,,,,0,0,,,,0,,,1975,
+1975-0485,FLOOD,Antioquia,Medellín,1975-11-07,,,,,,,,,,,0,0,,,,0,100.0,,1975,
+1975-0397,FIRE,Antioquia,Medellín,1975-10-07,,,,,,,,,,,0,40000,,,,0,,,1975,
+1975-0374,LANDSLIDE,Antioquia,Medellín,1975-09-18,B. Berlin,,,,1.0,,6.0,,,32.0,0,0,,,,0,,,1975,
+1975-0352,POLLUTION,Antioquia,Medellín,1975-09-09,fabrica de tejidos Leticia,2.0,,,,,,,,,0,0,,,,0,,,1975,
+1975-0318,INTOXICACION,Antioquia,Medellín,1975-08-11,,2.0,,,,,,,,,0,0,,,,0,,,1975,
+1975-0218,FIRE,Antioquia,Medellín,1975-06-17,Cárcel de La Ladera,,,,,,,,,,0,347000,,,,0,,,1975,
+1975-0195,FIRE,Antioquia,Medellín,1975-06-05,Fabrica de pinturas,,,,,,,,,,0,500000,,,,0,,,1975,
+1975-0157,FIRE,Antioquia,Medellín,1975-04-18,Editorial Bedout S.A,,,,,,,,,,0,12000000,,,,0,,,1975,
+1975-0141,FIRE,Antioquia,Medellín,1975-04-03,Crra 65 con calle 77,,,,,,,,,,0,220000,,,,0,,,1975,
+1975-0131,FIRE,Antioquia,Medellín,1975-03-17,Fabrica Shellmar de Colombia,,,,,,,,,,0,300000,,,,0,,,1975,
+1975-0026,FLOOD,Antioquia,Medellín,1975-02-23,Bs. Santo Domingo Savio Villa de Guadalupe y la Cima,,,,,,,,,,0,0,,,,0,,,1975,
+1975-0025,LANDSLIDE,Antioquia,Medellín,1975-02-23,Bs. Villa de Guadalupe,,,2.0,,,,,,,0,0,,,,0,,,1975,
+1975-0024,LANDSLIDE,Antioquia,Medellín,1975-02-23,Bs. Santo Domingo Savio,5.0,,,1.0,,,,,,0,0,,,,0,,,1975,
+1975-0013,LANDSLIDE,Antioquia,Medellín,1975-02-04,,18.0,10.0,,,,,,,,0,0,,,,0,,,1975,
+1975-0012,SPATE,Antioquia,Medellín,1975-02-02,,1.0,,,,,,,,,0,0,,,,0,,,1975,
+1974-0476,PLAGUE,Antioquia,Medellín,1974-12-03,,,,,,,,,,,0,0,,,,0,,,1974,
+1974-0460,SPATE,Antioquia,Medellín,1974-11-24,,,,,,,,,,,0,0,,,,0,,,1974,
+1974-0412,FLOOD,Antioquia,Medellín,1974-10-29,,,,,,,,,,,0,0,,,,0,,,1974,
+1974-0340,FLOOD,Antioquia,Medellín,1974-10-06,Bs.12 de Octubre Alfonso López Castilla Manrique Las Granjas,,,,,,,,,,0,0,,,,0,,,1974,
+1974-0341,LANDSLIDE,Antioquia,Medellín,1974-10-06,Alto de las Minas,1.0,,,,,,,,,0,0,,,,0,,,1974,
+1974-0319,LANDSLIDE,Antioquia,Medellín,1974-10-02,B. Popular,,,,4.0,,25.0,,,,0,0,,,,0,,,1974,
+1974-0313,LANDSLIDE,Antioquia,Medellín,1974-09-29,B. Santo Domingo Sabio,50.0,,,30.0,,,,,400.0,0,0,,,,0,,,1974,
+1974-0304,EARTHQUAKE,Antioquia,Medellín,1974-09-15,,4.0,3.0,,2.0,,,,,,0,0,,,,0,,,1974,
+1974-0291,STRUCTURE,Antioquia,Medellín,1974-09-04,Edificación ubicada en la Carrera 54 con la Calle 48,4.0,4.0,,,,,,,,0,0,,,,0,,,1974,
+1973-0534,FLOOD,Antioquia,Medellín,1973-12-05,Barrio El Salvador.,,,,,3.0,,,,,0,0,,,,0,,,1973,
+1973-0466,FLOOD,Antioquia,Medellín,1973-11-15,,2.0,,,,,,,,,0,0,,,,0,,,1973,
+1973-0422,FLOOD,Antioquia,Medellín,1973-11-01,,,,,1.0,,,,,,0,0,,,,0,,,1973,
+1973-0311,FIRE,Antioquia,Medellín,1973-09-12,Fábrica de zapatos ubicada en la calle 30 con carrera 47,,1.0,,,,,,,,0,500000,,,,0,,,1973,
+1973-0281,LANDSLIDE,Antioquia,Medellín,1973-09-01,B. Villa de Guadalupe,1.0,,,1.0,,,,,,0,0,,,,0,,,1973,
+1973-0194,STRONGWIND,Antioquia,Medellín,1973-07-12,,,,,,,,,,,0,0,,,,0,,,1973,
+1973-0184,FIRE,Antioquia,Medellín,1973-06-27,Subestación central de energía,,,,,,,,,,0,0,,,,0,,,1973,
+1973-0164,RAIN,Antioquia,Medellín,1973-06-25,B. Manrique,,,,2.0,,,,,,0,0,,,,0,,,1973,
+1973-0180,LANDSLIDE,Antioquia,Medellín,1973-06-25,Vda. El Vergel San Antonio de Prado,10.0,,6.0,3.0,,,,,,0,0,,,,0,,,1973,
+1973-0163,RAIN,Antioquia,Medellín,1973-06-23,,,,,2.0,,13.0,,,,0,0,,,,0,,,1973,
+1973-0158,POLLUTION,Antioquia,Medellín,1973-06-13,Alto de Minas en el río Medellín,,,,,,,,,,0,0,,,,0,,,1973,
+1973-0143,FIRE,Antioquia,Medellín,1973-05-23,Empresa de pinturas Pintuco,,,,,,,,,,0,20000,,,,0,,,1973,
+1973-0142,FIRE,Antioquia,Medellín,1973-05-23,Carrera 12 con la calle 92,,,,,,,,,,0,100000,,,,0,,,1973,
+1973-0118,FLOOD,Antioquia,Medellín,1973-05-04,,,,,,,,,,,0,0,,,,0,,,1973,
+1973-0114,FIRE,Antioquia,Medellín,1973-04-27,B. Triste,1.0,4.0,,,,,,,,0,30000,,,,0,,,1973,
+1973-0072,EARTHQUAKE,Antioquia,Medellín,1973-04-03,,1.0,,,,,,,,,0,0,,,,0,,,1973,
+1973-0078,FIRE,Antioquia,Medellín,1973-04-03,,,,,,,,,,,0,125000,,,,0,,,1973,
+1973-0064,FLOOD,Antioquia,Medellín,1973-03-13,Bs.Robledo LaPradera LaFloresta La América Manrique y Guabal,,,,,,,,,,0,0,,,,0,,,1973,
+1973-0050,FIRE,Antioquia,Medellín,1973-02-26,,,,,,,,,,,0,0,,,,0,,,1973,
+1973-0042,DROUGHT,Antioquia,Medellín,1973-02-13,,,,,,,,,,,0,0,,,,0,,,1973,
+1972-0604,INTOXICACION,Antioquia,Medellín,1972-12-22,Almacenes ley,,23.0,,,,,,,,0,0,,,,0,,,1972,
+1972-0517,INTOXICACION,Antioquia,Medellín,1972-09-19,,,11.0,,,,,,,,0,0,,,,0,,,1972,
+1972-0507,INTOXICACION,Antioquia,Medellín,1972-09-08,,,9.0,,,,,,,,0,0,,,,0,,,1972,
+1972-0500,FIRE,Antioquia,Medellín,1972-09-06,calle san juan con la carrera Bolivar,,,,,,,,,,0,1000000,,,,0,,,1972,
+1972-0455,STRONGWIND,Antioquia,Medellín,1972-07-24,,,,,,,,,,,0,0,,,,0,,,1972,
+1972-0451,FIRE,Antioquia,Medellín,1972-07-16,lavanderia Higienica Moderna,,,,,,,,,,0,1000000,,,,0,,,1972,
+1972-0439,FIRE,Antioquia,Medellín,1972-07-11,,1.0,,,1.0,,,,,,0,0,,,,0,,,1972,
+1972-0437,FIRE,Antioquia,Medellín,1972-07-08,carrera 56 con la calle 48,,,,,,,,,,0,300000,,,,0,,,1972,
+1972-0378,FIRE,Antioquia,Medellín,1972-06-03,fabrica de medias Cristal,,,,,,,,,,0,4000000,,,,0,,,1972,
+1972-0355,LANDSLIDE,Antioquia,Medellín,1972-05-24,Cto de Palmitas,2.0,,,1.0,,,,,,0,0,,,,0,,,1972,
+1972-0287,LANDSLIDE,Antioquia,Medellín,1972-05-14,Las Lomas,,3.0,,1.0,,3.0,,,,0,0,,,,0,,,1972,
+1972-0283,RAIN,Antioquia,Medellín,1972-05-13,B. El pesebre,,,,,,,,,,0,0,,,,0,,,1972,
+1972-0286,LANDSLIDE,Antioquia,Medellín,1972-05-13,B. La Loma,3.0,,,1.0,,,,,,0,0,,,,0,,,1972,
+1972-0250,LANDSLIDE,Antioquia,Medellín,1972-05-04,B.Nuevo,3.0,,,,,,,,,0,0,,,,0,,,1972,
+1972-0092,INTOXICACION,Antioquia,Medellín,1972-03-17,La Maria,,7.0,,,,,,,,0,0,,,,0,,,1972,
+1971-1146,ACCIDENT,Antioquia,Medellín,1971-12-13,La Encalinchada via al mar,1.0,6.0,,,,,,,,0,0,,,,0,,,1971,
+1971-1135,FIRE,Antioquia,Medellín,1971-11-30,,,,,,,,,,,0,200000,,,,0,,,1971,
+1971-1114,FLOOD,Antioquia,Medellín,1971-11-17,,,,,,,,,,,0,0,,,,0,,,1971,
+1971-1005,ACCIDENT,Antioquia,Medellín,1971-11-02,Cto. Palmitas,10.0,20.0,,,,,,,,0,0,,,,0,,,1971,
+1971-1004,LANDSLIDE,Antioquia,Medellín,1971-11-02,,6.0,20.0,,,,,,,,0,0,,,,0,,,1971,
+1971-0769,FLOOD,Antioquia,Medellín,1971-06-27,Manrique y Villa Hermosa,,,,,,,,,,0,0,,,,0,,,1971,
+1971-0768,LANDSLIDE,Antioquia,Medellín,1971-06-27,Represa de Piedras Blancas,,,,,,,,,,0,0,,,,0,,,1971,
+1971-0752,INTOXICACION,Antioquia,Medellín,1971-06-16,Empresa Ramsers de Colombia,,16.0,,,,,,,,0,0,,,,0,,,1971,
+1971-0668,RAIN,Antioquia,Medellín,1971-05-26,,,,,,,,,,,0,0,,,,0,,,1971,
+1971-0652,FLOOD,Antioquia,Medellín,1971-05-23,,,,1.0,1.0,,,,,,0,500000,,,,0,,,1971,
+1971-0659,LANDSLIDE,Antioquia,Medellín,1971-05-23,Vía férrea zona norte,,,,,,,,,,0,0,,,,0,,,1971,
+1971-0625,FLOOD,Antioquia,Medellín,1971-05-14,,,,,,,,,,,0,0,,,,0,,,1971,
+1971-0608,LANDSLIDE,Antioquia,Medellín,1971-05-10,Tubería conducción entre represa La García y planta Pedragal,,,,,,,,,,0,300000,,,,0,,,1971,
+1971-0602,FLOOD,Antioquia,Medellín,1971-05-09,Sector de Acevedo,,,,40.0,,252.0,,,,0,0,,,,0,,,1971,
+1971-0575,FLOOD,Antioquia,Medellín,1971-05-03,La América,,,,8.0,,,,,,0,0,,,,0,,,1971,
+1971-0392,LANDSLIDE,Antioquia,Medellín,1971-04-03,,,,,3.0,,,,,,0,0,,,,0,,,1971,
+1971-0397,LANDSLIDE,Antioquia,Medellín,1971-04-03,,,,,3.0,4.0,,,,327.0,0,0,,,,0,,,1971,
+1971-0339,FLOOD,Antioquia,Medellín,1971-04-01,Barrio Nacional,,,,1.0,,,,,,0,0,,,,0,,,1971,
+1971-0338,LANDSLIDE,Antioquia,Medellín,1971-04-01,,,,,,,,,,,0,0,,,,0,,,1971,
+1971-0259,FLOOD,Antioquia,Medellín,1971-03-24,,,,,,,,,,,0,0,,,,0,,,1971,
+1971-0234,LANDSLIDE,Antioquia,Medellín,1971-03-20,Variante Las Palmas.,,,,,,,,,,0,0,,,,0,,,1971,
+1971-0206,LANDSLIDE,Antioquia,Medellín,1971-03-15,,,,,,,,,,,0,0,,,,0,,,1971,
+1971-0119,FIRE,Antioquia,Medellín,1971-02-08,Guayaquil carra 51,,,,,,,,,,0,600000,,,,0,,,1971,
+1970-0665,EXPLOSION,Antioquia,Medellín,1970-12-24,,7.0,12.0,,,,,,,,0,50000,,,,0,,,1970,
+1970-0641,FLOOD,Antioquia,Medellín,1970-11-27,,,,,,,,,,,0,0,,,,0,,,1970,
+1970-0599,LANDSLIDE,Antioquia,Medellín,1970-11-14,B. Acevedo,,,,,,,,,,0,0,,,,0,,,1970,
+1970-0584,LANDSLIDE,Antioquia,Medellín,1970-11-12,Via Medellin-Montebello,,,,,,,,,,0,0,,,,0,,,1970,
+1970-0577,LANDSLIDE,Antioquia,Medellín,1970-11-11,Autopista Medellin-Bogota,,,,,,,,,,0,0,,,,0,,,1970,
+1970-0549,FLOOD,Antioquia,Medellín,1970-11-09,Calle 52 con Carrera 21,,,,7.0,,44.0,,,44.0,0,0,,,,0,,,1970,
+1970-0543,FLOOD,Antioquia,Medellín,1970-11-09,Villa Tina,,,,,,,,,,0,0,,,,0,,,1970,
+1970-0548,LANDSLIDE,Antioquia,Medellín,1970-11-09,B. Las Estancias Carrera 13 con Calle 52,,,,,5.0,32.0,,,32.0,0,0,,,,0,,,1970,
+1970-0545,LANDSLIDE,Antioquia,Medellín,1970-11-09,Calle 52 con Carrera 27,,,,,,,,,,0,0,,,,0,,,1970,
+1970-0546,LANDSLIDE,Antioquia,Medellín,1970-11-09,Calle 52 con Carrera 25,,,,,,,,,,0,0,,,,0,,,1970,
+1970-0525,SPATE,Antioquia,Medellín,1970-11-08,,1.0,,,240.0,,,,,,0,0,,,,0,,,1970,
+1970-0500,RAIN,Antioquia,Medellín,1970-11-05,,,,,,,,,,,0,1000000,,,,0,,,1970,
+1970-0499,SPATE,Antioquia,Medellín,1970-11-05,,,,,25.0,,,750.0,,,0,0,,,,0,,,1970,
+1970-0473,SPATE,Antioquia,Medellín,1970-11-04,,,,,25.0,,1575.0,,,1575.0,0,0,,,,0,,,1970,
+1970-0467,LANDSLIDE,Antioquia,Medellín,1970-11-04,,,,,,,,,,,0,0,,,,0,,,1970,
+1970-0457,SPATE,Antioquia,Medellín,1970-11-03,B. Belén,3.0,2.0,4.0,15.0,,,,,,0,500000,,,,0,,,1970,
+1970-0381,LANDSLIDE,Antioquia,Medellín,1970-10-09,,,,,,60.0,,378.0,,378.0,0,0,,,,0,,,1970,
+1970-0379,FLOOD,Antioquia,Medellín,1970-10-08,,,,,,,,,,,0,0,,,,0,,,1970,
+1970-0359,ELECTRICSTORM,Antioquia,Medellín,1970-10-04,,4.0,,,,,,,,,0,0,,,,0,,,1970,
+1970-0349,FLOOD,Antioquia,Medellín,1970-10-03,,2.0,,,,,,,,,0,1000000,2.0,,,0,,,1970,
+1970-0327,FLOOD,Antioquia,Medellín,1970-09-24,,,,,1.0,,,,,,0,0,,,,0,,,1970,
+1970-0325,FLOOD,Antioquia,Medellín,1970-09-23,,,,,,3.0,,19.0,,,0,500000,,,,0,,,1970,
+1970-0319,INTOXICACION,Antioquia,Medellín,1970-09-21,,,7.0,,,,,,,,0,0,,,,0,,,1970,
+1970-0274,FIRE,Antioquia,Medellín,1970-09-06,,,,,,,,,,,0,20000,,,,0,,,1970,
+1970-0250,LANDSLIDE,Antioquia,Medellín,1970-08-13,,2.0,,,,,,,,,0,0,,,,0,,,1970,
+1970-0235,FIRE,Antioquia,Medellín,1970-08-03,,,,,,,,,,,0,450000,,,,0,,,1970,
+1970-0195,FIRE,Antioquia,Medellín,1970-06-23,,,,,,,,,,,0,400000,,,,0,,,1970,
+1970-0173,FIRE,Antioquia,Medellín,1970-06-04,poblacion de San Antonio de Padua,,,,,,,,,,0,5000000,,,,0,,,1970,
+1970-0150,LANDSLIDE,Antioquia,Medellín,1970-05-19,,,,,,,,,,,0,0,,,,0,,,1970,
+1969-0009,LANDSLIDE,Antioquia,Medellín,1969-05-07,B.Popular2,,,,10.0,,,,,,0,0,,,,0,,,1969,
+1968-0029,FLOOD,Antioquia,Medellín,1968-10-18,B.Manrique Camp Vald,5.0,,,,,,,,,0,0,,,,0,,,1968,
+1967-0044,EARTHQUAKE,Antioquia,Medellín,1967-07-29,,,,,100.0,,,,,,0,0,,,,0,,,1967,
+1967-0036,FLOOD,Antioquia,Medellín,1967-06-15,,17.0,,,,,,,,,0,0,,,,0,,,1967,
+1967-0020,SPATE,Antioquia,Medellín,1967-05-03,,,,,500.0,,,,,,0,0,,,,0,,,1967,
+1967-0018,EARTHQUAKE,Antioquia,Medellín,1967-04-15,,2.0,6.0,,,,,,,,0,0,,,,0,,,1967,
+1966-0044,SPATE,Antioquia,Medellín,1966-11-26,,,,,1000.0,,,,,,0,0,,,,0,,,1966,
+1964-0028,SPATE,Antioquia,Medellín,1964-10-13,,,,,,,,,,,0,0,,,,0,,,1964,
+1963-0012,FLOOD,Antioquia,Medellín,1963-02-15,,,,,,,,,,,0,0,,,,0,,,1963,
+1963-0009,SPATE,Antioquia,Medellín,1963-02-15,,15.0,,,,,,,,,0,0,,,,0,,,1963,
+1962-0035,EARTHQUAKE,Antioquia,Medellín,1962-07-15,,,,,,,,,,,0,0,,,,0,,,1962,
+1962-0007,EARTHQUAKE,Antioquia,Medellín,1962-02-08,,,,,,,,,,,0,0,,,,0,,,1962,
+1957-0004,DROUGHT,Antioquia,Medellín,1957-02-15,,,,,,,,,,,0,0,,,,0,,,1957,
+1956-0013,FLOOD,Antioquia,Medellín,1956-04-15,,,,,,,,,,,0,0,,,,0,,,1956,
+1956-0010,SPATE,Antioquia,Medellín,1956-03-15,,,,,,,,,,,0,0,,,,0,,,1956,
+1955-0031,SPATE,Antioquia,Medellín,1955-07-04,,2.0,,,,,,,,,0,0,,,,0,,,1955,
+1955-0009,SPATE,Antioquia,Medellín,1955-04-07,,,,,1.0,,,,,,0,0,,,,0,,,1955,
+1954-0007,LANDSLIDE,Antioquia,Medellín,1954-07-05,Km. 3.5 vía a Santa Helena,70.0,60.0,,,,,,,,0,0,,,,0,,,1954,
+1954-0005,LANDSLIDE,Antioquia,Medellín,1954-07-02,,,,,,,,,,,0,0,,,,0,,,1954,
+1952-0007,EARTHQUAKE,Antioquia,Medellín,1952-02-04,,,,,,,,,,,0,0,,,,0,,,1952,
+1951-0021,FLOOD,Antioquia,Medellín,1951-05-02,,2.0,,,1.0,,,,,,0,0,,,,0,,,1951,
+1951-0020,SPATE,Antioquia,Medellín,1951-05-01,,,,,1.0,,,,,,0,0,,,,0,,,1951,
+1950-0156,SPATE,Antioquia,Medellín,1950-08-04,B.S.Bernar,2.0,4.0,,,,,,,,0,0,,,,0,,,1950,
+1950-0114,SPATE,Antioquia,Medellín,1950-05-15,,,,,,,,,,,0,0,,,,0,,,1950,
+1949-0003,DROUGHT,Antioquia,Medellín,1949-02-02,,,,,,,,,,,0,0,,,,0,,,1949,
+1948-0031,EARTHQUAKE,Antioquia,Medellín,1948-08-15,,,,,,,,,,,0,0,,,,0,,,1948,
+1948-0030,FLOOD,Antioquia,Medellín,1948-08-15,,,,,30.0,,,,,,0,0,,,,0,,,1948,
+1948-0026,SPATE,Antioquia,Medellín,1948-07-06,PALMITAS,,,,,,,,,,0,0,,,,0,,,1948,
+1948-0010,DROUGHT,Antioquia,Medellín,1948-03-01,,,,,,,,,,,0,0,,,,0,,,1948,
+1948-0004,STORM,Antioquia,Medellín,1948-01-05,,1.0,,,,,,,,,0,0,,,,0,,,1948,
+1947-0014,FLOOD,Antioquia,Medellín,1947-09-08,,15.0,,,,,,,,,0,0,,,,0,,,1947,
+1947-0013,SPATE,Antioquia,Medellín,1947-09-08,,15.0,,,,,,,,,0,0,,,,0,,,1947,
+1946-0031,DROUGHT,Antioquia,Medellín,1946-07-08,,,,,,,,,,,0,0,,,,0,,,1946,
+1944-0069,SPATE,Antioquia,Medellín,1944-10-19,,,,,1.0,,,,,,0,0,,,,0,,,1944,
+1944-0066,SPATE,Antioquia,Medellín,1944-10-17,,,,,,,,,,,0,0,,,,0,,,1944,
+1944-0065,FLOOD,Antioquia,Medellín,1944-10-16,,,,,,,,,,,0,0,,,,0,,,1944,
+1944-0064,STORM,Antioquia,Medellín,1944-10-14,,,,,1.0,,,,,,0,0,,,,0,,,1944,
+1944-0059,SPATE,Antioquia,Medellín,1944-10-13,,,,,1000.0,,,,,,0,0,,,,0,,,1944,
+1944-0051,SPATE,Antioquia,Medellín,1944-06-15,,,,,,,,,,,0,0,,,,0,,,1944,
+1943-0042,SPATE,Antioquia,Medellín,1943-08-09,,2.0,,,1.0,,,,,,0,0,,,,0,,,1943,
+1943-0024,SPATE,Antioquia,Medellín,1943-05-15,,,,,,,,,,,0,0,,,,0,,,1943,
+1942-0129,EARTHQUAKE,Antioquia,Medellín,1942-12-28,,,,,8.0,,,,,,0,0,,,,0,,,1942,
+1942-0128,LANDSLIDE,Antioquia,Medellín,1942-12-27,,5.0,,,,,,,,,0,0,,,,0,,,1942,
+1942-0117,SPATE,Antioquia,Medellín,1942-11-22,,,,,,,,,,,0,0,,,,0,,,1942,
+1942-0053,SPATE,Antioquia,Medellín,1942-05-15,,,,,,,,,,,0,0,,,,0,,,1942,
+1940-0025,SPATE,Antioquia,Medellín,1940-11-12,,,,,75.0,,,500.0,,,0,0,,,,0,,,1940,
+1938-0027,SPATE,Antioquia,Medellín,1938-04-07,,,,,,,,,,,0,0,,,,0,,,1938,
+1938-0009,EARTHQUAKE,Antioquia,Medellín,1938-02-04,,,3.0,,6.0,,,,,,0,0,,,,0,,,1938,
+1937-0012,LANDSLIDE,Antioquia,Medellín,1937-11-10,,2.0,2.0,,,,,,,,0,0,,,,0,,,1937,
+1937-0004,STORM,Antioquia,Medellín,1937-04-06,,,,,,,,,,,0,0,,,,0,,,1937,
+1935-0025,SPATE,Antioquia,Medellín,1935-11-03,S.Mateo,,,,,,,,,,0,0,,,,0,,,1935,
+1934-0003,SPATE,Antioquia,Medellín,1934-02-07,,2.0,,,,,,,,,0,0,,,,0,,,1934,
+1933-0007,LANDSLIDE,Antioquia,Medellín,1933-11-20,,3.0,8.0,,2.0,,,,,,0,0,,,,0,,,1933,
+1930-0005,FLOOD,Antioquia,Medellín,1930-10-12,,,,,1.0,,,,,,0,0,,,,0,,,1930,
+1928-0019,FLOOD,Antioquia,Medellín,1928-11-16,Guayaquil,,,,,,,,,,0,0,,,,0,,,1928,
+1928-0018,LANDSLIDE,Antioquia,Medellín,1928-11-15,,5.0,10.0,,,,,,,,0,0,,,,0,,,1928,
+1927-0010,LANDSLIDE,Antioquia,Medellín,1927-07-15,,30.0,,,,,,,,,0,0,,,,0,,,1927,
+1924-0009,LANDSLIDE,Antioquia,Medellín,1924-06-02,,1.0,,,,,,,,,0,0,,,,0,,,1924,
+1921-0007,LANDSLIDE,Antioquia,Medellín,1921-10-22,,,,,,,,,,,0,0,,,,0,,,1921,
+2007-0790,RAIN,Antioquia,Medellín,2007-11-04,BARRIO BOSTON,,,,3.0,41.0,,,,,0,0,,,,0,,,2007,
+2007-0633,FLOOD,Antioquia,Medellín,2007-10-08,BARRIOS MORAVIA Y LORETO,,,,,60.0,,,,,0,0,,,,0,,,2007,
+2007-0649,FLOOD,Antioquia,Medellín,2007-10-15,BARRIOS OLAYA HERRERA Y BLANQUIZAL,,,,,,,,,,0,0,,,,0,,,2007,
+2007-0831,LANDSLIDE,Antioquia,Medellín,2007-11-08,,,,,,2.0,,75.0,,,0,0,,,,0,,,2007,
+2007-0800,STRONGWIND,Antioquia,Medellín,2007-11-05,,2.0,,,,,,,,,0,0,,,,0,1.0,,2007,
+2007-0799,LANDSLIDE,Antioquia,Medellín,2007-11-04,,,,,15.0,62.0,,385.0,,,0,0,,,,0,,,2007,
+2007-0703,LANDSLIDE,Antioquia,Medellín,2007-10-27,BARRIO LA AVANZADA.,2.0,,,1.0,,,5.0,,,0,0,,,,0,,,2007,
+2007-0690,LANDSLIDE,Antioquia,Medellín,2007-10-23,,2.0,1.0,,1.0,,,5.0,,,0,0,,,,0,,,2007,
+2007-0660,FLOOD,Antioquia,Medellín,2007-10-18,,,,,2.0,21.0,,87.0,,,0,0,,,,0,,,2007,
+2007-0636,STRONGWIND,Antioquia,Medellín,2007-10-10,,,,,,27.0,,400.0,,,0,0,,,,0,,,2007,
+2007-0316,LANDSLIDE,Antioquia,Medellín,2007-05-28,BARRIO LA CRUZ NORORIENTE,7.0,,1.0,15.0,,,75.0,,,0,0,,,,0,,,2007,
+2007-0313,LANDSLIDE,Antioquia,Medellín,2007-05-27,,,,,,7.0,,35.0,,,0,0,,,,0,,,2007,
+2007-0231,LANDSLIDE,Antioquia,Medellín,2007-05-07,BARRIO ANDALUCIA.,,,,21.0,14.0,,200.0,,,0,0,,,,0,,,2007,
+2007-0143,FIRE,Antioquia,Medellín,2007-04-09,BARRIO LAURELES.,,,,,,,,,,0,0,,,,0,,,2007,
+2007-0124,FLOOD,Antioquia,Medellín,2007-04-06,BARRIO MANRIQUE.,,,,1.0,72.0,,365.0,,,0,0,,,,0,,,2007,
+2007-0084,ELECTRICSTORM,Antioquia,Medellín,2007-03-13,,1.0,,,,,,,,,0,0,,,,0,,,2007,
+2007-0060,FIRE,Antioquia,Medellín,2007-02-28,Sector Moravia.,1.0,,,250.0,,,1500.0,,,0,0,,,,0,,,2007,
+2007-0057,FIRE,Antioquia,Medellín,2007-02-27,,,,,,,,,,,0,0,,,,0,,,2007,
+2006-0975,FIRE,Antioquia,Medellín,2006-12-30,,,,,82.0,,,410.0,,,0,0,,,,0,,,2006,
+2006-0960,FLOOD,Antioquia,Medellín,2006-12-12,,,,,1.0,1.0,,10.0,,,0,0,,,,0,,,2006,
+2006-0913,FLOOD,Antioquia,Medellín,2006-11-23,,,,,11.0,9.0,,100.0,,,0,0,,,,0,,,2006,
+2006-0660,STRUCTURE,Antioquia,Medellín,2006-08-16,,,,,,,,,,,0,0,1.0,,,0,,,2006,
+2006-0534,FLOOD,Antioquia,Medellín,2006-06-02,,,,,1.0,3.0,,20.0,,,0,0,,,,0,,,2006,
+2006-0529,FLOOD,Antioquia,Medellín,2006-06-01,,,,,2.0,3.0,,50.0,,,0,0,,,,0,,,2006,
+2006-0298,FLOOD,Antioquia,Medellín,2006-05-03,,,,,,2.0,,10.0,,,0,0,,,,0,,,2006,
+2006-0260,LANDSLIDE,Antioquia,Medellín,2006-04-27,,,,,3.0,15.0,,50.0,,,0,0,,,,0,,,2006,
+2005-0710,LANDSLIDE,Antioquia,Medellín,2005-10-28,,,,,,,,25.0,,,0,0,,,,0,,,2005,
+2005-0632,FLOOD,Antioquia,Medellín,2005-10-15,,,,,,30.0,,150.0,,,0,0,,,,0,,,2005,
+2005-0480,FIRE,Antioquia,Medellín,2005-07-29,,,,,35.0,,,330.0,,,0,0,,,,0,,,2005,
+2005-0455,LANDSLIDE,Antioquia,Medellín,2005-07-13,,2.0,,,1.0,,,5.0,,,0,0,,,,0,,,2005,
+2005-0382,LANDSLIDE,Antioquia,Medellín,2005-06-06,,,,,4.0,,,20.0,,,0,0,,,,0,,,2005,
+2005-0310,FLOOD,Antioquia,Medellín,2005-05-16,,,,,1.0,12.0,,65.0,,,0,0,,,,0,,,2005,
+2005-0142,LANDSLIDE,Antioquia,Medellín,2005-02-16,,1.0,,,,,,,,,0,0,,,,0,,,2005,
+2004-0660,LANDSLIDE,Antioquia,Medellín,2004-11-10,,,,,1.0,,,5.0,,,0,0,,,,0,,,2004,
+2004-0543,LANDSLIDE,Antioquia,Medellín,2004-10-21,,,,,,4.0,,20.0,,,0,0,,,,0,,,2004,
+2004-0490,FLOOD,Antioquia,Medellín,2004-10-10,,,,,1.0,1.0,,10.0,,,0,0,1.0,,,0,,,2004,
+2004-0312,FIRE,Antioquia,Medellín,2004-07-07,,,,,3.0,,,21.0,,,0,0,,,,0,,,2004,
+2004-0293,FIRE,Antioquia,Medellín,2004-06-23,,,2.0,,30.0,,,200.0,,,0,0,,,,0,,,2004,
+2004-0166,LANDSLIDE,Antioquia,Medellín,2004-05-02,,,,,1.0,,,5.0,,,0,0,,,,0,,,2004,
+2004-0160,FLOOD,Antioquia,Medellín,2004-04-28,,,,,4.0,25.0,,150.0,,,0,0,,,,0,,,2004,
+2004-0126,LANDSLIDE,Antioquia,Medellín,2004-04-25,,,,,2.0,20.0,,110.0,,,0,0,,,,0,,,2004,
+2003-0441,FLOOD,Antioquia,Medellín,2003-11-09,VISTA HERMOSA,,,4.0,,,,,,,0,0,,,,0,,,2003,
+2003-0414,LANDSLIDE,Antioquia,Medellín,2003-10-31,,1.0,,,,,,,,,0,0,,,,0,,,2003,
+2003-0410,LANDSLIDE,Antioquia,Medellín,2003-10-29,,2.0,,,2.0,,,10.0,,,0,0,,,,0,,,2003,
+2003-0373,FIRE,Antioquia,Medellín,2003-10-06,,1.0,,,20.0,,,75.0,,,0,0,,,,0,,,2003,
+2003-0340,FIRE,Antioquia,Medellín,2003-09-19,,,,,5.0,2.0,,36.0,,,0,0,,,,0,,,2003,
+2003-0218,LANDSLIDE,Antioquia,Medellín,2003-06-15,,2.0,,,2.0,,,10.0,,,0,0,,,,0,,,2003,
+2003-0090,FIRE,Antioquia,Medellín,2003-03-06,,,,,650.0,,,4177.0,,,0,0,,,,0,,,2003,
+2003-0029,FIRE,Antioquia,Medellín,2003-01-15,,,,,5.0,,,,,,0,0,,,,0,,,2003,
+2005-0346,LANDSLIDE,Antioquia,Medellín,2005-05-20,Barrio Andalucía - La Francia,1.0,1.0,,1.0,,,5.0,,,0,0,,,,0,,,2005,
+2006-0270,LANDSLIDE,Antioquia,Medellín,2006-04-28,Alto de La Cruz,1.0,1.0,,1.0,6.0,,35.0,,,0,0,,,,0,,,2006,
+2006-0146,LANDSLIDE,Antioquia,Medellín,2006-03-24,Corregimiento San Antonio de Prado,3.0,1.0,,5.0,16.0,,160.0,,,0,0,,,,0,,,2006,
+2006-0850,LANDSLIDE,Antioquia,Medellín,2006-11-14,Barrio El Salado Comuna 13,5.0,2.0,,1.0,,,5.0,,,0,0,,,,0,,,2006,
+2004-0092,RAIN,Antioquia,Medellín,2004-04-14,Barrio Simon Bolivar,1.0,,,,,,,,,0,0,,,,0,,,2004,
+2005-0981,LANDSLIDE,Antioquia,Medellín,2005-11-23,VIA QUE COMUNICA A MEDELLIN CON QUIBDO,,,,,,,100.0,,,0,0,,,,0,,,2005,
+2004-0684,LANDSLIDE,Antioquia,Medellín,2004-11-11,Barrio La Cruz,,,,,25.0,,,,,0,0,,,,0,,,2004,
+2003-0418,LANDSLIDE,Antioquia,Medellín,2003-11-01,Nororiente de Medellìn,3.0,,,,,,,,,0,0,,,,0,,,2003,
+2003-0348,SPATE,Antioquia,Medellín,2003-09-27,Comuna Nororiental,6.0,11.0,,,,,2400.0,,,0,0,,,,0,,,2003,
+2003-0058,FIRE,Antioquia,Medellín,2003-02-07,Barrio Moravista,,,4.0,,,,55.0,,,0,0,,,,0,,,2003,
+2003-0323,FIRE,Antioquia,Medellín,2003-09-02,Sector Aranjuez,,,,5.0,2.0,39.0,,,,0,0,,,,0,,,2003,
+2003-0248,FIRE,Antioquia,Medellín,2003-07-07,CL 63 # 47-58 Prado Centro. Casa de Rosalina Bedoya,4.0,2.0,,1.0,3.0,,,,,0,0,,,,0,,,2003,
+2002-0677,FIRE,Antioquia,Medellín,2002-11-30,B. Moravia (barrio subnormal),,,,92.0,,399.0,,,,0,0,,,,0,,,2002,
+2002-0634,LANDSLIDE,Antioquia,Medellín,2002-10-31,B. Mano de Dios,2.0,3.0,,5.0,,10.0,,,,0,0,,,,0,,,2002,
+2002-0577,LANDSLIDE,Antioquia,Medellín,2002-09-26,,,,,1.0,,,,,,0,0,,,,0,,,2002,
+2002-0578,FLOOD,Antioquia,Medellín,2002-09-26,16 Bs.,,,,,,,,,,0,0,,,,0,,,2002,
+2002-0433,FIRE,Antioquia,Medellín,2002-07-08,,,,,,,,200.0,,,0,0,,,,0,,,2002,
+2002-0196,STRUCTURE,Antioquia,Medellín,2002-04-08,,,,,,,,7.0,,,0,0,,,,0,,,2002,
+2002-0195,LANDSLIDE,Antioquia,Medellín,2002-04-08,,,,,,6.0,,45.0,,,0,0,,,,0,,,2002,
+2002-0025,RAIN,Antioquia,Medellín,2002-01-09,B. Laureles.,,,,,,,,,,0,0,,,,0,,,2002,
+2001-0759,EXPLOSION,Antioquia,Medellín,2001-12-07,,,2.0,,,,,,,,0,0,,,,0,,,2001,
+2001-0713,FLOOD,Antioquia,Medellín,2001-11-21,,,,,,,,750.0,,,0,0,,,,0,,,2001,
+2001-0658,LANDSLIDE,Antioquia,Medellín,2001-11-02,Via Bogota-Barranquilla,,,,,,,,,,0,0,,,,0,,,2001,
+2001-0604,STRUCTURE,Antioquia,Medellín,2001-09-28,Discoteca Africa,2.0,80.0,,,,,,,,0,0,,,,0,,,2001,
+2001-0451,FORESTFIRE,Antioquia,Medellín,2001-08-22,,,,,,,,,,,0,0,,,370.0,0,,,2001,
+2001-0221,LANDSLIDE,Antioquia,Medellín,2001-04-19,Ciudad Bolivar,2.0,,,3.0,,,,,,0,0,,,,0,,,2001,
+2000-0602,LANDSLIDE,Antioquia,Medellín,2000-09-10,B. Carambolas,1.0,3.0,,1.0,15.0,,75.0,,,0,0,,,,0,,,2000,
+2000-0601,LANDSLIDE,Antioquia,Medellín,2000-09-10,Vivienda de uno de los suburbios de Medellin,2.0,,,1.0,,,,,,0,0,,,,0,,,2000,
+2000-0537,FIRE,Antioquia,Medellín,2000-07-27,B. de invasion Vallejuelos (occid. de Medellin),,,,161.0,,787.0,,,,0,0,,,,0,,,2000,
+2000-0507,LANDSLIDE,Antioquia,Medellín,2000-07-02,una vivienda al oeste de Medellin,1.0,,,1.0,,5.0,,,,0,0,,,,0,,,2000,
+2000-0294,LANDSLIDE,Antioquia,Medellín,2000-05-14,B. Enciso,7.0,1.0,,1.0,,,,,,0,0,,,,0,,,2000,
+2000-0273,FLOOD,Antioquia,Medellín,2000-05-05,B. Rincon,,,,,,,150.0,,,0,0,,,,0,,,2000,
+1999-0945,LANDSLIDE,Antioquia,Medellín,1999-11-03,,,,,1.0,,,,,25.0,0,0,,,,0,,,1999,
+1999-0898,LANDSLIDE,Antioquia,Medellín,1999-10-30,,,,,,,,,,,0,0,,,,0,,,1999,
+1999-0737,LANDSLIDE,Antioquia,Medellín,1999-09-28,B. Santa Rita La Toma - Caicedo,,4.0,,,,,,,5.0,0,0,,,,0,,,1999,
+1999-0578,LANDSLIDE,Antioquia,Medellín,1999-06-13,Km 20 del sector Hatillo-Cisneros,,,,,,,,,,0,0,,,,0,,,1999,
+1999-0456,LANDSLIDE,Antioquia,Medellín,1999-04-27,,,,,,,,,,,0,0,,,,0,,,1999,
+1999-0363,FLOOD,Antioquia,Medellín,1999-04-04,Comuna nororiental,,,,,,,,,,0,0,,,,0,,,1999,
+1999-0243,LANDSLIDE,Antioquia,Medellín,1999-02-24,,,,,,,,,,,0,0,,,,0,,,1999,
+1998-0606,LANDSLIDE,Antioquia,Medellín,1998-10-26,,,,,,,,,,,0,0,1.0,,,0,,,1998,
+1998-0607,LANDSLIDE,Antioquia,Medellín,1998-10-26,,2.0,1.0,,1.0,,,5.0,,,0,0,,,,0,,,1998,
+1998-0460,INTOXICACION,Antioquia,Medellín,1998-07-17,Barrio Triste,1.0,1.0,,,,,,,,0,0,,,,0,,,1998,
+1998-0348,LANDSLIDE,Antioquia,Medellín,1998-05-29,,,3.0,,,,,,,,0,0,,,,0,,,1998,
+1998-0089,FORESTFIRE,Antioquia,Medellín,1998-01-25,,,,,,,,,,,0,0,,,109.0,0,,,1998,
+1998-0008,FORESTFIRE,Antioquia,Medellín,1998-01-08,,,,,,,,,,,0,0,,,,0,,,1998,
+1997-0072,LANDSLIDE,Antioquia,Medellín,1997-01-23,B. Caicedo,,,,1.0,8.0,,45.0,,,0,0,,,,0,,,1997,
+1996-0989,FIRE,Antioquia,Medellín,1996-12-25,,,,,,,,,,,0,10000000000,,,,0,,,1996,
+1996-0836,FLOOD,Antioquia,Medellín,1996-10-03,B. Campo Valdes,5.0,,,,,,,,,0,0,,,,0,,,1996,
+1996-0584,RAIN,Antioquia,Medellín,1996-07-02,,,,,,,45.0,,,,0,0,,,,0,,,1996,
+1996-0374,LANDSLIDE,Antioquia,Medellín,1996-05-16,B. Villatina,2.0,1.0,,3.0,,,15.0,,,0,0,,,,0,,,1996,
+1996-0365,RAIN,Antioquia,Medellín,1996-05-15,,,,,,,,,,,0,0,,,,0,,,1996,
+1996-0335,STORM,Antioquia,Medellín,1996-05-13,,,,,,,,,,,0,1000000000,,,,0,,,1996,
+1996-0319,FLOOD,Antioquia,Medellín,1996-05-11,13 Bs. afectados,2.0,,,,,4920.0,,,,0,0,,,,0,,,1996,
+1996-0280,SPATE,Antioquia,Medellín,1996-04-14,,,21.0,,6.0,58.0,287.0,,,,0,250000000,,,,0,,,1996,
+1995-0771,LANDSLIDE,Antioquia,Medellín,1995-10-09,Via Medellin - Manizales Km. 6,,,,,,,,,,0,0,,,,0,,,1995,
+1995-0744,FIRE,Antioquia,Medellín,1995-09-25,Planta Industrial de Pintuco,,2.0,,,,,,,,0,0,,,,0,,,1995,
+1995-0584,LANDSLIDE,Antioquia,Medellín,1995-08-22,B. La Cruz,,,,,,49.0,,,,0,0,,,,0,,,1995,
+1995-0583,LANDSLIDE,Antioquia,Medellín,1995-08-22,B. Granizal,,,,,,50.0,,,,0,0,,,,0,,,1995,
+1995-0582,LANDSLIDE,Antioquia,Medellín,1995-08-22,B. Popular,,,,,,115.0,,,,0,0,,,,0,,,1995,
+1995-0581,LANDSLIDE,Antioquia,Medellín,1995-08-22,El Triunfo,,,,,23.0,259.0,,,,0,0,,,,0,,,1995,
+1995-0578,FLOOD,Antioquia,Medellín,1995-08-21,,,,,,,,,,164.0,0,0,,,,0,,,1995,
+1995-0577,LANDSLIDE,Antioquia,Medellín,1995-08-21,Calle 126 con carrera 42 E B. La Cantera.,,,,,4.0,,,,,0,150000,,,,0,,,1995,
+1995-0545,FLOOD,Antioquia,Medellín,1995-08-19,,,,,1.0,8.0,,,,,0,0,,,,0,,,1995,
+1995-0168,FORESTFIRE,Antioquia,Medellín,1995-02-14,,,,,,,,,,,0,0,,,,0,,,1995,
+1995-0079,FORESTFIRE,Antioquia,Medellín,1995-01-24,Cerro El Volador,,,,,,,,,,0,0,,,,0,,,1995,
+1994-0666,LANDSLIDE,Antioquia,Medellín,1994-11-04,Cto. San Antonio de Prado,7.0,,,1.0,,,7.0,,,0,0,,,,0,,,1994,
+1994-0640,INTOXICACION,Antioquia,Medellín,1994-10-21,B. Buenos Aires,,20.0,,,,,,,,0,0,,,,0,,,1994,
+1994-0524,LEAK,Antioquia,Medellín,1994-08-11,Planta de electrodomesticos HACEB,,17.0,,,,,,,,0,0,,,,0,,,1994,
+1994-0519,INTOXICACION,Antioquia,Medellín,1994-08-08,,,5.0,,,,,,,,0,0,,,,0,,,1994,
+1994-0204,LANDSLIDE,Antioquia,Medellín,1994-04-28,B. Villatina,1.0,5.0,,,,,,,,0,0,,,,0,,,1994,
+1993-0447,LANDSLIDE,Antioquia,Medellín,1993-11-20,Carretera Medellin-Bogota.,,2.0,,,,,,,,0,0,,,,0,50.0,,1993,
+1993-0441,FLOOD,Antioquia,Medellín,1993-11-17,,,,,,,,902.0,,,0,0,,,,0,,,1993,
+1993-0434,LEAK,Antioquia,Medellín,1993-11-13,B. La Toscana,,5.0,,,,,,,,0,0,,,,0,,,1993,
+1993-0399,LANDSLIDE,Antioquia,Medellín,1993-10-12,Asilo de Villatina,,,,,,,,,30.0,0,60000000,,,,0,,,1993,
+1993-0183,LANDSLIDE,Antioquia,Medellín,1993-05-09,Santo Domingo,1.0,,,,1.0,,,,,0,0,,,,0,,,1993,
+1992-0197,FIRE,Antioquia,Medellín,1992-12-28,Centro Comercial Caldas,,,,,,,,,,0,20000000,,,,0,,,1992,
+1992-0185,LANDSLIDE,Antioquia,Medellín,1992-12-08,Sector del B. Villa Tina en el oriente de la ciudad.,,,,5.0,,,100.0,,,0,0,,,,0,,,1992,
+1992-0140,EARTHQUAKE,Antioquia,Medellín,1992-10-18,Epicentro entre los limites de Choco y Antioquia.,,50.0,,,75.0,,,,,0,11000000000,,1.0,,0,,,1992,
+1992-0090,POLLUTION,Antioquia,Medellín,1992-09-04,Quebrada la Iguana cra 70 entre calles 48 B y 53,,16.0,,,,,300.0,,,0,0,,,,0,,,1992,
+1992-0049,FIRE,Antioquia,Medellín,1992-05-02,,,4.0,,,20.0,,,,,0,0,,,,0,,,1992,
+1991-0205,EXPLOSION,Antioquia,Medellín,1991-12-21,Sector de B. Triste,8.0,13.0,,,,,,,,0,0,,,,0,,,1991,
+1991-0177,FIRE,Antioquia,Medellín,1991-10-23,La Iguana,,,,12.0,,,,,,0,0,,,,0,,,1991,
+1991-0039,RAIN,Antioquia,Medellín,1991-03-08,Zona occidental de Medellin,,,,,,,,,,0,0,,,,0,,,1991,
+1991-0003,EXPLOSION,Antioquia,Medellín,1991-01-06,Calle 30 con carrera 89-B B. Belen - Las Violetas,,7.0,,,,,,,,0,0,,,,0,,,1991,
+1990-0430,FIRE,Antioquia,Medellín,1990-11-21,,,,,,,,,,,0,16000000,,,,0,,,1990,
+1990-0431,FIRE,Antioquia,Medellín,1990-11-22,Envigado bodega de Almaviva,,,,,,,,,,0,16000000,,,,0,,,1990,
+1990-0412,LANDSLIDE,Antioquia,Medellín,1990-11-10,,,,,,,,,,,0,0,,,,0,,,1990,
+1990-0330,LANDSLIDE,Antioquia,Medellín,1990-10-28,,1.0,,,16.0,,,948.0,,,0,0,,,,0,,,1990,
+1990-0260,LANDSLIDE,Antioquia,Medellín,1990-10-09,,4.0,3.0,,1.0,,,,,8.0,0,0,,,,0,,,1990,
+1990-0248,LANDSLIDE,Antioquia,Medellín,1990-09-21,,20.0,,,,,260.0,,,,6000000,0,,,,0,,,1990,
+1990-0013,FIRE,Antioquia,Medellín,1990-01-28,Calle 32A con Cr 52 sector la Alpujara,,,,,,,,,,0,100000000,,,,0,,,1990,
+1989-0298,LANDSLIDE,Antioquia,Medellín,1989-09-26,Villa Tina,4.0,,,,,,,,,0,0,,,,0,,,1989,
+1989-0275,FLOOD,Antioquia,Medellín,1989-09-06,,,,,,,,,,,0,0,,,,0,,,1989,
+1989-0267,FIRE,Antioquia,Medellín,1989-08-24,,,,,,,,,,,0,20000000,,,,0,,,1989,
+1989-0147,FIRE,Antioquia,Medellín,1989-05-26,Càrcel de Bellavista.,,,,,,,,,,0,0,,,,0,,,1989,
+1989-0127,FLOOD,Antioquia,Medellín,1989-05-04,,,,,,,,,,,0,0,,,,0,,,1989,
+1989-0055,LANDSLIDE,Antioquia,Medellín,1989-03-13,,,,,,,,,,,0,0,,,,0,,,1989,
+1988-0594,FLOOD,Antioquia,Medellín,1988-11-24,,6.0,,3.0,40.0,,1500.0,,,,0,0,,,,0,,,1988,
+1988-0579,FLOOD,Antioquia,Medellín,1988-11-23,,,,,5.0,,23.0,,,,0,0,,,,0,,,1988,
+1988-0561,SPATE,Antioquia,Medellín,1988-11-22,,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0560,SPATE,Antioquia,Medellín,1988-11-22,,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0553,SPATE,Antioquia,Medellín,1988-11-22,,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0559,SPATE,Antioquia,Medellín,1988-11-22,,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0569,SPATE,Antioquia,Medellín,1988-11-22,,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0558,SPATE,Antioquia,Medellín,1988-11-22,,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0556,SPATE,Antioquia,Medellín,1988-11-22,,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0557,SPATE,Antioquia,Medellín,1988-11-22,,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0568,SPATE,Antioquia,Medellín,1988-11-22,,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0511,LANDSLIDE,Antioquia,Medellín,1988-11-19,Vía Medellin - Santa Helena,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0321,LANDSLIDE,Antioquia,Medellín,1988-10-17,B.Violetas,1.0,,,1.0,,,,,,0,0,,,,0,,,1988,
+1988-0282,FLOOD,Antioquia,Medellín,1988-09-18,B. Belencito Independencia El Corazón El Sufragio,,,,20.0,,160.0,,,,0,0,,,,0,,,1988,
+1988-0281,LANDSLIDE,Antioquia,Medellín,1988-09-18,Zona Metropolitana,18.0,,8.0,85.0,110.0,2500.0,1500.0,,,0,0,,,,0,,,1988,
+1988-0277,LANDSLIDE,Antioquia,Medellín,1988-09-17,B. San Javier,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0267,FLOOD,Antioquia,Medellín,1988-09-16,B. 12 de Octubre,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0259,FLOOD,Antioquia,Medellín,1988-09-16,Estadio B. EL Naranjal,1.0,,,4.0,,,,,,0,0,,,,0,,,1988,
+1988-0268,FLOOD,Antioquia,Medellín,1988-09-16,B. Castilla,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0269,FLOOD,Antioquia,Medellín,1988-09-16,Sector Maravia,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0270,FLOOD,Antioquia,Medellín,1988-09-16,,,,,,,,,,28.0,0,0,,,,0,,,1988,
+1988-0271,LANDSLIDE,Antioquia,Medellín,1988-09-16,Valle de Aburrá. sector de EL Blanquizal.,1.0,,,23.0,120.0,,,,9.0,0,0,,,,0,,,1988,
+1988-0256,SPATE,Antioquia,Medellín,1988-09-15,Sector Occidental,11.0,,,,,,,,,0,0,,,,0,,,1988,
+1988-0245,FLOOD,Antioquia,Medellín,1988-09-10,,4.0,,5.0,43.0,125.0,,,,28.0,0,0,,,,0,,,1988,
+1988-0151,LANDSLIDE,Antioquia,Medellín,1988-08-05,,3.0,,,,,,,,,0,0,,,,0,,,1988,
+1988-0119,LANDSLIDE,Antioquia,Medellín,1988-07-15,,5.0,,,,,,,,,0,0,,,,0,,,1988,
+1988-0121,SPATE,Antioquia,Medellín,1988-07-15,,,,,29.0,,,3500.0,,,0,0,,,,0,,,1988,
+1988-0109,LANDSLIDE,Antioquia,Medellín,1988-07-11,,,,,3.0,,,1300.0,,,0,0,,,,0,,,1988,
+1988-0102,LANDSLIDE,Antioquia,Medellín,1988-07-07,,,2.0,,29.0,,,,,,0,0,,,,0,,,1988,
+1988-0098,FLOOD,Antioquia,Medellín,1988-07-05,,,,1.0,15.0,,200.0,,,,0,0,,,,0,,,1988,
+1988-0054,FLOOD,Antioquia,Medellín,1988-04-14,,,,,,,,,,,0,0,,,,0,,,1988,
+1988-0046,SPATE,Antioquia,Medellín,1988-04-05,,,,,8.0,,,,,,0,0,,,,0,,,1988,
+1988-0003,FIRE,Antioquia,Medellín,1988-01-01,Sector Belén. Bodega almacèn Ley,,1.0,,,,,,,,0,40000000,,,,0,,,1988,
+1987-0338,RAIN,Antioquia,Medellín,1987-11-04,Vía Medellín-Las Palmas,,,,,,,,,,0,0,,,,0,,,1987,
+1987-0256,LANDSLIDE,Antioquia,Medellín,1987-09-27,B. Villatina,500.0,150.0,,69.0,,1700.0,,,,0,0,,,,0,,,1987,
+1987-0165,FIRE,Antioquia,Medellín,1987-06-29,Antigua zona del basurero de Moravia,,,,15.0,,75.0,,,,0,1800000,,,,0,,,1987,
+1987-0135,SPATE,Antioquia,Medellín,1987-05-15,B.Aranjuez,,,,,,,,,,0,0,,,,0,,,1987,
+1987-0108,RAIN,Antioquia,Medellín,1987-05-05,,1.0,,,,,,,,,0,0,,,,0,,,1987,
+1987-0066,FIRE,Antioquia,Medellín,1987-03-22,,,,,,,,,,,0,6000000,,,,0,,,1987,
+1987-0041,FIRE,Antioquia,Medellín,1987-02-23,Sector de La Iguana,1.0,3.0,,15.0,,100.0,,,,0,5000000,,,,0,,,1987,
+1987-0015,FIRE,Antioquia,Medellín,1987-01-11,,1.0,,,,,,,,,0,300000,,,,0,,,1987,
+1987-0014,FIRE,Antioquia,Medellín,1987-01-11,B. Marco Fidel Suarez,,1.0,,6.0,,28.0,,,,0,2400000,,,,0,,,1987,
+1987-0013,FIRE,Antioquia,Medellín,1987-01-11,Fábrica de veladoras ubicada en la Autopista Norte,,,,,,,,,,0,16000000,,,,0,,,1987,
+1986-0500,FIRE,Antioquia,Medellín,1986-12-03,,,1.0,,,,,,,,0,15000000,,,,0,,,1986,
+1986-0453,RAIN,Antioquia,Medellín,1986-10-30,B. Santa Cruz,,,,3.0,,22.0,,,,0,0,,,,0,,,1986,
+1986-0428,FLOOD,Antioquia,Medellín,1986-10-27,Carretera al Mar que une Medellín con Urabá,,,,,,,,,,0,0,,,,0,,,1986,
+1986-0427,LANDSLIDE,Antioquia,Medellín,1986-10-27,Carrretera Medellin-Bogotá sitio El Motorista y Rio CLaro,,,,,,,,,,0,0,,,,0,,,1986,
+1986-0418,LANDSLIDE,Antioquia,Medellín,1986-10-26,B.L.Mirlas,,,,,,,25.0,,,0,0,,,,0,,,1986,
+1986-0406,SPATE,Antioquia,Medellín,1986-10-25,,,,,60.0,,650.0,,,,0,0,,,,0,,,1986,
+1986-0386,LANDSLIDE,Antioquia,Medellín,1986-10-22,,1.0,,,1.0,,,,,,0,0,,,,0,,,1986,
+1986-0383,LANDSLIDE,Antioquia,Medellín,1986-10-22,,,,,4.0,,110.0,,,,0,0,,,,0,,,1986,
+1986-0373,SPATE,Antioquia,Medellín,1986-10-21,,,,,,,,,,,0,0,,,,0,,,1986,
+1986-0374,SPATE,Antioquia,Medellín,1986-10-21,,,,,,,,,,,0,0,,,,0,,,1986,
+1986-0260,LANDSLIDE,Antioquia,Medellín,1986-09-15,,,,,,,,,,,0,0,,,,0,,,1986,
+1986-0234,FIRE,Antioquia,Medellín,1986-08-23,Iglesia Nuestra Señora de la Candelaria.,,,,,,,,,,0,1000000,,,,0,,,1986,
+1986-0202,STORM,Antioquia,Medellín,1986-07-15,,,,,15.0,,,,,,0,0,,,,0,,,1986,
+1986-0105,RAIN,Antioquia,Medellín,1986-05-14,,,,,,,,,,,0,0,,,,0,,,1986,
+1986-0088,FIRE,Antioquia,Medellín,1986-04-29,Centro de la ciudad,,,,,,,,,,0,40000000,,,,0,,,1986,
+1986-0085,LANDSLIDE,Antioquia,Medellín,1986-04-26,,2.0,,,,,,,,,0,0,,,,0,,,1986,
+1986-0063,STORM,Antioquia,Medellín,1986-04-07,,,,,,,,,,,0,0,,,,0,,,1986,
+1985-0263,LANDSLIDE,Antioquia,Medellín,1985-09-28,B. La Rosa,,,,1.0,,,,,,0,0,,,,0,,,1985,
+1985-0264,LANDSLIDE,Antioquia,Medellín,1985-09-28,B. 20 de Julio,,,,2.0,,,,,,0,0,,,,0,,,1985,
+1985-0258,LANDSLIDE,Antioquia,Medellín,1985-09-26,B. El Pesebre,1.0,,,1.0,,,,,,0,0,,,,0,,,1985,
+1985-0259,LANDSLIDE,Antioquia,Medellín,1985-09-26,B. Popular Dos,6.0,,,,,,,,,0,0,,,,0,,,1985,
+1985-0253,STRUCTURE,Antioquia,Medellín,1985-09-22,,1.0,1.0,,,,,,,,0,0,,,,0,,,1985,
+1985-0238,LANDSLIDE,Antioquia,Medellín,1985-09-15,Carretera Medellín-Santa Helena-Sajonia,,,,,,,,,,0,0,,,,0,,,1985,
+1985-0237,FLOOD,Antioquia,Medellín,1985-09-14,B. Villa Lilian,,3.0,,1.0,,,,,,0,0,,,,0,,,1985,
+1985-0223,EXPLOSION,Antioquia,Medellín,1985-09-01,B. Villa de Guadalupe,,8.0,,,,,,,,0,0,,,,0,,,1985,
+1985-0222,LANDSLIDE,Antioquia,Medellín,1985-08-29,B.Santa Cruz la Rosa,2.0,,,4.0,,,,,,0,0,,,,0,,,1985,
+1985-0217,LANDSLIDE,Antioquia,Medellín,1985-08-24,B. Popular Número Uno,4.0,,,3.0,2.0,,,,,0,0,,,,0,,,1985,
+1985-0199,LANDSLIDE,Antioquia,Medellín,1985-08-03,B.Popular,2.0,4.0,,,,,22.0,,,0,0,,,,0,,,1985,
+1985-0070,LANDSLIDE,Antioquia,Medellín,1985-04-15,,,,,,,,,,,0,0,,,,0,,,1985,
+1985-0064,LANDSLIDE,Antioquia,Medellín,1985-04-02,El Boqueron carretera al mar km.19,,,,,,,,,,0,0,,,,0,,,1985,
+1985-0057,LANDSLIDE,Antioquia,Medellín,1985-03-26,,,,,,,,,,,0,0,,,,0,,,1985,
+1985-0055,DROUGHT,Antioquia,Medellín,1985-03-19,,,,,,,,,,,0,0,,,,0,,,1985,
+1985-0044,FIRE,Antioquia,Medellín,1985-03-06,Almacen Tecniradio,,,,,,,,,,0,8000000,,,,0,,,1985,
+1985-0042,POLLUTION,Antioquia,Medellín,1985-03-02,Quebrada Cestillal,,,,,,,,,,0,0,,,,0,,,1985,
+1984-0896,LANDSLIDE,Antioquia,Medellín,1984-12-02,,,,,,,,,,,0,0,,,,0,360.0,,1984,
+1984-0892,FLOOD,Antioquia,Medellín,1984-12-01,,,,,,,,,,,0,0,,,,0,,,1984,
+1984-0878,FIRE,Antioquia,Medellín,1984-11-27,Carrera 60 con calle 46,,,,,,,,,,0,17000000,,,,0,,,1984,
+1984-0854,FIRE,Antioquia,Medellín,1984-11-20,,,,,,,,,,,0,50000000,,,,0,,,1984,
+1984-0787,LANDSLIDE,Antioquia,Medellín,1984-11-09,La Dorada -Medellin,,,,,,,,,,0,0,,,,0,,,1984,
+1984-0786,LANDSLIDE,Antioquia,Medellín,1984-11-09,Medellin - Turbo,,,,,,,,,,0,0,,,,0,,,1984,
+1984-0671,LANDSLIDE,Antioquia,Medellín,1984-11-05,B. Marco Fidel Suárez,,,,,,,,,,0,0,,,,0,,,1984,
+1984-0674,LANDSLIDE,Antioquia,Medellín,1984-11-05,B.Juan 23,,,,3.0,,76.0,,,76.0,0,0,,,,0,,,1984,
+1984-0496,RAIN,Antioquia,Medellín,1984-10-29,,,,,,,,,,,0,0,,,,0,,,1984,

@@ -1,0 +1,683 @@
+﻿territorio_raw,anio,eventos,amenaza,cod,territorio
+01. Popular,2005,154,movimiento en masa,01,Popular
+02. Santa Cruz,2005,77,movimiento en masa,02,Santa Cruz
+03. Manrique,2005,76,movimiento en masa,03,Manrique
+04. Aranjuez,2005,43,movimiento en masa,04,Aranjuez
+05. Castilla,2005,14,movimiento en masa,05,Castilla
+06. 12 de Octubre,2005,36,movimiento en masa,06,Doce de Octubre
+07. Robledo,2005,126,movimiento en masa,07,Robledo
+08. Villa Hermosa,2005,218,movimiento en masa,08,Villa Hermosa
+09. Buenos Aires,2005,77,movimiento en masa,09,Buenos Aires
+10. La Candelaria,2005,8,movimiento en masa,10,La Candelaria
+11. Laureles Estadio,2005,4,movimiento en masa,11,Laureles-Estadio
+12. La América,2005,16,movimiento en masa,12,La América
+13. San Javier,2005,323,movimiento en masa,13,San Javier
+14. El Poblado,2005,23,movimiento en masa,14,El Poblado
+15. Guayabal,2005,4,movimiento en masa,15,Guayabal
+16. Belén,2005,57,movimiento en masa,16,Belén
+50. Palmitas,2005,9,movimiento en masa,50,San Sebastián de Palmitas
+60. San Cristóbal,2005,62,movimiento en masa,60,San Cristóbal
+70. Altavista,2005,13,movimiento en masa,70,Altavista
+80. San Antonio de Prado,2005,52,movimiento en masa,80,San Antonio de Prado
+90. Santa Elena,2005,2,movimiento en masa,90,Santa Elena
+Total general,2005,1394,movimiento en masa,,Total general
+01. Popular,2006,288,movimiento en masa,01,Popular
+02. Santa Cruz,2006,104,movimiento en masa,02,Santa Cruz
+03. Manrique,2006,110,movimiento en masa,03,Manrique
+04. Aranjuez,2006,84,movimiento en masa,04,Aranjuez
+05. Castilla,2006,31,movimiento en masa,05,Castilla
+06. 12 de Octubre,2006,42,movimiento en masa,06,Doce de Octubre
+07. Robledo,2006,124,movimiento en masa,07,Robledo
+08. Villa Hermosa,2006,365,movimiento en masa,08,Villa Hermosa
+09. Buenos Aires,2006,127,movimiento en masa,09,Buenos Aires
+10. La Candelaria,2006,15,movimiento en masa,10,La Candelaria
+11. Laureles Estadio,2006,5,movimiento en masa,11,Laureles-Estadio
+12. La América,2006,13,movimiento en masa,12,La América
+13. San Javier,2006,334,movimiento en masa,13,San Javier
+14. El Poblado,2006,25,movimiento en masa,14,El Poblado
+15. Guayabal,2006,10,movimiento en masa,15,Guayabal
+16. Belén,2006,67,movimiento en masa,16,Belén
+50. Palmitas,2006,18,movimiento en masa,50,San Sebastián de Palmitas
+60. San Cristóbal,2006,61,movimiento en masa,60,San Cristóbal
+70. Altavista,2006,39,movimiento en masa,70,Altavista
+80. San Antonio de Prado,2006,223,movimiento en masa,80,San Antonio de Prado
+90. Santa Elena,2006,16,movimiento en masa,90,Santa Elena
+Total general,2006,2101,movimiento en masa,,Total general
+01. Popular,2007,298,movimiento en masa,01,Popular
+02. Santa Cruz,2007,119,movimiento en masa,02,Santa Cruz
+03. Manrique,2007,179,movimiento en masa,03,Manrique
+04. Aranjuez,2007,80,movimiento en masa,04,Aranjuez
+05. Castilla,2007,20,movimiento en masa,05,Castilla
+06. 12 de Octubre,2007,69,movimiento en masa,06,Doce de Octubre
+07. Robledo,2007,157,movimiento en masa,07,Robledo
+08. Villa Hermosa,2007,366,movimiento en masa,08,Villa Hermosa
+09. Buenos Aires,2007,65,movimiento en masa,09,Buenos Aires
+10. La Candelaria,2007,12,movimiento en masa,10,La Candelaria
+11. Laureles Estadio,2007,4,movimiento en masa,11,Laureles-Estadio
+12. La América,2007,17,movimiento en masa,12,La América
+13. San Javier,2007,480,movimiento en masa,13,San Javier
+14. El Poblado,2007,33,movimiento en masa,14,El Poblado
+15. Guayabal,2007,6,movimiento en masa,15,Guayabal
+16. Belén,2007,135,movimiento en masa,16,Belén
+50. Palmitas,2007,14,movimiento en masa,50,San Sebastián de Palmitas
+60. San Cristóbal,2007,146,movimiento en masa,60,San Cristóbal
+70. Altavista,2007,80,movimiento en masa,70,Altavista
+80. San Antonio de Prado,2007,42,movimiento en masa,80,San Antonio de Prado
+90. Santa Elena,2007,8,movimiento en masa,90,Santa Elena
+Total general,2007,2330,movimiento en masa,,Total general
+01. Popular,2008,550,movimiento en masa,01,Popular
+02. Santa Cruz,2008,200,movimiento en masa,02,Santa Cruz
+03. Manrique,2008,278,movimiento en masa,03,Manrique
+04. Aranjuez,2008,251,movimiento en masa,04,Aranjuez
+05. Castilla,2008,45,movimiento en masa,05,Castilla
+06. 12 de Octubre,2008,115,movimiento en masa,06,Doce de Octubre
+07. Robledo,2008,295,movimiento en masa,07,Robledo
+08. Villa Hermosa,2008,675,movimiento en masa,08,Villa Hermosa
+09. Buenos Aires,2008,158,movimiento en masa,09,Buenos Aires
+10. La Candelaria,2008,30,movimiento en masa,10,La Candelaria
+11. Laureles Estadio,2008,5,movimiento en masa,11,Laureles-Estadio
+12. La América,2008,50,movimiento en masa,12,La América
+13. San Javier,2008,1179,movimiento en masa,13,San Javier
+14. El Poblado,2008,156,movimiento en masa,14,El Poblado
+15. Guayabal,2008,21,movimiento en masa,15,Guayabal
+16. Belén,2008,188,movimiento en masa,16,Belén
+50. Palmitas,2008,36,movimiento en masa,50,San Sebastián de Palmitas
+60. San Cristóbal,2008,245,movimiento en masa,60,San Cristóbal
+70. Altavista,2008,186,movimiento en masa,70,Altavista
+80. San Antonio de Prado,2008,93,movimiento en masa,80,San Antonio de Prado
+90. Santa Elena,2008,24,movimiento en masa,90,Santa Elena
+Total general,2008,4780,movimiento en masa,,Total general
+01. Popular,2009,293,movimiento en masa,01,Popular
+02. Santa Cruz,2009,127,movimiento en masa,02,Santa Cruz
+03. Manrique,2009,209,movimiento en masa,03,Manrique
+04. Aranjuez,2009,78,movimiento en masa,04,Aranjuez
+05. Castilla,2009,17,movimiento en masa,05,Castilla
+06. 12 de Octubre,2009,50,movimiento en masa,06,Doce de Octubre
+07. Robledo,2009,117,movimiento en masa,07,Robledo
+08. Villa Hermosa,2009,345,movimiento en masa,08,Villa Hermosa
+09. Buenos Aires,2009,104,movimiento en masa,09,Buenos Aires
+10. La Candelaria,2009,9,movimiento en masa,10,La Candelaria
+11. Laureles Estadio,2009,3,movimiento en masa,11,Laureles-Estadio
+12. La América,2009,15,movimiento en masa,12,La América
+13. San Javier,2009,328,movimiento en masa,13,San Javier
+14. El Poblado,2009,82,movimiento en masa,14,El Poblado
+15. Guayabal,2009,11,movimiento en masa,15,Guayabal
+16. Belén,2009,62,movimiento en masa,16,Belén
+50. Palmitas,2009,12,movimiento en masa,50,San Sebastián de Palmitas
+60. San Cristóbal,2009,101,movimiento en masa,60,San Cristóbal
+70. Altavista,2009,74,movimiento en masa,70,Altavista
+80. San Antonio de Prado,2009,81,movimiento en masa,80,San Antonio de Prado
+90. Santa Elena,2009,8,movimiento en masa,90,Santa Elena
+Total general,2009,2126,movimiento en masa,,Total general
+01. Popular,2010,488,movimiento en masa,01,Popular
+02. Santa Cruz,2010,183,movimiento en masa,02,Santa Cruz
+03. Manrique,2010,282,movimiento en masa,03,Manrique
+04. Aranjuez,2010,117,movimiento en masa,04,Aranjuez
+05. Castilla,2010,29,movimiento en masa,05,Castilla
+06. 12 de Octubre,2010,60,movimiento en masa,06,Doce de Octubre
+07. Robledo,2010,263,movimiento en masa,07,Robledo
+08. Villa Hermosa,2010,718,movimiento en masa,08,Villa Hermosa
+09. Buenos Aires,2010,112,movimiento en masa,09,Buenos Aires
+10. La Candelaria,2010,24,movimiento en masa,10,La Candelaria
+11. Laureles Estadio,2010,8,movimiento en masa,11,Laureles-Estadio
+12. La América,2010,16,movimiento en masa,12,La América
+13. San Javier,2010,634,movimiento en masa,13,San Javier
+14. El Poblado,2010,115,movimiento en masa,14,El Poblado
+15. Guayabal,2010,12,movimiento en masa,15,Guayabal
+16. Belén,2010,132,movimiento en masa,16,Belén
+50. Palmitas,2010,19,movimiento en masa,50,San Sebastián de Palmitas
+60. San Cristóbal,2010,116,movimiento en masa,60,San Cristóbal
+70. Altavista,2010,105,movimiento en masa,70,Altavista
+80. San Antonio de Prado,2010,92,movimiento en masa,80,San Antonio de Prado
+90. Santa Elena,2010,17,movimiento en masa,90,Santa Elena
+Total general,2010,3542,movimiento en masa,,Total general
+01. Popular,2011,726,movimiento en masa,01,Popular
+02. Santa Cruz,2011,222,movimiento en masa,02,Santa Cruz
+03. Manrique,2011,438,movimiento en masa,03,Manrique
+04. Aranjuez,2011,134,movimiento en masa,04,Aranjuez
+05. Castilla,2011,20,movimiento en masa,05,Castilla
+06. 12 de Octubre,2011,121,movimiento en masa,06,Doce de Octubre
+07. Robledo,2011,263,movimiento en masa,07,Robledo
+08. Villa Hermosa,2011,784,movimiento en masa,08,Villa Hermosa
+09. Buenos Aires,2011,161,movimiento en masa,09,Buenos Aires
+10. La Candelaria,2011,10,movimiento en masa,10,La Candelaria
+11. Laureles Estadio,2011,7,movimiento en masa,11,Laureles-Estadio
+12. La América,2011,15,movimiento en masa,12,La América
+13. San Javier,2011,693,movimiento en masa,13,San Javier
+14. El Poblado,2011,117,movimiento en masa,14,El Poblado
+15. Guayabal,2011,8,movimiento en masa,15,Guayabal
+16. Belén,2011,138,movimiento en masa,16,Belén
+50. Palmitas,2011,27,movimiento en masa,50,San Sebastián de Palmitas
+60. San Cristóbal,2011,245,movimiento en masa,60,San Cristóbal
+70. Altavista,2011,134,movimiento en masa,70,Altavista
+80. San Antonio de Prado,2011,69,movimiento en masa,80,San Antonio de Prado
+90. Santa Elena,2011,44,movimiento en masa,90,Santa Elena
+Total general,2011,4376,movimiento en masa,,Total general
+01. Popular,2012,255,movimiento en masa,01,Popular
+02. Santa Cruz,2012,75,movimiento en masa,02,Santa Cruz
+03. Manrique,2012,192,movimiento en masa,03,Manrique
+04. Aranjuez,2012,45,movimiento en masa,04,Aranjuez
+05. Castilla,2012,4,movimiento en masa,05,Castilla
+06. 12 de Octubre,2012,25,movimiento en masa,06,Doce de Octubre
+07. Robledo,2012,69,movimiento en masa,07,Robledo
+08. Villa Hermosa,2012,249,movimiento en masa,08,Villa Hermosa
+09. Buenos Aires,2012,91,movimiento en masa,09,Buenos Aires
+10. La Candelaria,2012,5,movimiento en masa,10,La Candelaria
+11. Laureles Estadio,2012,0,movimiento en masa,11,Laureles-Estadio
+12. La América,2012,7,movimiento en masa,12,La América
+13. San Javier,2012,251,movimiento en masa,13,San Javier
+14. El Poblado,2012,50,movimiento en masa,14,El Poblado
+15. Guayabal,2012,4,movimiento en masa,15,Guayabal
+16. Belén,2012,43,movimiento en masa,16,Belén
+50. Palmitas,2012,14,movimiento en masa,50,San Sebastián de Palmitas
+60. San Cristóbal,2012,57,movimiento en masa,60,San Cristóbal
+70. Altavista,2012,60,movimiento en masa,70,Altavista
+80. San Antonio de Prado,2012,57,movimiento en masa,80,San Antonio de Prado
+90. Santa Elena,2012,5,movimiento en masa,90,Santa Elena
+Total general,2012,1558,movimiento en masa,,Total general
+01. Popular,2013,212,movimiento en masa,01,Popular
+02. Santa Cruz,2013,77,movimiento en masa,02,Santa Cruz
+03. Manrique,2013,198,movimiento en masa,03,Manrique
+04. Aranjuez,2013,47,movimiento en masa,04,Aranjuez
+05. Castilla,2013,10,movimiento en masa,05,Castilla
+06. 12 de Octubre,2013,24,movimiento en masa,06,Doce de Octubre
+07. Robledo,2013,79,movimiento en masa,07,Robledo
+08. Villa Hermosa,2013,194,movimiento en masa,08,Villa Hermosa
+09. Buenos Aires,2013,38,movimiento en masa,09,Buenos Aires
+10. La Candelaria,2013,2,movimiento en masa,10,La Candelaria
+11. Laureles Estadio,2013,1,movimiento en masa,11,Laureles-Estadio
+12. La América,2013,7,movimiento en masa,12,La América
+13. San Javier,2013,221,movimiento en masa,13,San Javier
+14. El Poblado,2013,35,movimiento en masa,14,El Poblado
+15. Guayabal,2013,6,movimiento en masa,15,Guayabal
+16. Belén,2013,48,movimiento en masa,16,Belén
+50. Palmitas,2013,29,movimiento en masa,50,San Sebastián de Palmitas
+60. San Cristóbal,2013,38,movimiento en masa,60,San Cristóbal
+70. Altavista,2013,48,movimiento en masa,70,Altavista
+80. San Antonio de Prado,2013,35,movimiento en masa,80,San Antonio de Prado
+90. Santa Elena,2013,12,movimiento en masa,90,Santa Elena
+Total general,2013,1361,movimiento en masa,,Total general
+01. Popular,2014,92,movimiento en masa,01,Popular
+02. Santa Cruz,2014,40,movimiento en masa,02,Santa Cruz
+03. Manrique,2014,130,movimiento en masa,03,Manrique
+04. Aranjuez,2014,25,movimiento en masa,04,Aranjuez
+05. Castilla,2014,6,movimiento en masa,05,Castilla
+06. 12 de Octubre,2014,23,movimiento en masa,06,Doce de Octubre
+07. Robledo,2014,66,movimiento en masa,07,Robledo
+08. Villa Hermosa,2014,153,movimiento en masa,08,Villa Hermosa
+09. Buenos Aires,2014,43,movimiento en masa,09,Buenos Aires
+10. La Candelaria,2014,7,movimiento en masa,10,La Candelaria
+11. Laureles Estadio,2014,2,movimiento en masa,11,Laureles-Estadio
+12. La América,2014,3,movimiento en masa,12,La América
+13. San Javier,2014,121,movimiento en masa,13,San Javier
+14. El Poblado,2014,22,movimiento en masa,14,El Poblado
+15. Guayabal,2014,3,movimiento en masa,15,Guayabal
+16. Belén,2014,27,movimiento en masa,16,Belén
+50. Palmitas,2014,15,movimiento en masa,50,San Sebastián de Palmitas
+60. San Cristóbal,2014,28,movimiento en masa,60,San Cristóbal
+70. Altavista,2014,38,movimiento en masa,70,Altavista
+80. San Antonio de Prado,2014,33,movimiento en masa,80,San Antonio de Prado
+90. Santa Elena,2014,8,movimiento en masa,90,Santa Elena
+Total general,2014,885,movimiento en masa,,Total general
+01. Popular,2015,129,movimiento en masa,01,Popular
+02. Santa Cruz,2015,39,movimiento en masa,02,Santa Cruz
+03. Manrique,2015,114,movimiento en masa,03,Manrique
+04. Aranjuez,2015,11,movimiento en masa,04,Aranjuez
+05. Castilla,2015,7,movimiento en masa,05,Castilla
+06. 12 de Octubre,2015,12,movimiento en masa,06,Doce de Octubre
+07. Robledo,2015,43,movimiento en masa,07,Robledo
+08. Villa Hermosa,2015,148,movimiento en masa,08,Villa Hermosa
+09. Buenos Aires,2015,29,movimiento en masa,09,Buenos Aires
+10. La Candelaria,2015,6,movimiento en masa,10,La Candelaria
+11. Laureles Estadio,2015,4,movimiento en masa,11,Laureles-Estadio
+12. La América,2015,2,movimiento en masa,12,La América
+13. San Javier,2015,134,movimiento en masa,13,San Javier
+14. El Poblado,2015,16,movimiento en masa,14,El Poblado
+15. Guayabal,2015,2,movimiento en masa,15,Guayabal
+16. Belén,2015,37,movimiento en masa,16,Belén
+50. Palmitas,2015,14,movimiento en masa,50,San Sebastián de Palmitas
+60. San Cristóbal,2015,19,movimiento en masa,60,San Cristóbal
+70. Altavista,2015,34,movimiento en masa,70,Altavista
+80. San Antonio de Prado,2015,25,movimiento en masa,80,San Antonio de Prado
+90. Santa Elena,2015,7,movimiento en masa,90,Santa Elena
+Total general,2015,832,movimiento en masa,,Total general
+01. Popular,2016,127,movimiento en masa,01,Popular
+02. Santa Cruz,2016,57,movimiento en masa,02,Santa Cruz
+03. Manrique,2016,160,movimiento en masa,03,Manrique
+04. Aranjuez,2016,37,movimiento en masa,04,Aranjuez
+05. Castilla,2016,8,movimiento en masa,05,Castilla
+06. 12 de Octubre,2016,19,movimiento en masa,06,Doce de Octubre
+07. Robledo,2016,54,movimiento en masa,07,Robledo
+08. Villa Hermosa,2016,230,movimiento en masa,08,Villa Hermosa
+09. Buenos Aires,2016,42,movimiento en masa,09,Buenos Aires
+10. La Candelaria,2016,8,movimiento en masa,10,La Candelaria
+11. Laureles Estadio,2016,0,movimiento en masa,11,Laureles-Estadio
+12. La América,2016,7,movimiento en masa,12,La América
+13. San Javier,2016,153,movimiento en masa,13,San Javier
+14. El Poblado,2016,26,movimiento en masa,14,El Poblado
+15. Guayabal,2016,5,movimiento en masa,15,Guayabal
+16. Belén,2016,40,movimiento en masa,16,Belén
+50. Palmitas,2016,15,movimiento en masa,50,San Sebastián de Palmitas
+60. San Cristóbal,2016,64,movimiento en masa,60,San Cristóbal
+70. Altavista,2016,32,movimiento en masa,70,Altavista
+80. San Antonio de Prado,2016,81,movimiento en masa,80,San Antonio de Prado
+90. Santa Elena,2016,15,movimiento en masa,90,Santa Elena
+Total general,2016,1180,movimiento en masa,,Total general
+01. Popular,2017,173,movimiento en masa,01,Popular
+02. Santa Cruz,2017,54,movimiento en masa,02,Santa Cruz
+03. Manrique,2017,202,movimiento en masa,03,Manrique
+04. Aranjuez,2017,39,movimiento en masa,04,Aranjuez
+05. Castilla,2017,13,movimiento en masa,05,Castilla
+06. 12 de Octubre,2017,22,movimiento en masa,06,Doce de Octubre
+07. Robledo,2017,70,movimiento en masa,07,Robledo
+08. Villa Hermosa,2017,212,movimiento en masa,08,Villa Hermosa
+09. Buenos Aires,2017,60,movimiento en masa,09,Buenos Aires
+10. La Candelaria,2017,5,movimiento en masa,10,La Candelaria
+11. Laureles Estadio,2017,0,movimiento en masa,11,Laureles-Estadio
+12. La América,2017,4,movimiento en masa,12,La América
+13. San Javier,2017,222,movimiento en masa,13,San Javier
+14. El Poblado,2017,26,movimiento en masa,14,El Poblado
+15. Guayabal,2017,7,movimiento en masa,15,Guayabal
+16. Belén,2017,48,movimiento en masa,16,Belén
+50. Palmitas,2017,10,movimiento en masa,50,San Sebastián de Palmitas
+60. San Cristóbal,2017,49,movimiento en masa,60,San Cristóbal
+70. Altavista,2017,57,movimiento en masa,70,Altavista
+80. San Antonio de Prado,2017,79,movimiento en masa,80,San Antonio de Prado
+90. Santa Elena,2017,16,movimiento en masa,90,Santa Elena
+Total general,2017,1368,movimiento en masa,,Total general
+01. Popular,2018,147,movimiento en masa,01,Popular
+02. Santa Cruz,2018,47,movimiento en masa,02,Santa Cruz
+03. Manrique,2018,126,movimiento en masa,03,Manrique
+04. Aranjuez,2018,15,movimiento en masa,04,Aranjuez
+05. Castilla,2018,9,movimiento en masa,05,Castilla
+06. 12 de Octubre,2018,25,movimiento en masa,06,Doce de Octubre
+07. Robledo,2018,80,movimiento en masa,07,Robledo
+08. Villa Hermosa,2018,192,movimiento en masa,08,Villa Hermosa
+09. Buenos Aires,2018,42,movimiento en masa,09,Buenos Aires
+10. La Candelaria,2018,5,movimiento en masa,10,La Candelaria
+11. Laureles Estadio,2018,0,movimiento en masa,11,Laureles-Estadio
+12. La América,2018,7,movimiento en masa,12,La América
+13. San Javier,2018,197,movimiento en masa,13,San Javier
+14. El Poblado,2018,24,movimiento en masa,14,El Poblado
+15. Guayabal,2018,11,movimiento en masa,15,Guayabal
+16. Belén,2018,49,movimiento en masa,16,Belén
+50. Palmitas,2018,24,movimiento en masa,50,San Sebastián de Palmitas
+60. San Cristóbal,2018,117,movimiento en masa,60,San Cristóbal
+70. Altavista,2018,57,movimiento en masa,70,Altavista
+80. San Antonio de Prado,2018,57,movimiento en masa,80,San Antonio de Prado
+90. Santa Elena,2018,13,movimiento en masa,90,Santa Elena
+Total general,2018,1244,movimiento en masa,,Total general
+01. Popular,2005,7,inundación y avenida torrencial,01,Popular
+02. Santa Cruz,2005,2,inundación y avenida torrencial,02,Santa Cruz
+03. Manrique,2005,7,inundación y avenida torrencial,03,Manrique
+04. Aranjuez,2005,6,inundación y avenida torrencial,04,Aranjuez
+05. Castilla,2005,5,inundación y avenida torrencial,05,Castilla
+06. 12 de Octubre,2005,4,inundación y avenida torrencial,06,Doce de Octubre
+07. Robledo,2005,13,inundación y avenida torrencial,07,Robledo
+08. Villa Hermosa,2005,12,inundación y avenida torrencial,08,Villa Hermosa
+09. Buenos Aires,2005,6,inundación y avenida torrencial,09,Buenos Aires
+10. La Candelaria,2005,3,inundación y avenida torrencial,10,La Candelaria
+11. Laureles Estadio,2005,0,inundación y avenida torrencial,11,Laureles-Estadio
+12. La América,2005,0,inundación y avenida torrencial,12,La América
+13. San Javier,2005,19,inundación y avenida torrencial,13,San Javier
+14. El Poblado,2005,5,inundación y avenida torrencial,14,El Poblado
+15. Guayabal,2005,1,inundación y avenida torrencial,15,Guayabal
+16. Belén,2005,8,inundación y avenida torrencial,16,Belén
+50. Palmitas,2005,1,inundación y avenida torrencial,50,San Sebastián de Palmitas
+60. San Cristóbal,2005,3,inundación y avenida torrencial,60,San Cristóbal
+70. Altavista,2005,2,inundación y avenida torrencial,70,Altavista
+80. San Antonio de Prado,2005,8,inundación y avenida torrencial,80,San Antonio de Prado
+90. Santa Elena,2005,0,inundación y avenida torrencial,90,Santa Elena
+Total general,2005,112,inundación y avenida torrencial,,Total general
+01. Popular,2006,19,inundación y avenida torrencial,01,Popular
+02. Santa Cruz,2006,6,inundación y avenida torrencial,02,Santa Cruz
+03. Manrique,2006,9,inundación y avenida torrencial,03,Manrique
+04. Aranjuez,2006,11,inundación y avenida torrencial,04,Aranjuez
+05. Castilla,2006,10,inundación y avenida torrencial,05,Castilla
+06. 12 de Octubre,2006,17,inundación y avenida torrencial,06,Doce de Octubre
+07. Robledo,2006,26,inundación y avenida torrencial,07,Robledo
+08. Villa Hermosa,2006,39,inundación y avenida torrencial,08,Villa Hermosa
+09. Buenos Aires,2006,17,inundación y avenida torrencial,09,Buenos Aires
+10. La Candelaria,2006,5,inundación y avenida torrencial,10,La Candelaria
+11. Laureles Estadio,2006,7,inundación y avenida torrencial,11,Laureles-Estadio
+12. La América,2006,6,inundación y avenida torrencial,12,La América
+13. San Javier,2006,26,inundación y avenida torrencial,13,San Javier
+14. El Poblado,2006,5,inundación y avenida torrencial,14,El Poblado
+15. Guayabal,2006,2,inundación y avenida torrencial,15,Guayabal
+16. Belén,2006,16,inundación y avenida torrencial,16,Belén
+50. Palmitas,2006,0,inundación y avenida torrencial,50,San Sebastián de Palmitas
+60. San Cristóbal,2006,8,inundación y avenida torrencial,60,San Cristóbal
+70. Altavista,2006,1,inundación y avenida torrencial,70,Altavista
+80. San Antonio de Prado,2006,14,inundación y avenida torrencial,80,San Antonio de Prado
+90. Santa Elena,2006,0,inundación y avenida torrencial,90,Santa Elena
+Total general,2006,244,inundación y avenida torrencial,,Total general
+01. Popular,2007,8,inundación y avenida torrencial,01,Popular
+02. Santa Cruz,2007,5,inundación y avenida torrencial,02,Santa Cruz
+03. Manrique,2007,18,inundación y avenida torrencial,03,Manrique
+04. Aranjuez,2007,21,inundación y avenida torrencial,04,Aranjuez
+05. Castilla,2007,8,inundación y avenida torrencial,05,Castilla
+06. 12 de Octubre,2007,5,inundación y avenida torrencial,06,Doce de Octubre
+07. Robledo,2007,18,inundación y avenida torrencial,07,Robledo
+08. Villa Hermosa,2007,65,inundación y avenida torrencial,08,Villa Hermosa
+09. Buenos Aires,2007,19,inundación y avenida torrencial,09,Buenos Aires
+10. La Candelaria,2007,5,inundación y avenida torrencial,10,La Candelaria
+11. Laureles Estadio,2007,0,inundación y avenida torrencial,11,Laureles-Estadio
+12. La América,2007,2,inundación y avenida torrencial,12,La América
+13. San Javier,2007,41,inundación y avenida torrencial,13,San Javier
+14. El Poblado,2007,7,inundación y avenida torrencial,14,El Poblado
+15. Guayabal,2007,0,inundación y avenida torrencial,15,Guayabal
+16. Belén,2007,11,inundación y avenida torrencial,16,Belén
+50. Palmitas,2007,0,inundación y avenida torrencial,50,San Sebastián de Palmitas
+60. San Cristóbal,2007,7,inundación y avenida torrencial,60,San Cristóbal
+70. Altavista,2007,11,inundación y avenida torrencial,70,Altavista
+80. San Antonio de Prado,2007,2,inundación y avenida torrencial,80,San Antonio de Prado
+90. Santa Elena,2007,0,inundación y avenida torrencial,90,Santa Elena
+Total general,2007,253,inundación y avenida torrencial,,Total general
+01. Popular,2008,26,inundación y avenida torrencial,01,Popular
+02. Santa Cruz,2008,16,inundación y avenida torrencial,02,Santa Cruz
+03. Manrique,2008,20,inundación y avenida torrencial,03,Manrique
+04. Aranjuez,2008,32,inundación y avenida torrencial,04,Aranjuez
+05. Castilla,2008,4,inundación y avenida torrencial,05,Castilla
+06. 12 de Octubre,2008,18,inundación y avenida torrencial,06,Doce de Octubre
+07. Robledo,2008,56,inundación y avenida torrencial,07,Robledo
+08. Villa Hermosa,2008,30,inundación y avenida torrencial,08,Villa Hermosa
+09. Buenos Aires,2008,17,inundación y avenida torrencial,09,Buenos Aires
+10. La Candelaria,2008,7,inundación y avenida torrencial,10,La Candelaria
+11. Laureles Estadio,2008,7,inundación y avenida torrencial,11,Laureles-Estadio
+12. La América,2008,7,inundación y avenida torrencial,12,La América
+13. San Javier,2008,25,inundación y avenida torrencial,13,San Javier
+14. El Poblado,2008,14,inundación y avenida torrencial,14,El Poblado
+15. Guayabal,2008,4,inundación y avenida torrencial,15,Guayabal
+16. Belén,2008,15,inundación y avenida torrencial,16,Belén
+50. Palmitas,2008,1,inundación y avenida torrencial,50,San Sebastián de Palmitas
+60. San Cristóbal,2008,12,inundación y avenida torrencial,60,San Cristóbal
+70. Altavista,2008,9,inundación y avenida torrencial,70,Altavista
+80. San Antonio de Prado,2008,7,inundación y avenida torrencial,80,San Antonio de Prado
+90. Santa Elena,2008,0,inundación y avenida torrencial,90,Santa Elena
+Total general,2008,327,inundación y avenida torrencial,,Total general
+01. Popular,2009,19,inundación y avenida torrencial,01,Popular
+02. Santa Cruz,2009,11,inundación y avenida torrencial,02,Santa Cruz
+03. Manrique,2009,26,inundación y avenida torrencial,03,Manrique
+04. Aranjuez,2009,25,inundación y avenida torrencial,04,Aranjuez
+05. Castilla,2009,2,inundación y avenida torrencial,05,Castilla
+06. 12 de Octubre,2009,4,inundación y avenida torrencial,06,Doce de Octubre
+07. Robledo,2009,19,inundación y avenida torrencial,07,Robledo
+08. Villa Hermosa,2009,31,inundación y avenida torrencial,08,Villa Hermosa
+09. Buenos Aires,2009,14,inundación y avenida torrencial,09,Buenos Aires
+10. La Candelaria,2009,2,inundación y avenida torrencial,10,La Candelaria
+11. Laureles Estadio,2009,0,inundación y avenida torrencial,11,Laureles-Estadio
+12. La América,2009,1,inundación y avenida torrencial,12,La América
+13. San Javier,2009,13,inundación y avenida torrencial,13,San Javier
+14. El Poblado,2009,22,inundación y avenida torrencial,14,El Poblado
+15. Guayabal,2009,2,inundación y avenida torrencial,15,Guayabal
+16. Belén,2009,7,inundación y avenida torrencial,16,Belén
+50. Palmitas,2009,0,inundación y avenida torrencial,50,San Sebastián de Palmitas
+60. San Cristóbal,2009,7,inundación y avenida torrencial,60,San Cristóbal
+70. Altavista,2009,5,inundación y avenida torrencial,70,Altavista
+80. San Antonio de Prado,2009,6,inundación y avenida torrencial,80,San Antonio de Prado
+90. Santa Elena,2009,1,inundación y avenida torrencial,90,Santa Elena
+Total general,2009,217,inundación y avenida torrencial,,Total general
+01. Popular,2010,21,inundación y avenida torrencial,01,Popular
+02. Santa Cruz,2010,10,inundación y avenida torrencial,02,Santa Cruz
+03. Manrique,2010,18,inundación y avenida torrencial,03,Manrique
+04. Aranjuez,2010,8,inundación y avenida torrencial,04,Aranjuez
+05. Castilla,2010,10,inundación y avenida torrencial,05,Castilla
+06. 12 de Octubre,2010,11,inundación y avenida torrencial,06,Doce de Octubre
+07. Robledo,2010,13,inundación y avenida torrencial,07,Robledo
+08. Villa Hermosa,2010,19,inundación y avenida torrencial,08,Villa Hermosa
+09. Buenos Aires,2010,16,inundación y avenida torrencial,09,Buenos Aires
+10. La Candelaria,2010,4,inundación y avenida torrencial,10,La Candelaria
+11. Laureles Estadio,2010,2,inundación y avenida torrencial,11,Laureles-Estadio
+12. La América,2010,5,inundación y avenida torrencial,12,La América
+13. San Javier,2010,18,inundación y avenida torrencial,13,San Javier
+14. El Poblado,2010,11,inundación y avenida torrencial,14,El Poblado
+15. Guayabal,2010,1,inundación y avenida torrencial,15,Guayabal
+16. Belén,2010,7,inundación y avenida torrencial,16,Belén
+50. Palmitas,2010,1,inundación y avenida torrencial,50,San Sebastián de Palmitas
+60. San Cristóbal,2010,4,inundación y avenida torrencial,60,San Cristóbal
+70. Altavista,2010,12,inundación y avenida torrencial,70,Altavista
+80. San Antonio de Prado,2010,17,inundación y avenida torrencial,80,San Antonio de Prado
+90. Santa Elena,2010,1,inundación y avenida torrencial,90,Santa Elena
+Total general,2010,209,inundación y avenida torrencial,,Total general
+01. Popular,2011,27,inundación y avenida torrencial,01,Popular
+02. Santa Cruz,2011,8,inundación y avenida torrencial,02,Santa Cruz
+03. Manrique,2011,24,inundación y avenida torrencial,03,Manrique
+04. Aranjuez,2011,19,inundación y avenida torrencial,04,Aranjuez
+05. Castilla,2011,4,inundación y avenida torrencial,05,Castilla
+06. 12 de Octubre,2011,12,inundación y avenida torrencial,06,Doce de Octubre
+07. Robledo,2011,10,inundación y avenida torrencial,07,Robledo
+08. Villa Hermosa,2011,16,inundación y avenida torrencial,08,Villa Hermosa
+09. Buenos Aires,2011,7,inundación y avenida torrencial,09,Buenos Aires
+10. La Candelaria,2011,1,inundación y avenida torrencial,10,La Candelaria
+11. Laureles Estadio,2011,0,inundación y avenida torrencial,11,Laureles-Estadio
+12. La América,2011,3,inundación y avenida torrencial,12,La América
+13. San Javier,2011,14,inundación y avenida torrencial,13,San Javier
+14. El Poblado,2011,8,inundación y avenida torrencial,14,El Poblado
+15. Guayabal,2011,2,inundación y avenida torrencial,15,Guayabal
+16. Belén,2011,12,inundación y avenida torrencial,16,Belén
+50. Palmitas,2011,1,inundación y avenida torrencial,50,San Sebastián de Palmitas
+60. San Cristóbal,2011,4,inundación y avenida torrencial,60,San Cristóbal
+70. Altavista,2011,10,inundación y avenida torrencial,70,Altavista
+80. San Antonio de Prado,2011,3,inundación y avenida torrencial,80,San Antonio de Prado
+90. Santa Elena,2011,0,inundación y avenida torrencial,90,Santa Elena
+Total general,2011,185,inundación y avenida torrencial,,Total general
+01. Popular,2012,5,inundación y avenida torrencial,01,Popular
+02. Santa Cruz,2012,5,inundación y avenida torrencial,02,Santa Cruz
+03. Manrique,2012,9,inundación y avenida torrencial,03,Manrique
+04. Aranjuez,2012,5,inundación y avenida torrencial,04,Aranjuez
+05. Castilla,2012,5,inundación y avenida torrencial,05,Castilla
+06. 12 de Octubre,2012,4,inundación y avenida torrencial,06,Doce de Octubre
+07. Robledo,2012,5,inundación y avenida torrencial,07,Robledo
+08. Villa Hermosa,2012,9,inundación y avenida torrencial,08,Villa Hermosa
+09. Buenos Aires,2012,7,inundación y avenida torrencial,09,Buenos Aires
+10. La Candelaria,2012,2,inundación y avenida torrencial,10,La Candelaria
+11. Laureles Estadio,2012,1,inundación y avenida torrencial,11,Laureles-Estadio
+12. La América,2012,0,inundación y avenida torrencial,12,La América
+13. San Javier,2012,5,inundación y avenida torrencial,13,San Javier
+14. El Poblado,2012,5,inundación y avenida torrencial,14,El Poblado
+15. Guayabal,2012,0,inundación y avenida torrencial,15,Guayabal
+16. Belén,2012,5,inundación y avenida torrencial,16,Belén
+50. Palmitas,2012,0,inundación y avenida torrencial,50,San Sebastián de Palmitas
+60. San Cristóbal,2012,5,inundación y avenida torrencial,60,San Cristóbal
+70. Altavista,2012,4,inundación y avenida torrencial,70,Altavista
+80. San Antonio de Prado,2012,5,inundación y avenida torrencial,80,San Antonio de Prado
+90. Santa Elena,2012,0,inundación y avenida torrencial,90,Santa Elena
+Total general,2012,86,inundación y avenida torrencial,,Total general
+01. Popular,2013,6,inundación y avenida torrencial,01,Popular
+02. Santa Cruz,2013,6,inundación y avenida torrencial,02,Santa Cruz
+03. Manrique,2013,7,inundación y avenida torrencial,03,Manrique
+04. Aranjuez,2013,13,inundación y avenida torrencial,04,Aranjuez
+05. Castilla,2013,4,inundación y avenida torrencial,05,Castilla
+06. 12 de Octubre,2013,3,inundación y avenida torrencial,06,Doce de Octubre
+07. Robledo,2013,5,inundación y avenida torrencial,07,Robledo
+08. Villa Hermosa,2013,9,inundación y avenida torrencial,08,Villa Hermosa
+09. Buenos Aires,2013,4,inundación y avenida torrencial,09,Buenos Aires
+10. La Candelaria,2013,0,inundación y avenida torrencial,10,La Candelaria
+11. Laureles Estadio,2013,0,inundación y avenida torrencial,11,Laureles-Estadio
+12. La América,2013,1,inundación y avenida torrencial,12,La América
+13. San Javier,2013,6,inundación y avenida torrencial,13,San Javier
+14. El Poblado,2013,1,inundación y avenida torrencial,14,El Poblado
+15. Guayabal,2013,2,inundación y avenida torrencial,15,Guayabal
+16. Belén,2013,2,inundación y avenida torrencial,16,Belén
+50. Palmitas,2013,0,inundación y avenida torrencial,50,San Sebastián de Palmitas
+60. San Cristóbal,2013,3,inundación y avenida torrencial,60,San Cristóbal
+70. Altavista,2013,2,inundación y avenida torrencial,70,Altavista
+80. San Antonio de Prado,2013,5,inundación y avenida torrencial,80,San Antonio de Prado
+90. Santa Elena,2013,0,inundación y avenida torrencial,90,Santa Elena
+Total general,2013,79,inundación y avenida torrencial,,Total general
+01. Popular,2014,5,inundación y avenida torrencial,01,Popular
+02. Santa Cruz,2014,5,inundación y avenida torrencial,02,Santa Cruz
+03. Manrique,2014,4,inundación y avenida torrencial,03,Manrique
+04. Aranjuez,2014,3,inundación y avenida torrencial,04,Aranjuez
+05. Castilla,2014,7,inundación y avenida torrencial,05,Castilla
+06. 12 de Octubre,2014,8,inundación y avenida torrencial,06,Doce de Octubre
+07. Robledo,2014,6,inundación y avenida torrencial,07,Robledo
+08. Villa Hermosa,2014,3,inundación y avenida torrencial,08,Villa Hermosa
+09. Buenos Aires,2014,2,inundación y avenida torrencial,09,Buenos Aires
+10. La Candelaria,2014,1,inundación y avenida torrencial,10,La Candelaria
+11. Laureles Estadio,2014,0,inundación y avenida torrencial,11,Laureles-Estadio
+12. La América,2014,1,inundación y avenida torrencial,12,La América
+13. San Javier,2014,7,inundación y avenida torrencial,13,San Javier
+14. El Poblado,2014,0,inundación y avenida torrencial,14,El Poblado
+15. Guayabal,2014,0,inundación y avenida torrencial,15,Guayabal
+16. Belén,2014,0,inundación y avenida torrencial,16,Belén
+50. Palmitas,2014,0,inundación y avenida torrencial,50,San Sebastián de Palmitas
+60. San Cristóbal,2014,5,inundación y avenida torrencial,60,San Cristóbal
+70. Altavista,2014,1,inundación y avenida torrencial,70,Altavista
+80. San Antonio de Prado,2014,1,inundación y avenida torrencial,80,San Antonio de Prado
+90. Santa Elena,2014,1,inundación y avenida torrencial,90,Santa Elena
+Total general,2014,60,inundación y avenida torrencial,,Total general
+01. Popular,2015,1,inundación y avenida torrencial,01,Popular
+02. Santa Cruz,2015,3,inundación y avenida torrencial,02,Santa Cruz
+03. Manrique,2015,3,inundación y avenida torrencial,03,Manrique
+04. Aranjuez,2015,0,inundación y avenida torrencial,04,Aranjuez
+05. Castilla,2015,1,inundación y avenida torrencial,05,Castilla
+06. 12 de Octubre,2015,3,inundación y avenida torrencial,06,Doce de Octubre
+07. Robledo,2015,1,inundación y avenida torrencial,07,Robledo
+08. Villa Hermosa,2015,3,inundación y avenida torrencial,08,Villa Hermosa
+09. Buenos Aires,2015,4,inundación y avenida torrencial,09,Buenos Aires
+10. La Candelaria,2015,1,inundación y avenida torrencial,10,La Candelaria
+11. Laureles Estadio,2015,0,inundación y avenida torrencial,11,Laureles-Estadio
+12. La América,2015,0,inundación y avenida torrencial,12,La América
+13. San Javier,2015,1,inundación y avenida torrencial,13,San Javier
+14. El Poblado,2015,0,inundación y avenida torrencial,14,El Poblado
+15. Guayabal,2015,0,inundación y avenida torrencial,15,Guayabal
+16. Belén,2015,1,inundación y avenida torrencial,16,Belén
+50. Palmitas,2015,0,inundación y avenida torrencial,50,San Sebastián de Palmitas
+60. San Cristóbal,2015,0,inundación y avenida torrencial,60,San Cristóbal
+70. Altavista,2015,0,inundación y avenida torrencial,70,Altavista
+80. San Antonio de Prado,2015,2,inundación y avenida torrencial,80,San Antonio de Prado
+90. Santa Elena,2015,0,inundación y avenida torrencial,90,Santa Elena
+Total general,2015,24,inundación y avenida torrencial,,Total general
+01. Popular,2016,4,inundación y avenida torrencial,01,Popular
+02. Santa Cruz,2016,2,inundación y avenida torrencial,02,Santa Cruz
+03. Manrique,2016,2,inundación y avenida torrencial,03,Manrique
+04. Aranjuez,2016,6,inundación y avenida torrencial,04,Aranjuez
+05. Castilla,2016,4,inundación y avenida torrencial,05,Castilla
+06. 12 de Octubre,2016,2,inundación y avenida torrencial,06,Doce de Octubre
+07. Robledo,2016,7,inundación y avenida torrencial,07,Robledo
+08. Villa Hermosa,2016,3,inundación y avenida torrencial,08,Villa Hermosa
+09. Buenos Aires,2016,1,inundación y avenida torrencial,09,Buenos Aires
+10. La Candelaria,2016,1,inundación y avenida torrencial,10,La Candelaria
+11. Laureles Estadio,2016,0,inundación y avenida torrencial,11,Laureles-Estadio
+12. La América,2016,2,inundación y avenida torrencial,12,La América
+13. San Javier,2016,4,inundación y avenida torrencial,13,San Javier
+14. El Poblado,2016,2,inundación y avenida torrencial,14,El Poblado
+15. Guayabal,2016,0,inundación y avenida torrencial,15,Guayabal
+16. Belén,2016,1,inundación y avenida torrencial,16,Belén
+50. Palmitas,2016,0,inundación y avenida torrencial,50,San Sebastián de Palmitas
+60. San Cristóbal,2016,4,inundación y avenida torrencial,60,San Cristóbal
+70. Altavista,2016,0,inundación y avenida torrencial,70,Altavista
+80. San Antonio de Prado,2016,3,inundación y avenida torrencial,80,San Antonio de Prado
+90. Santa Elena,2016,1,inundación y avenida torrencial,90,Santa Elena
+Total general,2016,49,inundación y avenida torrencial,,Total general
+01. Popular,2017,0,inundación y avenida torrencial,01,Popular
+02. Santa Cruz,2017,1,inundación y avenida torrencial,02,Santa Cruz
+03. Manrique,2017,5,inundación y avenida torrencial,03,Manrique
+04. Aranjuez,2017,6,inundación y avenida torrencial,04,Aranjuez
+05. Castilla,2017,1,inundación y avenida torrencial,05,Castilla
+06. 12 de Octubre,2017,0,inundación y avenida torrencial,06,Doce de Octubre
+07. Robledo,2017,4,inundación y avenida torrencial,07,Robledo
+08. Villa Hermosa,2017,0,inundación y avenida torrencial,08,Villa Hermosa
+09. Buenos Aires,2017,5,inundación y avenida torrencial,09,Buenos Aires
+10. La Candelaria,2017,2,inundación y avenida torrencial,10,La Candelaria
+11. Laureles Estadio,2017,0,inundación y avenida torrencial,11,Laureles-Estadio
+12. La América,2017,1,inundación y avenida torrencial,12,La América
+13. San Javier,2017,2,inundación y avenida torrencial,13,San Javier
+14. El Poblado,2017,0,inundación y avenida torrencial,14,El Poblado
+15. Guayabal,2017,0,inundación y avenida torrencial,15,Guayabal
+16. Belén,2017,1,inundación y avenida torrencial,16,Belén
+50. Palmitas,2017,0,inundación y avenida torrencial,50,San Sebastián de Palmitas
+60. San Cristóbal,2017,0,inundación y avenida torrencial,60,San Cristóbal
+70. Altavista,2017,0,inundación y avenida torrencial,70,Altavista
+80. San Antonio de Prado,2017,3,inundación y avenida torrencial,80,San Antonio de Prado
+90. Santa Elena,2017,1,inundación y avenida torrencial,90,Santa Elena
+Total general,2017,32,inundación y avenida torrencial,,Total general
+01. Popular,2018,2,inundación y avenida torrencial,01,Popular
+02. Santa Cruz,2018,0,inundación y avenida torrencial,02,Santa Cruz
+03. Manrique,2018,5,inundación y avenida torrencial,03,Manrique
+04. Aranjuez,2018,3,inundación y avenida torrencial,04,Aranjuez
+05. Castilla,2018,1,inundación y avenida torrencial,05,Castilla
+06. 12 de Octubre,2018,2,inundación y avenida torrencial,06,Doce de Octubre
+07. Robledo,2018,6,inundación y avenida torrencial,07,Robledo
+08. Villa Hermosa,2018,1,inundación y avenida torrencial,08,Villa Hermosa
+09. Buenos Aires,2018,0,inundación y avenida torrencial,09,Buenos Aires
+10. La Candelaria,2018,0,inundación y avenida torrencial,10,La Candelaria
+11. Laureles Estadio,2018,0,inundación y avenida torrencial,11,Laureles-Estadio
+12. La América,2018,1,inundación y avenida torrencial,12,La América
+13. San Javier,2018,5,inundación y avenida torrencial,13,San Javier
+14. El Poblado,2018,1,inundación y avenida torrencial,14,El Poblado
+15. Guayabal,2018,1,inundación y avenida torrencial,15,Guayabal
+16. Belén,2018,0,inundación y avenida torrencial,16,Belén
+50. Palmitas,2018,0,inundación y avenida torrencial,50,San Sebastián de Palmitas
+60. San Cristóbal,2018,2,inundación y avenida torrencial,60,San Cristóbal
+70. Altavista,2018,1,inundación y avenida torrencial,70,Altavista
+80. San Antonio de Prado,2018,4,inundación y avenida torrencial,80,San Antonio de Prado
+90. Santa Elena,2018,0,inundación y avenida torrencial,90,Santa Elena
+Total general,2018,35,inundación y avenida torrencial,,Total general
+01. Popular,2016,2,incendio de cobertura vegetal,01,Popular
+02. Santa Cruz,2016,13,incendio de cobertura vegetal,02,Santa Cruz
+03. Manrique,2016,8,incendio de cobertura vegetal,03,Manrique
+04. Aranjuez,2016,1,incendio de cobertura vegetal,04,Aranjuez
+05. Castilla,2016,19,incendio de cobertura vegetal,05,Castilla
+06. 12 de Octubre,2016,53,incendio de cobertura vegetal,06,Doce de Octubre
+07. Robledo,2016,10,incendio de cobertura vegetal,07,Robledo
+08. Villa Hermosa,2016,21,incendio de cobertura vegetal,08,Villa Hermosa
+09. Buenos Aires,2016,62,incendio de cobertura vegetal,09,Buenos Aires
+10. La Candelaria,2016,3,incendio de cobertura vegetal,10,La Candelaria
+11. Laureles Estadio,2016,18,incendio de cobertura vegetal,11,Laureles-Estadio
+12. La América,2016,10,incendio de cobertura vegetal,12,La América
+13. San Javier,2016,20,incendio de cobertura vegetal,13,San Javier
+14. El Poblado,2016,5,incendio de cobertura vegetal,14,El Poblado
+15. Guayabal,2016,86,incendio de cobertura vegetal,15,Guayabal
+16. Belén,2016,30,incendio de cobertura vegetal,16,Belén
+50. Palmitas,2016,24,incendio de cobertura vegetal,50,San Sebastián de Palmitas
+60. San Cristóbal,2016,9,incendio de cobertura vegetal,60,San Cristóbal
+70. Altavista,2016,20,incendio de cobertura vegetal,70,Altavista
+80. San Antonio de Prado,2016,51,incendio de cobertura vegetal,80,San Antonio de Prado
+90. Santa Elena,2016,53,incendio de cobertura vegetal,90,Santa Elena
+Total general,2016,536,incendio de cobertura vegetal,,Total general
+01. Popular,2017,3,incendio de cobertura vegetal,01,Popular
+02. Santa Cruz,2017,2,incendio de cobertura vegetal,02,Santa Cruz
+03. Manrique,2017,3,incendio de cobertura vegetal,03,Manrique
+04. Aranjuez,2017,0,incendio de cobertura vegetal,04,Aranjuez
+05. Castilla,2017,3,incendio de cobertura vegetal,05,Castilla
+06. 12 de Octubre,2017,23,incendio de cobertura vegetal,06,Doce de Octubre
+07. Robledo,2017,5,incendio de cobertura vegetal,07,Robledo
+08. Villa Hermosa,2017,9,incendio de cobertura vegetal,08,Villa Hermosa
+09. Buenos Aires,2017,23,incendio de cobertura vegetal,09,Buenos Aires
+10. La Candelaria,2017,2,incendio de cobertura vegetal,10,La Candelaria
+11. Laureles Estadio,2017,5,incendio de cobertura vegetal,11,Laureles-Estadio
+12. La América,2017,3,incendio de cobertura vegetal,12,La América
+13. San Javier,2017,5,incendio de cobertura vegetal,13,San Javier
+14. El Poblado,2017,6,incendio de cobertura vegetal,14,El Poblado
+15. Guayabal,2017,27,incendio de cobertura vegetal,15,Guayabal
+16. Belén,2017,14,incendio de cobertura vegetal,16,Belén
+50. Palmitas,2017,6,incendio de cobertura vegetal,50,San Sebastián de Palmitas
+60. San Cristóbal,2017,1,incendio de cobertura vegetal,60,San Cristóbal
+70. Altavista,2017,6,incendio de cobertura vegetal,70,Altavista
+80. San Antonio de Prado,2017,24,incendio de cobertura vegetal,80,San Antonio de Prado
+90. Santa Elena,2017,30,incendio de cobertura vegetal,90,Santa Elena
+Total general,2017,214,incendio de cobertura vegetal,,Total general
+01. Popular,2018,1,incendio de cobertura vegetal,01,Popular
+02. Santa Cruz,2018,3,incendio de cobertura vegetal,02,Santa Cruz
+03. Manrique,2018,4,incendio de cobertura vegetal,03,Manrique
+04. Aranjuez,2018,0,incendio de cobertura vegetal,04,Aranjuez
+05. Castilla,2018,9,incendio de cobertura vegetal,05,Castilla
+06. 12 de Octubre,2018,33,incendio de cobertura vegetal,06,Doce de Octubre
+07. Robledo,2018,2,incendio de cobertura vegetal,07,Robledo
+08. Villa Hermosa,2018,7,incendio de cobertura vegetal,08,Villa Hermosa
+09. Buenos Aires,2018,23,incendio de cobertura vegetal,09,Buenos Aires
+10. La Candelaria,2018,3,incendio de cobertura vegetal,10,La Candelaria
+11. Laureles Estadio,2018,9,incendio de cobertura vegetal,11,Laureles-Estadio
+12. La América,2018,2,incendio de cobertura vegetal,12,La América
+13. San Javier,2018,3,incendio de cobertura vegetal,13,San Javier
+14. El Poblado,2018,5,incendio de cobertura vegetal,14,El Poblado
+15. Guayabal,2018,22,incendio de cobertura vegetal,15,Guayabal
+16. Belén,2018,22,incendio de cobertura vegetal,16,Belén
+50. Palmitas,2018,9,incendio de cobertura vegetal,50,San Sebastián de Palmitas
+60. San Cristóbal,2018,4,incendio de cobertura vegetal,60,San Cristóbal
+70. Altavista,2018,3,incendio de cobertura vegetal,70,Altavista
+80. San Antonio de Prado,2018,38,incendio de cobertura vegetal,80,San Antonio de Prado
+90. Santa Elena,2018,15,incendio de cobertura vegetal,90,Santa Elena
+Total general,2018,226,incendio de cobertura vegetal,,Total general

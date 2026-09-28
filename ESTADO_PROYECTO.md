@@ -1,6 +1,6 @@
 # Estado del acompañamiento PAC 2026
 
-Actualizado: 2026-09-25.
+Actualizado: 2026-09-28.
 
 ## Relieve: DTM LiDAR oficial localizado
 
@@ -96,11 +96,22 @@ Redactados con textos, figuras y Word (carpeta `P1_08_1_AMENAZAS/`): 8.1.2 (borr
 
 - **Guía de redacción vigente:** [GUIA_REDACCION_PAC_2026.md](GUIA_REDACCION_PAC_2026.md). Los textos se escriben sobre la ciudad y no sobre los estudios; las limitaciones van aparte.
 - **Base espacial:** POT 2026 (versión de julio de 2026, radicada ante el Concejo; adopción por confirmar) como referencia principal y POT 2014 como continuidad. Los mapas de amenaza de 2026 se extrajeron de láminas en PDF; no son capas oficiales y sus pies de figura lo dicen.
-- **Referencias:** [INDICE_REFERENCIAS_7.1_8.1.md](INDICE_REFERENCIAS_7.1_8.1.md) (22 referencias; los archivos están en la carpeta `PAC_2026_Referencias_7.1_8.1` de Descargas, por tamaño no se versionan).
+- **Referencias:** [INDICE_REFERENCIAS.md](INDICE_REFERENCIAS.md) (38 referencias, cubre 7.1, 8.1, 8.5 y 8.6; los archivos están en la carpeta `PAC_2026_Referencias_7.1_8.1` de Descargas, por tamaño no se versionan).
 - **Sin mapa de incendios:** falta la ubicación de los 1.357 eventos (Universidad de Antioquia/SIATA) o la capa del DAGRD (requiere autorización).
 - **Pendientes de texto:** integrar en los archivos los párrafos reescritos de 8.1.5.1, 8.1.5.2, 8.1.6.2 y 8.1.3 (hoy solo en la conversación); leer el Tomo III del plan de salud (plan estratégico de acción); reducir 8.1.3, 8.1.7 y 8.1.9 a unas 500 palabras.
-- **Datos por conseguir para 8.1.7:** series observadas de temperatura del aire (SIATA o IDEAM) y lectura de Soto-Estrada (2019), Landsat 1986–2016.
+- **Datos por conseguir para 8.1.7:** series observadas de temperatura del aire (SIATA o IDEAM) y lectura de Soto-Estrada (2019), Landsat 1986–2016. Parcialmente resuelto en 8.5 (ver abajo): serie horaria del IDEAM en el Aeropuerto Olaya Herrera, no en 8.1.7; falta decidir si se traslada o se referencia cruzado.
 
-## Siguiente numeral: 8.5 Cuantificación de los eventos
+## Numeral 8.5 — estado al 2026-09-27
 
-Series históricas de eventos, magnitud y pérdidas económicas y humanas, con la estructura de amenazas de 8.1. Fuentes identificadas en el documento maestro: SIRMED (eventos históricos 1880–2025 e histórico de emergencias con descarga en CSV), Geohazards (5.246 movimientos en masa de Antioquia, 1871–2026), Atlas de riesgo de Colombia (UNGRD e INGENIAR) y MEData. Además la hemeroteca del proyecto (`PAC_2026_hemeroteca_extendida.xlsm`, 34 noticias y 56 referencias técnicas) y las tablas de eventos del DAGRD por comuna, 2005–2018, del Tomo I del plan de salud. Responsables según el documento maestro: Juliana y Marcos.
+Cuantificación de los eventos (tendencias, magnitud, pérdidas económicas y humanas), con la estructura de amenazas de 8.1. Carpeta `P1_08_5_CUANTIFICACION_EVENTOS/` (CODIGO, DATOS_PREPARADOS, FIGURAS, TEXTOS). Word listo para pegar en Descargas y en Drive (15 páginas, 10 figuras, 1 tabla; no versionado en GitHub por ser binario).
+
+- **Fuentes.** SIRMED (histórico de emergencias completo desde 2021, 44.317 eventos vía consulta por año al servicio propio del portal), Geohazards (1.082 movimientos en masa de Medellín, 1871–2026), DesInventar Sendai (737 eventos, 1921–2017), UNGRD (96 eventos únicos, 2019–2022) y las tablas del DAGRD por comuna (2005–2018) del Tomo I del plan de salud.
+- **El Niño y La Niña.** Clasificación por episodios de la NOAA (mínimo cinco meses consecutivos, índice oceánico de tres meses en ±0,5), no por año calendario. Los años de La Niña concentran 52 % de los movimientos en masa del DAGRD (2005–2018); los incendios pasan de 5/mes en La Niña a 42/mes en El Niño.
+- **Temperatura, Aeropuerto Olaya Herrera (IDEAM 27015330).** Única serie horaria abierta y larga (diciembre de 2014 a septiembre de 2026), con control de calidad propio contra picos falsos del sensor desde 2024. Las normales oficiales dan +0,25 °C/década en la mínima y +0,15 °C/década en la máxima (1971–2000 a 1991–2020); una regresión que descuenta la fase de El Niño y La Niña confirma un aumento de fondo de ~0,3 °C/década en ambas, una vez se explica la caída aparente entre 2015–2020 y 2021–2026 por el cambio en la mezcla de fases de esos dos bloques.
+- **Figura de Aristizábal et al. (2026).** Su Figura 3 (precipitación y deslizamientos por fase de El Niño y La Niña, Valle de Aburrá, 1950–2023) se incluyó con los rótulos traducidos al español, sin tocar datos ni escalas, por instrucción explícita del usuario. Licencia CC BY 4.0.
+- **Brechas:** sin serie de pérdidas económicas; SIRMED y DAGRD no son encadenables (se comparan patrones, no cifras); el número de eventos atendidos mide demanda de atención, no gravedad ni riesgo; la serie propia de temperatura (once años) es corta para una tendencia sólida.
+- Detalle completo en `BITACORA.md`, entrada del 2026-09-26/27.
+
+## Numeral 8.6 — estado al 2026-09-28
+
+Subcapítulo de cierre del capítulo 8 (Análisis de riesgos y vulnerabilidades): "El Niño y La Niña como factor transversal del riesgo climático". Carpeta `P1_08_6_ENSO_TRANSVERSAL/TEXTOS/`, sin figuras ni datos propios. Sintetiza 8.1–8.5 y suma cuatro fuentes: Bedoya-Soto, Aristizábal, Carmona y Poveda (2019) sobre el ciclo diurno de la lluvia; IPCC AR6 (2021) sobre El Niño y La Niña como ciclo natural amplificado por el cambio climático; una estimación de prensa del Banco de la República sobre inflación (no verificada contra informe primario); y el Marco de Sendai (UNDRR, 2015) sobre entender el riesgo antes de que se materialice. Detalle completo en `BITACORA.md`, entrada del 2026-09-28.
