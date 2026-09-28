@@ -145,3 +145,10 @@ Se inició la descarga directa en Drive de 984 recortes mensuales CHELSA v2.1 (`
 - Se agregaron dos columnas de valoración que no estaban en el índice original: veredicto de relevancia y producto del contrato (Producto 1 para todas las filas, por tratarse de C1).
 - Anexo C (mecanismos e instrumentos de planeación) y Anexo D (hallazgos, capacidades y desafíos) no se abordaron: C pertenece a otro dominio (gobernanza del PAC, no datos climáticos) y D exige síntesis de todo el capítulo 8, no solo de los numerales trabajados aquí (8.1, 8.5, 8.6).
 - Se evaluó y descartó actualizar la carpeta `PAC_2026_MED_ACOMP_IA` (bibliografía de 8.1 en `source-data.json`/`build.mjs`): es un espejo local de un proyecto de ChatGPT (`@oai/artifact-tool`, librería privada de OpenAI, según su propio `AGENTS.md`), no se puede ejecutar desde este entorno y su alcance está cerrado solo a 8.1.
+
+## 2026-09-28 — Respaldo del documento maestro y CONTEXTO_Y_RESPALDOS.md
+
+- A pedido del usuario ("si mañana pierdo este PC, ¿con GitHub es suficiente?"): se confirmó técnicamente que `G:\` es Google Drive File Stream real (proceso `GoogleDriveFS.exe`, cuenta marcosatho@gmail.com), no un disco local; todo lo que ya vivía bajo `G:\Mi unidad\` estaba a salvo. Lo que no lo estaba: el documento maestro, la carpeta plana de referencias completa y dos paquetes grandes (islas de calor, geodatabase de la UdeA), que solo existían en Descargas.
+- Se copiaron los cuatro a Drive y se verificaron por tamaño exacto contra el original (documento maestro, versión "(2)"; carpeta de referencias completa, 158 archivos; los dos zip). Los originales de Descargas no se tocaron.
+- Se agregó `LEEME_DESCARGAS.md` a `P1_08_5_CUANTIFICACION_EVENTOS/` (antes solo estaba en Drive y Descargas, no en este repositorio).
+- Se creó `CONTEXTO_Y_RESPALDOS.md`: documento único que explica dónde vive cada cosa, qué tan seguro está, y el principio de que si un dato crudo no quedó copiado, se recupera volviendo a correr la receta de descarga documentada, no copiando archivos pesados a mano.
