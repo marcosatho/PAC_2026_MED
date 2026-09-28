@@ -112,6 +112,10 @@ Cuantificación de los eventos (tendencias, magnitud, pérdidas económicas y hu
 - **Brechas:** sin serie de pérdidas económicas; SIRMED y DAGRD no son encadenables (se comparan patrones, no cifras); el número de eventos atendidos mide demanda de atención, no gravedad ni riesgo; la serie propia de temperatura (once años) es corta para una tendencia sólida.
 - Detalle completo en `BITACORA.md`, entrada del 2026-09-26/27.
 
+## Anexos A y B — estado al 2026-09-28
+
+Numeral 15 (Anexos) del docx maestro: A (fuentes y trazabilidad) y B (variables e indicadores) construidos en `Anexo_A_B_PAC_2026.xlsx` (`P1_ANEXOS/` en este repositorio), a partir de `INDICE_REFERENCIAS.md`. Texto de enlace listo para pegar en `P1_ANEXOS/texto_anexos_A_B.md`. Anexo C y Anexo D siguen vacíos (fuera del alcance de este trabajo; ver `BITACORA.md`).
+
 ## Numeral 8.6 — estado al 2026-09-28
 
 Subcapítulo de cierre del capítulo 8 (Análisis de riesgos y vulnerabilidades): "El Niño y La Niña como factor transversal del riesgo climático". Carpeta `P1_08_6_ENSO_TRANSVERSAL/TEXTOS/`, sin figuras ni datos propios. Sintetiza 8.1–8.5 y suma cuatro fuentes: Bedoya-Soto, Aristizábal, Carmona y Poveda (2019) sobre el ciclo diurno de la lluvia; IPCC AR6 (2021) sobre El Niño y La Niña como ciclo natural amplificado por el cambio climático; una estimación de prensa del Banco de la República sobre inflación (no verificada contra informe primario); y el Marco de Sendai (UNDRR, 2015) sobre entender el riesgo antes de que se materialice. Detalle completo en `BITACORA.md`, entrada del 2026-09-28.
