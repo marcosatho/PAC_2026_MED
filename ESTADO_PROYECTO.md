@@ -112,6 +112,12 @@ Cuantificación de los eventos (tendencias, magnitud, pérdidas económicas y hu
 - **Brechas:** sin serie de pérdidas económicas; SIRMED y DAGRD no son encadenables (se comparan patrones, no cifras); el número de eventos atendidos mide demanda de atención, no gravedad ni riesgo; la serie propia de temperatura (once años) es corta para una tendencia sólida.
 - Detalle completo en `BITACORA.md`, entrada del 2026-09-26/27.
 
+## Numerales 8.3 y 8.4 — estado al 2026-09-28
+
+Texto listo para pegar en `P1_08_3_8_4_CAPACIDAD_PRIORIZACION/TEXTOS/texto_8_3_8_4.md`. 8.3 (Capacidad adaptativa) suma a lo ya escrito (remisión a 6.5 y al numeral 10) la capacidad institucional específica frente a los eventos de 8.1-8.5 (DAGRD/SIRMED, SIATA). 8.4 (Comunidades y territorios prioritarios) cruza amenaza (8.1, 8.5) con sensibilidad (8.2, IMCV y déficit habitacional): Popular queda sustentada en las cuatro listas revisadas; la referencia preliminar de comunas 1, 3 y 8 queda solo parcialmente sustentada, y San Javier y Santa Cruz aparecen con tanto o más sustento que Manrique — decisión pendiente del equipo. Sin territorializar los 8 grupos poblacionales prioritarios de 6.1 (dato no disponible) ni la tabla completa del Índice de Calidad de Vida por comuna (portal bloqueó la descarga).
+
+**Corrección de proceso:** el script que elegía "el docx maestro más reciente" ordenaba alfabéticamente, no por fecha, y leía por error la versión del 20 de septiembre en vez de la del 26. Con eso se subestimó el avance real de 6, 7.2-7.5 y 10 en una revisión anterior. Corregido: seleccionar siempre por fecha de modificación.
+
 ## Anexos A y B — estado al 2026-09-28
 
 Numeral 15 (Anexos) del docx maestro: A (fuentes y trazabilidad) y B (variables e indicadores) construidos en `Anexo_A_B_PAC_2026.xlsx` (`P1_ANEXOS/` en este repositorio), a partir de `INDICE_REFERENCIAS.md`. Texto de enlace listo para pegar en `P1_ANEXOS/texto_anexos_A_B.md`. Anexo C y Anexo D siguen vacíos (fuera del alcance de este trabajo; ver `BITACORA.md`).
