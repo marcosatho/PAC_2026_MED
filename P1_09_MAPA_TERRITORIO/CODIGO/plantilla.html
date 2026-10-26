@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa del territorio · Base de variables PAC</title>
+<!--
+  PESTAÑA 6 DE LA BASE DE VARIABLES PAC (v1) · «Mapa del territorio»
+  Esta página usa el mismo sistema de diseño del tablero del Producto 9 (variables CSS, pestañas, «partes», KPI, notas).
+  Está armada en bloques para pegarla como sexta pestaña del tablero:
+    1) CSS del módulo: todo lo que empieza por «#t6» o por «.m6-» (bloque «ESTILOS DEL MÓDULO 6»).
+    2) HTML del módulo: la <section class="tab on" id="t6"> (bloque «MÓDULO 6»).
+    3) JS del módulo: la función PAC_MAPA (bloque «SCRIPT DEL MÓDULO 6»); al cambiar a la pestaña se llama PAC_MAPA.show().
+    4) Datos: la constante DATA_M6 (capas ya simplificadas para web) y Leaflet 1.9.4 (incluido más abajo).
+  En el tablero habría que añadir el botón <button role="tab" data-t="t6"><b>6</b>Mapa del territorio</button> a la barra de pestañas.
+-->
+<style>
+:root{
+  color-scheme:light;
+  --bg:#F4F5F3;--surface:#FCFCFB;--ink:#0F1A15;--ink2:#48534D;--muted:#6A746E;--line:#DFE4E1;--brand:#1E463D;--brand2:#2E5C50;--chip:#EDF1EF;
+  --s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;
+  --o1:#86b6ef;--o2:#2a78d6;--o3:#104281;
+  --good:#0ca30c;--warn:#fab219;--serious:#ec835a;--crit:#d03b3b;--none:#E4E8E6;--future:#F0F2F1;
+}
+@media (prefers-color-scheme: dark){:root:where(:not([data-theme="light"])){
+  color-scheme:dark;
+  --bg:#121412;--surface:#1a1a19;--ink:#F2F4F2;--ink2:#C3C8C4;--muted:#99A29D;--line:#2E3431;--brand:#8CCBB4;--brand2:#A9D8C6;--chip:#252A27;
+  --s1:#3987e5;--s2:#d95926;--s3:#199e70;--o1:#184f95;--o2:#3987e5;--o3:#9ec5f4;--none:#2E3431;--future:#202421;}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#121412;--surface:#1a1a19;--ink:#F2F4F2;--ink2:#C3C8C4;--muted:#99A29D;--line:#2E3431;--brand:#8CCBB4;--brand2:#A9D8C6;--chip:#252A27;
+  --s1:#3987e5;--s2:#d95926;--s3:#199e70;--o1:#184f95;--o2:#3987e5;--o3:#9ec5f4;--none:#2E3431;--future:#202421;}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 "Segoe UI",Calibri,system-ui,-apple-system,sans-serif}
+.wrap{max-width:1240px;margin:0 auto;padding:0 16px}
+header.top{background:var(--surface);border-bottom:1px solid var(--line)}
+header.top .wrap{padding-top:18px;padding-bottom:0}
+h1{margin:0;font-size:22px;color:var(--brand);line-height:1.25}
+.sub{color:var(--muted);font-size:13px;margin-top:4px}
+.tools{float:right;display:flex;gap:6px}
+.btn{background:var(--surface);color:var(--ink2);border:1px solid var(--line);border-radius:6px;padding:5px 10px;cursor:pointer;font:inherit;font-size:12.5px}
+.btn:hover{border-color:var(--brand2);color:var(--brand)}
+.btn[aria-pressed="true"]{background:var(--brand);color:var(--surface);border-color:var(--brand)}
+nav.tabs{display:flex;gap:2px;margin-top:14px;overflow-x:auto;scrollbar-width:thin}
+nav.tabs button{background:none;border:0;border-bottom:3px solid transparent;padding:10px 14px;font:inherit;font-size:14px;color:var(--muted);cursor:pointer;white-space:nowrap}
+nav.tabs button b{display:inline-block;min-width:20px;height:20px;border-radius:10px;background:var(--chip);color:var(--ink2);font-size:12px;text-align:center;line-height:20px;margin-right:6px}
+nav.tabs button[aria-selected="true"]{color:var(--brand);border-bottom-color:var(--brand);font-weight:600}
+nav.tabs button[aria-selected="true"] b{background:var(--brand);color:var(--surface)}
+main{padding:20px 0 60px}
+.tab{display:none}.tab.on{display:block}
+.part{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px 22px 18px;margin-bottom:18px}
+.part .n{font-size:12px;font-weight:700;color:var(--brand2);letter-spacing:.04em}
+.part h2{margin:2px 0 6px;font-size:19px;color:var(--ink);line-height:1.3}
+.part .msg{font-size:15.5px;color:var(--ink2);margin:0 0 14px;max-width:900px}
+.part ul.pts{margin:0 0 14px;padding-left:20px;max-width:920px}
+.part ul.pts li{margin:5px 0}
+.part ul.pts li b{color:var(--ink)}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:start}
+@media (max-width:860px){.cols{grid-template-columns:minmax(0,1fr)}}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin:4px 0 16px}
+.kpi{border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--surface)}
+.kpi b{display:block;font-size:28px;line-height:1.1;color:var(--ink)}
+.kpi span{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}
+.kpi.bad b{color:var(--crit)}
+.note{color:var(--muted);font-size:12.5px;margin:8px 0 0}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink2);margin:6px 0 10px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 10px}
+select,input[type=search]{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:6px 8px;font:inherit;font-size:13px;max-width:100%}
+.scroll{overflow-x:auto}
+table.t{width:100%;border-collapse:collapse;font-size:13px}
+table.t th{text-align:left;color:var(--muted);font-weight:600;font-size:12px;border-bottom:1px solid var(--line);padding:6px 8px;position:sticky;top:0;background:var(--surface)}
+table.t td{border-bottom:1px solid var(--line);padding:7px 8px;vertical-align:top}
+table.t td.num{text-align:right;font-variant-numeric:tabular-nums}
+.maxh{max-height:560px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+.tag{display:inline-block;border-radius:4px;padding:1px 7px;font-size:11.5px;background:var(--chip);color:var(--ink2);white-space:nowrap}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:12px}
+.card{border:1px solid var(--line);border-radius:10px;padding:14px;background:var(--surface)}
+.card h3{margin:0 0 6px;font-size:14.5px;color:var(--brand)}
+.card p{margin:0 0 6px;font-size:13px;color:var(--ink2)}
+.banner{border:1px solid var(--serious);background:color-mix(in srgb,var(--serious) 12%,var(--surface));border-radius:10px;padding:12px 14px;margin-bottom:16px;font-size:13.5px}
+footer{color:var(--muted);font-size:12px;padding:6px 0 40px}
+@media print{nav.tabs,.tools{display:none}.tab{display:block}.part{break-inside:avoid}}
+
+/* ======================= ESTILOS DEL MÓDULO 6 (mapa) ======================= */
+#t6 .m6-grid{display:grid;grid-template-columns:minmax(0,1fr) 336px;gap:16px;align-items:start}
+@media (max-width:1000px){#t6 .m6-grid{grid-template-columns:minmax(0,1fr)}}
+#t6 #m6-map{height:740px;border:1px solid var(--line);border-radius:10px;background:var(--chip);z-index:0}
+@media (max-width:1000px){#t6 #m6-map{height:520px}}
+#t6 .m6-panel{border:1px solid var(--line);border-radius:10px;padding:14px;background:var(--surface);font-size:13px;max-height:740px;overflow-y:auto}
+@media (max-width:1000px){#t6 .m6-panel{max-height:none}}
+#t6 .yr{color:var(--muted);font-weight:400;font-size:.82em;white-space:nowrap}
+#t6 .m6-hz{display:grid;grid-template-columns:minmax(0,1fr) 76px;gap:8px;align-items:center}
+#t6 .m6-hz input[type=range]{width:100%}
+#t6 .lg{display:grid;grid-template-columns:18px minmax(0,1fr);gap:8px;margin:6px 0;align-items:start;color:var(--ink2);font-size:12.5px}
+#t6 .lg i{width:16px;height:12px;border-radius:2px;display:inline-block;border:1px solid rgba(0,0,0,.18);margin-top:3px}
+#t6 .lg small{display:block;color:var(--muted);font-size:11.5px;line-height:1.35}
+#t6 .lg-t{font-weight:600;margin:10px 0 2px;color:var(--ink)}
+#t6 .lg-t:first-child{margin-top:0}
+#t6 .m6-panel h3{margin:14px 0 6px;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700;border-top:1px solid var(--line);padding-top:10px}
+#t6 .m6-panel h3:first-child{margin-top:0;border-top:0;padding-top:0}
+#t6 .m6-panel label.r{display:flex;gap:7px;align-items:flex-start;margin:4px 0;color:var(--ink2);cursor:pointer}
+#t6 .m6-panel label.r input{margin-top:3px}
+#t6 .m6-panel .op{display:flex;gap:8px;align-items:center;margin:6px 0 2px;color:var(--muted);font-size:12px}
+#t6 .m6-panel .op input{flex:1}
+#t6 .m6-leg{display:grid;gap:3px;margin:4px 0 6px;font-size:12.5px;color:var(--ink2)}
+#t6 .m6-leg div{display:flex;align-items:center;gap:7px}
+#t6 .m6-leg i{width:16px;height:12px;border-radius:2px;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+#t6 .m6-sel b{font-size:15px;color:var(--ink)}
+#t6 .m6-sel .st{color:var(--muted);font-size:12px}
+#t6 .m6-bar{display:flex;height:10px;border-radius:3px;overflow:hidden;margin:3px 0 1px;background:var(--none)}
+#t6 .m6-bar span{display:block;height:100%}
+#t6 .m6-row{display:grid;grid-template-columns:118px minmax(0,1fr);gap:8px;align-items:center;margin:7px 0;font-size:12.5px}
+#t6 .m6-row .k{color:var(--muted)}
+#t6 .m6-star{color:var(--crit);font-weight:700}
+#t6 td.m6-c{position:relative;min-width:104px}
+#t6 td.m6-c .bar{position:absolute;left:0;top:0;bottom:0;opacity:.22;border-radius:0}
+#t6 td.m6-c span{position:relative}
+#t6 tr.m6-sel-row td{background:color-mix(in srgb,var(--brand) 10%,var(--surface))}
+#t6 .m6-chip{display:inline-block;min-width:28px;text-align:center;border-radius:4px;padding:1px 7px;font-weight:700;font-size:12.5px;border:1px solid rgba(0,0,0,.15)}
+#t6 details.m6-det{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:12px 0 0;background:var(--surface);font-size:13.5px;color:var(--ink2)}
+#t6 details.m6-det summary{cursor:pointer;font-weight:600;color:var(--ink)}
+#t6 details.m6-det p,#t6 details.m6-det ul{margin:8px 0}
+#t6 details.m6-det ul{padding-left:20px}
+#t6 details.m6-det li{margin:3px 0}
+#t6 .m6-mtab{max-height:300px;overflow:auto;margin:8px 0}
+.m6-pop .leaflet-popup-content-wrapper{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+.m6-pop .leaflet-popup-tip{background:var(--surface)}
+.m6-pop .leaflet-popup-close-button{color:var(--muted)}
+#t6 .m6-topbar{position:sticky;top:-14px;z-index:3;display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:var(--surface);margin:-14px -14px 6px;padding:10px 14px;border-bottom:1px solid var(--line)}
+#t6 .m6-topbar .st{font-size:11.5px;color:var(--muted)}
+#t6 a.m6-link{color:var(--brand);text-decoration:underline;cursor:pointer}
+#t6 .m6-team{border-left:4px solid var(--warn);padding:8px 12px;background:color-mix(in srgb,var(--warn) 10%,var(--surface));border-radius:6px;margin:8px 0}
+#t6 .m6-sub{font-size:12px;font-weight:700;color:var(--brand);margin:10px 0 2px}
+#t6 .m6-pill{display:inline-block;border-radius:10px;padding:0 8px;font-size:11.5px;font-weight:600;margin:2px 3px 0 0;border:1px solid rgba(0,0,0,.14);color:#fff}
+#t6 .m6-pop-t{font-size:12.5px;line-height:1.45;min-width:210px}
+#t6 .m6-pop-t b{font-size:13.5px}
+#t6 .m6-pop-t .k{color:var(--muted)}
+#t6 .m6-cardbtn{margin-top:8px}
+#t6 .m6-top{margin:6px 0 0;padding-left:18px;font-size:12.5px;color:var(--ink2)}
+#t6 .m6-top li{margin:2px 0}
+#t6 table.m6-imp{table-layout:fixed}
+#t6 table.m6-cmt th:nth-child(1){width:20%}
+#t6 table.m6-cmt th:nth-child(2){width:40%}
+#t6 table.m6-cmt th:nth-child(3){width:40%}
+#t6 table.m6-cmt{table-layout:fixed}
+#t6 table.m6-cmt td{overflow-wrap:anywhere}
+@media (max-width:760px){#t6 table.m6-cmt{table-layout:auto;min-width:620px}}
+#t6 table.m6-imp th:nth-child(1){width:15%}
+#t6 table.m6-imp th:nth-child(2){width:19%}
+#t6 table.m6-imp th:nth-child(3){width:41%}
+#t6 table.m6-imp th:nth-child(4){width:25%}
+#t6 table.m6-imp td{overflow-wrap:anywhere}
+@media (max-width:760px){#t6 table.m6-imp{table-layout:auto;min-width:640px}}
+#t6 .m6-conf{display:block;border-radius:8px;padding:2px 8px;font-size:12px;font-weight:600;line-height:1.35;background:var(--chip);color:var(--ink2)}
+#t6 .m6-conf.alta{background:color-mix(in srgb,var(--good) 28%,var(--surface))}
+#t6 .m6-conf.media{background:color-mix(in srgb,var(--warn) 32%,var(--surface))}
+#t6 .m6-conf.baja{background:color-mix(in srgb,var(--crit) 22%,var(--surface))}
+#t6 table.t th.s{cursor:pointer;user-select:none}
+#t6 table.t th.s:hover{color:var(--brand)}
+#t6 table.t tbody tr{cursor:pointer}
+#t6 table.t tbody tr:hover td{background:var(--chip)}
+#t6 .st-tag{display:inline-block;border-radius:10px;padding:1px 8px;font-size:11.5px;font-weight:600}
+#t6 .st-tag.a{background:color-mix(in srgb,var(--warn) 30%,var(--surface));color:var(--ink)}
+#t6 .st-tag.r{background:color-mix(in srgb,var(--crit) 22%,var(--surface));color:var(--ink)}
+#t6 .st-tag.b{background:color-mix(in srgb,var(--s1) 22%,var(--surface));color:var(--ink)}
+#t6 .st-tag.g{background:var(--chip);color:var(--ink2)}
+.leaflet-container{font:12px/1.4 "Segoe UI",Calibri,system-ui,sans-serif}
+.leaflet-tooltip.m6-tt{background:var(--surface);color:var(--ink);border:1px solid var(--line);box-shadow:0 4px 14px rgba(0,0,0,.18);font-size:12.5px}
+/* ======================= FIN ESTILOS DEL MÓDULO 6 ======================= */
+
+/* Leaflet 1.9.4 (BSD-2) */
+__LEAFLET_CSS__
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="tools"><button class="btn" id="thm" aria-pressed="false" title="Cambiar tema">Tema</button></div>
+  <h1>Base de variables para el Plan de Acción Climática de Medellín · v1</h1>
+  <div class="sub">Producto 9 · Componente 4 · Pestaña 6 (módulo en construcción, versión 2) · Documento de trabajo para validación del equipo experto · Octubre de 2026 · Las capas marcadas con asterisco (*) son preliminares</div>
+  <nav class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-t="t6"><b>6</b>Mapa del territorio</button>
+  </nav>
+</div></header>
+<main><div class="wrap">
+
+<!-- ======================= MÓDULO 6: INICIO ======================= -->
+<section class="tab on" id="t6">
+
+  <div class="part"><div class="n">PARTE 1</div><h2>La base de variables mide la amenaza en cifras municipales; este mapa la ubica en el territorio</h2>
+  <p class="msg">Las variables que hoy alimentan los bloques de inundaciones, avenidas torrenciales, movimientos en masa e isla de calor son, casi todas, cifras del municipio o de la ciudad. Esta pestaña suma lo que ya tenemos con ubicación: dónde se concentra la amenaza del POT 2026*, qué tan caliente está la superficie en cada barrio y, desde esta versión, tres medidas que ya se pueden ubicar (arbolado, obras de ladera y alerta temprana). Cruzadas con la amenaza, marcan los barrios donde la medida falta.</p>
+  <div class="kpis" id="m6-kpis"></div>
+  <ul class="pts">
+    <li><b>Cómo leerlo.</b> Cada capa tiene su leyenda y, las de amenaza, su control de opacidad. Al hacer clic en el mapa se abre la ficha del barrio (temperatura, árboles, amenaza, obras y alerta) y en el panel la de su comuna o corregimiento.</li>
+    <li><b>Medidas y brechas.</b> «Medida existente» significa lo que hoy está registrado en el servidor de mapas de la Alcaldía (consulta del 8 de octubre de 2026), no lo previsto. Una brecha marca un barrio donde la amenaza es alta y la medida no aparece; los umbrales son criterio del equipo.</li>
+    <li><b>El asterisco (*).</b> Las amenazas del POT 2026 son preliminares: se extrajeron de las láminas en PDF de la Cartografía 1 (agosto de 2026) y no son capas oficiales. En inundación, el estudio base conserva en algunas quebradas la zonificación del POT 2014.</li>
+    <li><b>Multiamenaza.</b> Es un criterio del equipo, no una norma: no existe un indicador nacional que combine las tres amenazas. Se califica cada una (baja 1, media 2, alta 3) y se multiplican; el índice va de 1 a 27. Cómo se construyó y sus límites están en el recuadro debajo del mapa.</li>
+    <li><b>Lo que no es.</b> La temperatura de la superficie (satélite, mañana) no es la temperatura del aire a 2 metros. Ese dato medido hoy es un vacío y está marcado en la parte 5.</li>
+  </ul></div>
+
+  <div class="part"><div class="n">PARTE 2</div><h2>Mapa interactivo: amenazas, temperatura de la superficie, medidas existentes y dónde faltan</h2>
+  <div class="banner"><b>* Capas preliminares.</b> Las amenazas por inundación, avenidas torrenciales y movimientos en masa son del POT 2026 (revisión de mediano plazo, radicada en 2026; adopción por confirmar), reconstruidas de láminas en PDF. Los deslizamientos se vectorizaron celda a celda, sin remuestrear. Las áreas coinciden con las del estudio de amenaza (EBA) con diferencias menores de 1,1 puntos. Hay que actualizarlas cuando el Distrito publique las capas oficiales.</div>
+  <div class="m6-grid">
+    <div id="m6-map" role="application" aria-label="Mapa interactivo de amenazas y temperatura de la superficie, Medellín"></div>
+    <aside class="m6-panel" aria-label="Capas y ficha del territorio">
+      <div class="m6-topbar"><button class="btn" id="m6-clear" title="Quita del mapa todas las capas, incluidos los límites; el mapa base queda">Quitar todas las capas</button><span class="st">Primero los problemas, luego las soluciones</span></div>
+      <h3>1 · Problemas <span class="yr">(amenazas y calor)</span></h3>
+      <div class="m6-sub">Amenazas del POT 2026 <span class="yr">(2026)</span> <span class="m6-star">*</span></div>
+      <div class="m6-hz"><label class="r"><input type="checkbox" data-h="mm" checked> Deslizamientos</label><input type="range" class="m6-hop" data-h="mm" min="10" max="100" value="65" aria-label="Opacidad de deslizamientos"></div>
+      <div class="m6-hz"><label class="r"><input type="checkbox" data-h="inu"> Inundación</label><input type="range" class="m6-hop" data-h="inu" min="10" max="100" value="75" aria-label="Opacidad de inundación"></div>
+      <div class="m6-hz"><label class="r"><input type="checkbox" data-h="tor"> Avenidas torrenciales</label><input type="range" class="m6-hop" data-h="tor" min="10" max="100" value="75" aria-label="Opacidad de avenidas torrenciales"></div>
+      <div class="note" style="margin:2px 0 0;font-size:11.5px">Puede marcar varias; con dos o más, cada amenaza usa su propio color (tonos oscuro, medio y claro para alta, media y baja).</div>
+      <div class="m6-sub">Incendios forestales · plan municipal de gestión del riesgo <span class="yr">(sin fecha de corte)</span></div>
+      <div class="m6-hz"><label class="r"><input type="checkbox" data-h="inc"> Amenaza por incendios forestales</label><input type="range" class="m6-hop" data-h="inc" min="10" max="100" value="80" aria-label="Opacidad de incendios forestales"></div>
+      <div class="m6-sub">Multiamenaza <span class="yr">(2026)</span> <span class="m6-star">*</span></div>
+      <div class="m6-hz"><label class="r"><input type="checkbox" data-h="multi"> Índice 1 a 27</label><input type="range" class="m6-hop" data-h="multi" min="10" max="100" value="80" aria-label="Opacidad de la multiamenaza"></div>
+      <div class="note" style="margin:2px 0 0;font-size:11.5px">Criterio del equipo, no normativo: baja = 1, media = 2, alta = 3; el índice es el producto de las tres amenazas (deslizamientos × inundación × avenidas torrenciales). Fuera de la mancha de inundación o de avenidas torrenciales vale 1. Detalle y límites debajo del mapa.</div>
+      <div class="m6-sub">Calor · temperatura de la superficie <span class="yr">(2013–2016)</span></div>
+      <label class="r"><input type="radio" name="m6-lst" value="none" checked> Ninguna</label>
+      <label class="r"><input type="radio" name="m6-lst" value="barrio"> Por barrio, sin efecto de la pendiente</label>
+      <label class="r"><input type="radio" name="m6-lst" value="com"> Por comuna, mediana</label>
+      <label class="r"><input type="radio" name="m6-lst" value="comn"> Por comuna, sin efecto de la pendiente</label>
+      <div class="op">Opacidad <input type="range" min="10" max="100" value="70" id="m6-opl" aria-label="Opacidad de la temperatura"></div>
+      <h3>2 · Soluciones <span class="yr">(medidas que hoy están registradas)</span></h3>
+      <div class="m6-sub">Arbolado y verde urbano</div>
+      <label class="r"><input type="radio" name="m6-arb" value="none" checked> Sin mapa por barrio</label>
+      <label class="r"><input type="radio" name="m6-arb" value="arb"> Árboles por hectárea <span class="yr">(inventario de árboles)</span></label>
+      <label class="r"><input type="radio" name="m6-arb" value="copa"> % del barrio con cobertura arbórea <span class="yr">(2019)</span></label>
+      <label class="r"><input type="radio" name="m6-arb" value="verde"> % del barrio con espacios verdes <span class="yr">(2019)</span></label>
+      <div class="note" style="margin:0 0 2px;font-size:11.5px"><a href="#m6-abdet" class="m6-link" data-open="m6-abdet">Cómo se construyó el índice de arbolado</a></div>
+      <label class="r"><input type="checkbox" data-m="pot"> Zonas verdes con potencial verde</label>
+      <label class="r"><input type="checkbox" data-m="techo"> Techos verdes (cubierta verde marcada) <span class="yr">(2019)</span></label>
+      <label class="r"><input type="checkbox" data-m="eco"> Ecoparques</label>
+      <label class="r"><input type="checkbox" data-m="cor"> Corredores verdes, trazados del POT 2014 <span class="yr">(2014)</span></label>
+      <div class="m6-sub">Obras de ladera y quebrada</div>
+      <label class="r"><input type="checkbox" data-m="obras"> Obras de mitigación <span class="yr">(2016–2022)</span></label>
+      <label class="r"><input type="checkbox" data-m="monit"> Monitoreo geotécnico</label>
+      <label class="r"><input type="checkbox" data-m="estu"> Estudios y diseños de gestión del riesgo</label>
+      <div class="m6-sub">Alerta temprana y evacuación</div>
+      <label class="r"><input type="checkbox" data-m="alarm"> Alarmas y sensores de nivel</label>
+      <label class="r"><input type="checkbox" data-m="enc"> Puntos de encuentro y rutas de evacuación</label>
+      <h3>3 · Dónde falta <span class="m6-star">*</span> <span class="yr">(problema alto y solución sin registro, por barrio)</span></h3>
+      <label class="r"><input type="radio" name="m6-bre" value="none" checked> Sin marca</label>
+      <label class="r"><input type="radio" name="m6-bre" value="calor"> Calor alto y poco arbolado</label>
+      <label class="r"><input type="radio" name="m6-bre" value="ladera"> Deslizamiento alto sin obra ni monitoreo</label>
+      <label class="r"><input type="radio" name="m6-bre" value="alerta"> Avenida torrencial alta sin alerta temprana</label>
+      <div class="note" style="margin:2px 0 0;font-size:11.5px">Las marcas son un criterio del equipo, con umbrales por cuartil escritos en el recuadro «Cómo se marcan las brechas».</div>
+      <h3>Referencias</h3>
+      <label class="r"><input type="checkbox" id="m6-lim" checked> Comunas y corregimientos <span class="yr">(2014)</span></label>
+      <div class="filters" style="margin:6px 0 0"><select id="m6-base" aria-label="Mapa base"><option value="claro">Mapa base gris claro</option><option value="oscuro">Mapa base gris oscuro</option><option value="calles">Calles (OpenStreetMap)</option><option value="sat">Imagen satelital</option></select></div>
+      <h3>Leyenda</h3>
+      <div id="m6-leg"></div>
+      <h3>Territorio seleccionado</h3>
+      <div class="m6-sel" id="m6-sel"><span class="st">Haga clic en una comuna o corregimiento del mapa, o en una fila de la tabla.</span></div>
+    </aside>
+  </div>
+  <details class="m6-det" id="m6-mdet"><summary>Multiamenaza: de dónde sale el criterio, cómo se calcula y cuáles son sus límites</summary>
+    <p><b>¿Existe un indicador nacional?</b> No lo encontramos. Las guías nacionales tratan cada amenaza por separado: movimientos en masa y avenidas torrenciales (Servicio Geológico Colombiano) e inundación (Instituto de Hidrología, Meteorología y Estudios Ambientales, IDEAM). Las orientaciones del Ministerio de Vivienda para incorporar la gestión del riesgo en los planes de ordenamiento (2022) no definen un índice que las combine, y el índice municipal de riesgo de desastres del Departamento Nacional de Planeación mide riesgo (con población y vulnerabilidad), no amenaza. Fuera del país, las herramientas que combinan amenazas toman el valor máximo (ThinkHazard!), un promedio geométrico (INFORM) o suman niveles codificados; no encontramos ninguna que multiplique clases 1, 2 y 3.</p>
+    <p><b>Qué hicimos.</b> Criterio del equipo: en cada amenaza del POT 2026* baja = 1, media = 2 y alta = 3, y el índice es el producto de las tres. Va de 1 (baja en todas, o fuera de las manchas) a 27 (alta en las tres). El cálculo cruza las capas vectoriales tal como están, sin pasarlas a celdas. La tabla muestra cada combinación presente en el Distrito.</p>
+    <div class="m6-mtab"><table class="t" id="m6-mtab"></table></div>
+    <p><b>Límites que conviene tener presentes:</b></p>
+    <ul>
+      <li>Baja y «fuera de la mancha» valen lo mismo (1): el índice no distingue una zona con inundación baja de una sin inundación.</li>
+      <li>Los deslizamientos cubren todo el Distrito; la inundación y las avenidas torrenciales, solo sus manchas. Por eso el índice sigue casi siempre a los deslizamientos y se separa de ellos en el valle y a lo largo de las quebradas.</li>
+      <li>Solo hay diez valores posibles (1, 2, 3, 4, 6, 8, 9, 12, 18 y 27) y la escala es ordinal: 27 no es «27 veces» peor que 1. En el Distrito el 8 y el 12 casi no ocurren (menos de 3 hectáreas cada uno). El producto hace que dos amenazas medias (2 × 2 = 4) pesen más que una sola alta (3); con el máximo o con la suma el orden cambia.</li>
+      <li>Las tres amenazas pesan igual, no se consideran consecuencias (personas, viviendas) y no se tiene en cuenta que unas se encadenan con otras (la creciente que se convierte en avenida torrencial).</li>
+      <li>Un índice de 4 o más solo puede salir de dos o más amenazas por encima de baja (un solo factor llega como máximo a 3). Por eso lo usamos para marcar dónde se superponen amenazas.</li>
+      <li>Las clases vienen de capas preliminares (*), reconstruidas de láminas en PDF.</li>
+    </ul>
+  </details>
+  <p class="note">Fuentes: POT 2026, Cartografía 1 y Anexo 16 (DAP, 2026a, 2026b); temperatura de la superficie: imágenes Landsat de la mañana (30 m), mediana 2013–2016, paquete «Islas de calor» del PAC&amp;VC del Área Metropolitana, procesado a partir de Guzmán Echavarría (2018); límites oficiales del Distrito (GeoMedellín). Medidas y amenaza por incendios: servidor de mapas de la Alcaldía de Medellín (Departamento Administrativo de Gestión del Riesgo de Desastres, Secretaría de Medio Ambiente, Secretaría de Infraestructura Física; espacios verdes: Área Metropolitana del Valle de Aburrá y Universidad Nacional, 2019), consulta del 8 de octubre de 2026. Mapa base © Esri y © OpenStreetMap.</p>
+  </div>
+
+  <div class="part"><div class="n">PARTE 3</div><h2>Comunas y corregimientos: cuánto de su área está en amenaza alta y qué tan caliente está su superficie</h2>
+  <p class="msg">Los porcentajes se calculan con las capas sin simplificar. Haga clic en un encabezado para ordenar y en una fila para ver el territorio en el mapa. La amenaza alta de deslizamientos domina en los corregimientos y en las laderas del norte; la inundación y las avenidas torrenciales pesan en el valle.</p>
+  <div class="filters"><select id="m6-tf" aria-label="Filtrar por tipo"><option value="">Todos los territorios</option><option>Comuna</option><option>Corregimiento</option><option>Sin nombre</option></select>
+  <button class="btn" id="m6-csv">Descargar CSV</button></div>
+  <div class="maxh"><table class="t" id="m6-tab"></table></div>
+  <p class="note">«Sin nombre» son dos polígonos del límite oficial (SN01 y SN02) sin nombre ni comuna asignada. Temperatura: mediana de píxeles de 30 m por territorio. «Sin pendiente» descuenta el efecto de la pendiente y la orientación de las laderas.</p>
+  </div>
+
+  <div class="part"><div class="n">PARTE 4</div><h2>Tres medidas que ya se pueden ubicar y dónde faltan</h2>
+  <p class="msg">Son tres ejemplos, uno de cada tipo de herramienta: una solución basada en la naturaleza, una obra gris y una medida no estructural. Cada una se cruza con la amenaza que atiende para marcar los barrios donde hoy no aparece. La marca no dice que allí falte una obra: dice que el registro no la muestra.</p>
+  <div class="cards" id="m6-med"></div>
+  <details class="m6-det" id="m6-abdet"><summary>Cómo se construyó el índice de arbolado</summary><div id="m6-abtxt"></div></details>
+  <details class="m6-det" id="m6-brdet"><summary>Cómo se marcan las brechas, y qué no está en estos registros</summary><div id="m6-brtxt"></div></details>
+  <details class="m6-det" id="m6-teamdet"><summary>Comentario para el equipo: qué cuenta como «arbolado bajo» y como «calor alto» (por decidir)</summary><div id="m6-teamtxt"></div></details>
+  <h3 style="margin:20px 0 4px;font-size:16px;color:var(--brand)">Qué medidas pesan más, según la evidencia que hoy tenemos</h3>
+  <p class="note" style="margin:0 0 8px">El orden sigue la evidencia local disponible, no un cálculo de impacto. «Confianza» dice qué tan bien respalda esa evidencia el efecto esperado en Medellín.</p>
+  <div class="scroll"><table class="t m6-imp" id="m6-imp"></table></div>
+  <p class="note">Las cifras de enfriamiento vienen del catálogo integrado de medidas (hoja «Enfriamiento ADA-06»): Guzmán Echavarría (2018) y Martínez Osorio (2017) para el valle de Aburrá; Damarla y Chattopadhyay (2025) para la literatura internacional. Son temperaturas de superficie o comparaciones entre lugares, no el efecto de plantar un árbol donde no lo hay.</p>
+  <div class="filters" style="margin-top:10px"><button class="btn" id="m6-csvb">Descargar la base por barrio (CSV)</button></div>
+  </div>
+
+  <div class="part"><div class="n">PARTE 5</div><h2>Lo que la base de variables tiene hoy en estos cuatro bloques <span class="yr">(v1, octubre de 2026)</span></h2>
+  <p class="msg">Foto de la base v1: cuántas variables llegan a cada bloque y a qué escala. Casi todas son municipales o de ciudad; muy pocas nombran el fenómeno. Este mapa añade variables espaciales por comuna y barrio que la base todavía no tiene.</p>
+  <div class="scroll"><table class="t" id="m6-snap"></table></div>
+  <p class="note">Conteo por asignación (una variable puede llegar a más de un bloque) a partir de la base embebida en el tablero v1. «Nombran el fenómeno» busca el término en el nombre de la variable.</p>
+  </div>
+
+  <div class="part"><div class="n">PARTE 6</div><h2>Vacíos del mapa y qué buscar</h2>
+  <p class="msg">Marcamos lo que falta en vez de esconderlo. Cada vacío dice qué dato lo cerraría y qué tipo de acceso requiere.</p>
+  <div class="cards" id="m6-gaps"></div></div>
+
+
+  <div class="part" id="m6-coment"><div class="n">COMENTARIOS</div><h2>Comentarios sobre la estructura general del proyecto, a la luz de la guía de seguimiento, evaluación y reporte de C40 <span class="yr">(12 de octubre de 2026)</span></h2>
+  <p class="msg">Esta sección es una mirada general, un brochazo, sobre la metodología de seguimiento, evaluación y reporte de C40 y sobre el lugar de este geovisor en ella. Todavía es difícil entender cómo se estructura por completo el PAC; por eso son comentarios para conversar con los equipos, no una evaluación del proyecto.</p>
+
+  <h3 style="margin:16px 0 4px;font-size:16px;color:var(--brand)">Para qué sirve este geovisor y hasta dónde llega</h3>
+  <p>Dentro del PAC se ha recogido parte de la evidencia climática y meteorológica. Tiene rezagos temporales (de 2013–2016 a 2026), pero a partir de ella se pueden definir objetivos y alimentar los planes de acción. El alcance del geovisor llega hasta ahí y solo de forma parcial hasta la implementación de las acciones y el monitoreo del progreso: la herramienta no recibe datos nuevos de implementación y no todos los datos se pueden obtener por servicio automático. Algunos son capas de la Alcaldía que se pueden volver a consultar; muchos otros son estudios académicos o metaestudios que dan una perspectiva de ciudad.</p>
+
+  <h3 style="margin:16px 0 4px;font-size:16px;color:var(--brand)">Lectura frente a los pasos de la guía</h3>
+  <p class="note" style="margin:0 0 8px">La guía propone un ciclo (construir la base de evidencia, fijar metas, formular el plan, implementar, monitorear) y seis pasos para el sistema de seguimiento: gobernanza y estructura, lógica de intervención, indicadores, monitorear (recoger datos), evaluar (valorar el cambio) y reportar (presentar resultados), con ajuste de rumbo cuando haga falta.</p>
+  <div class="scroll"><table class="t m6-cmt">
+    <thead><tr><th>Paso de la guía</th><th>Qué aporta hoy el geovisor</th><th>Qué falta</th></tr></thead>
+    <tbody>
+      <tr><td><b>Gobernanza y estructura</b></td><td>Ayuda a definirla para los datos: qué dato, de quién, de qué fecha y con qué método (documento de métodos y trazabilidad temporal).</td><td>Quién coordina el sistema y con qué recursos.</td></tr>
+      <tr><td><b>Lógica de intervención</b></td><td>«Problemas» da el punto de partida y «Soluciones» ubica las acciones climáticas existentes: los elementos físicos que ayudan a mitigar los problemas.</td><td>La cadena completa: acción, productos, resultados e impactos. Hoy solo se ve el producto (la obra, el árbol, la alarma).</td></tr>
+      <tr><td><b>Indicadores</b></td><td>Cifras resumen por territorio.</td><td>Indicadores con método, fuente y frecuencia; indicadores de equidad (datos por grupo) y de resultados.</td></tr>
+      <tr><td><b>Monitorear (recoger datos)</b></td><td>La recopilación se puede repetir con el código del proyecto para las capas con servicio en línea.</td><td>Una línea base de «antes» y «después» de cada acción; muchos datos no se pueden consultar de forma automática.</td></tr>
+      <tr><td><b>Evaluar</b></td><td>Comparar cortes de datos a medida que se actualicen.</td><td>Qué preguntas de evaluación se hacen y cada cuánto.</td></tr>
+      <tr><td><b>Reportar</b></td><td>El panel y las descargas son una primera forma de reporte.</td><td>Un plan de reporte por audiencia (decisores, dependencias, ciudadanía, financiadores).</td></tr>
+    </tbody></table></div>
+  <p class="note">La guía define como acción climática cualquier política, programa o inversión de la ciudad para mitigar o adaptarse. Lo que muestra «Soluciones» es el subconjunto físico y ubicable de esas acciones; las políticas y los programas sin ubicación no están.</p>
+
+  <h3 style="margin:16px 0 4px;font-size:16px;color:var(--brand)">Hitos</h3>
+  <p>La guía llama hitos a los eventos, las fechas, las decisiones o los entregables del plan. Se recomienda definirlos también desde lo geoespacial. Un primer hito sería recopilar y profundizar lo que ya existe en estudios, intervenciones y análisis de las entidades públicas, de las corporaciones autónomas regionales y de la Alcaldía.</p>
+
+  <h3 style="margin:16px 0 4px;font-size:16px;color:var(--brand)">Seis preguntas para cada acción</h3>
+  <p style="margin:0 0 4px">Para construir la lógica de intervención, la guía sugiere preguntarse lo siguiente. Se recomienda transmitir esta estructura al equipo del PAC: busca que las decisiones se basen en datos.</p>
+  <ol class="pts" style="margin:0 0 8px;padding-left:22px">
+    <li>¿Cuál es el objetivo de la acción?</li>
+    <li>¿Qué se puede medir antes de aplicarla y qué después?</li>
+    <li>¿Qué va a mejorar?</li>
+    <li>¿Qué podría cambiar como consecuencia de esa mejora?</li>
+    <li>¿Cómo se mide ese cambio?</li>
+    <li>¿Qué beneficios trae, incluidos los más amplios, y para quién?</li>
+  </ol>
+
+  <h3 style="margin:16px 0 4px;font-size:16px;color:var(--brand)">Actores</h3>
+  <p>El ecosistema de la guía incluye un equipo coordinador, las dependencias de la ciudad, las agencias nacionales y regionales, el sector privado y la sociedad civil. Está por definir cómo conversa este proyecto con el sector privado, con las agencias nacionales y con la población; de eso depende, en buena parte, la efectividad de las acciones.</p>
+
+  <h3 style="margin:16px 0 4px;font-size:16px;color:var(--brand)">Un vacío: la librería de datos</h3>
+  <p>Hoy no está claro cuáles son todos los datos del PAC de 2020 ni si el proyecto tiene la totalidad de los que se usaron. Aclararlo facilita la trazabilidad. Se recomienda construir una librería de datos, igual que la de bibliografía: qué datos usó el PAC de 2020, cuáles usa el de 2026, de quién son (dueño o generador), de dónde vienen y en qué parte se emplean. Eso daría gobernanza de datos. El primer paso es confirmar si las bases que ya se compartieron son todas o si faltan.</p>
+
+  <p class="note">Metodología: C40 Cities Climate Leadership Group. (s. f.). <i>C40 City Monitoring, Evaluation and Reporting Guidance: Guidance for climate action planning teams</i> (documento de 2020–2021). Los pasos, las definiciones y las preguntas están parafraseados. Comentarios del 12 de octubre de 2026.</p>
+  </div>
+
+</section>
+<!-- ======================= MÓDULO 6: FIN ======================= -->
+
+<footer>Documento de trabajo. Las cifras de amenaza son preliminares (*). Cada capa conserva su fuente; las capas del POT 2026 no son oficiales.</footer>
+</div></main>
+
+<script>
+__LEAFLET_JS__
+</script>
+<script>
+const DATA_M6=__DATA_JSON__;
+</script>
+<script>
+/* ======================= SCRIPT DEL MÓDULO 6 ======================= */
+const PAC_MAPA=(function(){
+  const D=DATA_M6, T=D.terr, TOT=D.tot, M=D.med, MT=M.tot, MG=M.geo;
+  const byCod={}; T.forEach(t=>byCod[t.codigo]=t);
+  T.forEach(t=>Object.assign(t,M.terr[t.codigo]||{}));
+  const BT={}; M.barrios.forEach(b=>BT[b.bid]=b);                 /* ficha de cada barrio o vereda, por identificador */
+  const BRE={calor:'#e4572e',ladera:'#7b2cbf',alerta:'#f4a300'};     /* color de cada brecha */
+  const BRN={calor:'Calor alto y poco arbolado',ladera:'Deslizamiento alto sin obra ni monitoreo',alerta:'Avenida torrencial alta sin alerta temprana'};
+  const FLAG={calor:'f_calor',ladera:'f_ladera',alerta:'f_alerta'};
+  const GRN=['#e5f2dc','#bfe0a8','#8cc77a','#4fa24f','#1f7a3a'];   /* verde para arbolado y espacios verdes */
+  const nom=c=>{const t=byCod[c];return t?t.nombre:c;};
+  const fmt=(n,d=1)=>n==null?'—':Number(n).toLocaleString('es-CO',{minimumFractionDigits:d,maximumFractionDigits:d});
+  const cssv=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const COL={alta:'#d03b3b',media:'#fab219',baja:'#8fd694'};
+  const HZ={mm:'Deslizamientos',inu:'Inundación',tor:'Avenidas torrenciales'};
+  const EDG=[26,28,30,32,34], RAMP=['#fff3b0','#fdd27a','#f9a34a','#ec6d2f','#c93a1f','#8f1d14'];
+  const lstCol=v=>{if(v==null)return '#cfcfcf';let i=0;while(i<EDG.length&&v>=EDG[i])i++;return RAMP[i];};
+  let map,sel=null,selLayer=null,limLayer=null,hazLayers={},lstLayers={},base={},baseCur=null,on={mm:true,inu:false,tor:false,multi:false,inc:false},medOn={},medLayers={},arbCur='none',breCur='none',arbLayer=null,breLayer=null,breHalo=null,lstCur='none',sortKey='nombre',sortDir=1,ready=false;
+
+  /* ---- multiamenaza: baja=1, media=2, alta=3; índice = deslizamientos × inundación × avenidas torrenciales (criterio del equipo) ---- */
+  const MV=[1,2,3,4,6,8,9,12,18,27], MTH=4;   /* índice ≥ 4 equivale a dos o más amenazas por encima de baja (un solo factor llega como máximo a 3) */
+  const MCOL={1:'#d9eed3',2:'#f6e58c',3:'#f3bf4e',4:'#ee9a3f',6:'#e4742f',8:'#d4552b',9:'#bd3a2a',12:'#962428',18:'#6c1a2b',27:'#3f0c2a'};
+  const mTxt=v=>v>=8?'#ffffff':'#1f2a22';
+  const MNM={1:'baja',2:'media',3:'alta'};
+  const chip=v=>'<span class="m6-chip" style="background:'+MCOL[v]+';color:'+mTxt(v)+'">'+v+'</span>';
+  /* reparto del área de un territorio por valor del índice, mediana ponderada por área y % del área con índice ≥ MTH */
+  function mstats(t){
+    const by={};MV.forEach(v=>by[v]=0);let s=0;
+    Object.entries(t.comb||{}).forEach(([k,x])=>{const p=k.split('-').reduce((a,b)=>a*Number(b),1);by[p]+=x;s+=x;});
+    if(s>0)MV.forEach(v=>by[v]=by[v]/s*100);
+    let acc=0,med=null;for(const v of MV){acc+=by[v];if(acc>=50){med=v;break;}}
+    return {by:by,med:med,hi:MV.filter(v=>v>=MTH).reduce((a,v)=>a+by[v],0)};
+  }
+  T.forEach(t=>{const m=mstats(t);t.m_by=m.by;t.m_med=m.med;t.m_hi=Math.round(m.hi*10)/10;MV.forEach(v=>t['mp_'+v]=Math.round(m.by[v]*10)/10);});
+
+  /* ---- KPI ---- */
+  function kpis(){
+    const k=[
+      [fmt(TOT.mm_alta)+' %','del Distrito en amenaza alta por deslizamientos* (2026; '+fmt(TOT.mm_alta_ha,0)+' ha)',1],
+      [fmt(TOT.inu_alta_ha,0)+' ha','en amenaza alta por inundación* (2026; '+fmt(TOT.inu_alta)+' % del Distrito)',0],
+      [fmt(TOT.tor_alta_ha,0)+' ha','en amenaza alta por avenidas torrenciales* (2026; '+fmt(TOT.tor_alta)+' % del Distrito)',0],
+      [fmt(MV.filter(v=>v>=MTH).reduce((a,v)=>a+(TOT.multi_ha[v]||0),0),0)+' ha','con dos o más amenazas superpuestas por encima de baja* (multiamenaza ≥ 4; 2026; '+fmt(MV.filter(v=>v>=MTH).reduce((a,v)=>a+(TOT.multi_pct[v]||0),0))+' % del Distrito)',0],
+      [fmt(TOT.lst_com-TOT.lst_cor)+' °C','más caliente la superficie en comunas ('+fmt(TOT.lst_com)+' °C) que en corregimientos ('+fmt(TOT.lst_cor)+' °C) (2013–2016); '+fmt(TOT.lstn_com-TOT.lstn_cor)+' °C sin el efecto de la pendiente',1],
+      [fmt(MT.arboles,0),'árboles en el inventario de Medellín; '+fmt(MT.arb_urb_ha,1)+' por hectárea en los barrios urbanos (inventario vigente)',0],
+      [fmt(MT.n_calor,0)+' barrios','con superficie caliente y poco arbolado, de '+fmt(MT.n_urb,0)+' barrios urbanos',1],
+      [fmt(MT.n_ladera,0)+' barrios','con deslizamiento alto y sin obra de mitigación ni monitoreo, de '+fmt(MT.n_barr,0)+' barrios y veredas',1],
+      [fmt(MT.n_alerta,0)+' barrios','con avenida torrencial alta y sin alarma, sensor, punto de encuentro ni ruta de evacuación',1]
+    ];
+    document.getElementById('m6-kpis').innerHTML=k.map(x=>'<div class="kpi'+(x[2]?' bad':'')+'"><b>'+x[0]+'</b><span>'+x[1]+'</span></div>').join('');
+  }
+
+  /* ---- mapa ---- */
+  function mkBase(){
+    map.createPane('lab');map.getPane('lab').style.zIndex=450;map.getPane('lab').style.pointerEvents='none';
+    const E='https://server.arcgisonline.com/ArcGIS/rest/services/';
+    const esri=(n,pane)=>L.tileLayer(E+n+'/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,maxNativeZoom:16,pane:pane||'tilePane',attribution:'Tiles © Esri'});
+    base.claro=L.layerGroup([esri('Canvas/World_Light_Gray_Base'),esri('Canvas/World_Light_Gray_Reference','lab')]);
+    base.oscuro=L.layerGroup([esri('Canvas/World_Dark_Gray_Base'),esri('Canvas/World_Dark_Gray_Reference','lab')]);
+    base.calles=L.layerGroup([L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'})]);
+    base.sat=L.layerGroup([L.tileLayer(E+'World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Imagen © Esri'}),esri('Reference/World_Boundaries_and_Places','lab')]);
+  }
+  function setBase(k){if(baseCur)map.removeLayer(baseCur);baseCur=base[k];baseCur.addTo(map);document.getElementById('m6-base').value=k;}
+  function mkLayers(){
+    map.createPane('lst');map.getPane('lst').style.zIndex=400;
+    ['multi','mm','inu','tor','inc'].forEach((h,i)=>{map.createPane('haz_'+h);map.getPane('haz_'+h).style.zIndex=406+i*2;});
+    map.createPane('lim');map.getPane('lim').style.zIndex=420;
+    map.createPane('selp');map.getPane('selp').style.zIndex=430;
+    ['mm','inu','tor'].forEach(h=>{
+      hazLayers[h]=L.geoJSON(D.haz_geo[h],{pane:'haz_'+h,interactive:false,renderer:L.canvas({pane:'haz_'+h}),
+        style:f=>({stroke:false,fillColor:COL[f.properties.clase],fillOpacity:1})});
+    });
+    /* multiamenaza = (a) clases de deslizamientos como 1, 2, 3 en todo el Distrito + (b) encima, las piezas dentro de las manchas de inundación o torrencial,
+       que ya traen el producto de las tres. Un solo lienzo y opacidad aplicada al conjunto para que no se mezclen los colores. */
+    const rmu=L.canvas({pane:'haz_multi'}),MMI={baja:1,media:2,alta:3};
+    hazLayers.multi=L.layerGroup([
+      L.geoJSON(D.haz_geo.mm,{pane:'haz_multi',interactive:false,renderer:rmu,style:f=>({stroke:false,fillColor:MCOL[MMI[f.properties.clase]],fillOpacity:1})}),
+      L.geoJSON(D.multi_geo,{pane:'haz_multi',interactive:false,renderer:rmu,style:f=>({stroke:false,fillColor:MCOL[f.properties.p],fillOpacity:1})})]);
+    hazLayers.inc=L.geoJSON(MG.incendios,{pane:'haz_inc',interactive:false,renderer:L.canvas({pane:'haz_inc'}),
+      style:f=>({stroke:false,fillColor:COL[f.properties.clase],fillOpacity:1})});
+    const rl=L.canvas({pane:'lst'});
+    lstLayers.barrio=L.geoJSON(D.bar_geo,{pane:'lst',renderer:rl,
+      style:f=>({stroke:true,weight:.4,color:'#00000033',fillColor:lstCol(f.properties.lst_n),fillOpacity:1}),
+      onEachFeature:(f,l)=>l.bindTooltip((f.properties.nombre||'Barrio')+(f.properties.lst_n!=null?': '+fmt(f.properties.lst_n)+' °C (sin pendiente)':': sin dato'),{sticky:true,className:'m6-tt'})});
+    const mk=key=>L.geoJSON(D.terr_geo,{pane:'lst',renderer:L.canvas({pane:'lst'}),
+      style:f=>({stroke:true,weight:.6,color:'#00000044',fillColor:lstCol(byCod[f.properties.codigo][key]),fillOpacity:1}),interactive:false});
+    lstLayers.com=mk('lst'); lstLayers.comn=mk('lst_n');
+    limLayer=L.geoJSON(D.terr_geo,{pane:'lim',style:{fill:false,color:'#1E463D',weight:1.4,opacity:.9},interactive:false,renderer:L.canvas({pane:'lim'})});
+    selLayer=L.geoJSON(null,{pane:'selp',interactive:false,style:{fill:false,color:'#ffffff',weight:4,opacity:1}});
+    const sel2=L.geoJSON(null,{pane:'selp',interactive:false,style:{fill:false,color:'#0F1A15',weight:1.8,opacity:1}});
+    selLayer._second=sel2;
+    mkMed();
+  }
+  /* ---- medidas existentes (arbolado, obras de ladera, alerta temprana) y brechas ---- */
+  function mkMed(){
+    map.createPane('bar_med');map.getPane('bar_med').style.zIndex=402;
+    map.createPane('medpoly');map.getPane('medpoly').style.zIndex=415;
+    map.createPane('bres');map.getPane('bres').style.zIndex=416;
+    map.createPane('medpt');map.getPane('medpt').style.zIndex=445;
+    const rp=L.canvas({pane:'medpoly'}), rt=L.canvas({pane:'medpt'});
+    const tip=(l,t)=>{if(t)l.bindTooltip(t,{sticky:true,className:'m6-tt'});};
+    const vec=(data,st,fn)=>L.geoJSON(data,{pane:'medpoly',renderer:rp,style:st,onEachFeature:(f,l)=>tip(l,fn(f.properties))});
+    const pts=(data,st,fn)=>L.geoJSON(data,{pane:'medpt',renderer:rt,
+      pointToLayer:(f,ll)=>L.circleMarker(ll,Object.assign({pane:'medpt',renderer:rt,weight:1.2,color:'#ffffff',fillOpacity:.95},typeof st==='function'?st(f):st)),
+      onEachFeature:(f,l)=>tip(l,fn(f.properties))});
+    medLayers.pot=vec(MG.zv_pot,{stroke:true,weight:1,color:'#007a33',fillColor:'#00c853',fillOpacity:.8},p=>'Zona verde con potencial verde · '+p.c);
+    medLayers.techo=vec(MG.techos,{stroke:true,weight:1.5,color:'#005f73',fillColor:'#00b4d8',fillOpacity:.9},p=>'Cubierta verde marcada · '+p.c);
+    medLayers.eco=vec(MG.ecoparques,{stroke:true,weight:1,color:'#1b5e20',fillColor:'#2e8b57',fillOpacity:.6},p=>'Ecoparque · '+p.t+(p.s?' ('+p.s+')':''));
+    medLayers.cor=vec(MG.corredores,{weight:3.5,color:'#00796b',opacity:.95,dashArray:'6 4'},p=>'Corredor verde del POT 2014 · '+p.t+' · '+p.a);
+    medLayers.estu=vec(MG.estudios,{stroke:true,weight:1,color:'#6a4c93',dashArray:'3 3',fillColor:'#6a4c93',fillOpacity:.18},p=>'Estudio · '+p.t+(p.y?' ('+p.y+')':''));
+    medLayers.obras=pts(MG.obras,{radius:5,fillColor:'#8d5524'},p=>'Obra de mitigación ('+p.y+') · '+p.b+' · '+p.t);
+    medLayers.monit=pts(MG.monit,f=>({radius:5,fillColor:f.properties.e==='Activo'?'#0f8b8d':(f.properties.e==='Fallado'?'#c0392b':'#7f8c8d')}),p=>'Monitoreo geotécnico · '+p.t+' · '+p.e+(p.f?' · última lectura '+p.f:''));
+    medLayers.alarm=L.layerGroup([pts(MG.alarmas,{radius:7,fillColor:'#b5179e'},p=>'Alarma · '+p.t+(p.q?' · '+p.q:'')),pts(MG.sensores,{radius:6,fillColor:'#1d70b8'},p=>'Sensor de nivel · '+p.t+(p.q?' · '+p.q:''))]);
+    medLayers.enc=L.layerGroup([vec(MG.rutas,{weight:2,color:'#2a9d2a',opacity:.95},p=>'Ruta de evacuación · '+p.t),pts(MG.encuentro,{radius:5,fillColor:'#2a9d2a'},p=>'Punto de encuentro · '+p.t+(p.q?' ('+p.q+')':''))]);
+    arbLayer=L.geoJSON(D.bar_geo,{pane:'bar_med',renderer:L.canvas({pane:'bar_med'}),interactive:false,style:()=>({stroke:true,weight:.4,color:'#00000033',fillColor:'#d6d6d6',fillOpacity:.85})});
+    const rb=L.canvas({pane:'bres'});   /* un solo lienzo: primero el borde blanco (halo) y encima el relleno y el trazo oscuro */
+    breHalo=L.geoJSON(D.bar_geo,{pane:'bres',renderer:rb,interactive:false,style:()=>({fill:false,stroke:false})});
+    breLayer=L.geoJSON(D.bar_geo,{pane:'bres',renderer:rb,interactive:false,style:()=>({fill:false,stroke:false})});
+  }
+  const ARBK={arb:['arb_ha','arb_edges','Árboles por hectárea'],copa:['copa_pct','copa_edges','% del barrio con cobertura arbórea'],verde:['verde_pct','verde_edges','% del barrio con espacios verdes']};
+  function arbColor(b){
+    if(!b||!b.urbano)return '#d6d6d6';
+    const k=ARBK[arbCur],v=b[k[0]]; if(v==null)return '#d6d6d6';
+    const e=MT[k[1]];let i=0;while(i<e.length&&v>=e[i])i++;return GRN[i];
+  }
+  const HUE={mm:{alta:'#b3271b',media:'#ec835a',baja:'#f7cbb5'},inu:{alta:'#0b4f9c',media:'#4f8fd6',baja:'#b8d3f0'},tor:{alta:'#5b2a86',media:'#9b6bc2',baja:'#d9c3ea'},inc:{alta:'#8a5a00',media:'#e0a526',baja:'#f3df9a'}};
+  const nOn=()=>['mm','inu','tor','inc'].filter(h=>on[h]).length;
+  const hazColor=(h,c)=>nOn()>=2?HUE[h][c]:COL[c];
+  const opH=h=>document.querySelector('.m6-hop[data-h='+h+']').value/100, opL=()=>document.getElementById('m6-opl').value/100;
+  function apply(){
+    Object.values(hazLayers).forEach(l=>map.removeLayer(l));
+    Object.values(lstLayers).forEach(l=>map.removeLayer(l));
+    if(on.multi){hazLayers.multi.addTo(map);map.getPane('haz_multi').style.opacity=opH('multi');}
+    ['mm','inu','tor','inc'].forEach(h=>{if(on[h]){hazLayers[h].addTo(map);hazLayers[h].setStyle(f=>({stroke:false,fillColor:hazColor(h,f.properties.clase),fillOpacity:opH(h)}));}});
+    if(lstCur!=='none'){lstLayers[lstCur].addTo(map);lstLayers[lstCur].setStyle({fillOpacity:opL()});}
+    if(arbCur!=='none'){arbLayer.setStyle(f=>({stroke:true,weight:.4,color:'#00000033',fillColor:arbColor(BT[f.properties.bid]),fillOpacity:.85}));arbLayer.addTo(map);}else map.removeLayer(arbLayer);
+    if(breCur!=='none'){
+      const fl=f=>{const b=BT[f.properties.bid];return !!(b&&b[FLAG[breCur]]);};
+      breHalo.setStyle(f=>fl(f)?{fill:false,stroke:true,weight:5.5,color:'#ffffff',opacity:.95}:{fill:false,stroke:false});
+      breLayer.setStyle(f=>fl(f)?{fill:true,fillColor:BRE[breCur],fillOpacity:.3,stroke:true,weight:2.2,color:'#111111',opacity:1}:{fill:false,stroke:false});
+      breHalo.addTo(map);breLayer.addTo(map);
+    }else{map.removeLayer(breHalo);map.removeLayer(breLayer);}
+    Object.keys(medLayers).forEach(k=>{if(medOn[k])medLayers[k].addTo(map);else map.removeLayer(medLayers[k]);});
+    if(document.getElementById('m6-lim').checked)limLayer.addTo(map);else map.removeLayer(limLayer);
+    legend();
+  }
+  /* criterios de cada clase según el estudio de amenaza del POT 2026 (EBA, Universidad EAFIT; DAP, 2026a) */
+  const CRIT={
+    mm:{alta:'Laderas fuertes a muy fuertes (pendiente mediana ≈ 30°). Reúne ~57 % de los deslizamientos registrados.',media:'Relieves moderados a fuertes (≈ 26°). ~25 % de los deslizamientos registrados.',baja:'Relieves suaves a moderados (≈ 14°): planicies aluviales y laderas bajas. ~19 % de los registrados.'},
+    inu:{alta:'Crecida con período de retorno de 10 años (10 % de probabilidad al año). Las quebradas canalizadas o embovedadas entran como alta por defecto.',media:'Crecida de 100 años (1 % al año).',baja:'Crecida de 500 años (0,2 % al año).'},
+    tor:{alta:'Mayor intensidad del flujo: índice de intensidad ≈ 50 m³/s² (evento de 25 años).',media:'Índice de intensidad de flujo entre 1 y 50 m³/s².',baja:'Recurrencia de 500 años; índice de intensidad menor a 1 m³/s².'}
+  };
+  const HZY={mm:'Deslizamientos',inu:'Inundación',tor:'Avenidas torrenciales'};
+  const MEDLG={
+    pot:['#00c853','Zonas verdes con potencial verde',()=>fmt(MT.pot_n,0)+' polígonos y '+fmt(MT.pot_ha,0)+' ha en total: franjas de amoblamiento, antejardines y separadores marcados con potencial.'],
+    techo:['#00b4d8','Techos verdes: cubierta verde marcada (2019)',()=>fmt(MT.techos_n,0)+' polígonos y '+fmt(MT.techos_ha,1)+' ha.'],
+    eco:['#2e8b57','Ecoparques',()=>fmt(MT.eco_n,0)+' polígonos; casi todos de quebrada.'],
+    cor:['#00796b','Corredores verdes del POT 2014 (2014)',()=>fmt(MT.cor_n,0)+' tramos «posibles»; no son los corredores construidos.'],
+    obras:['#8d5524','Obras de mitigación (2016–2022)',()=>fmt(MT.obras_n,0)+' obras terminadas con ubicación (de '+fmt(MT.obras_reg,0)+' registradas): taludes, cunetas, muros, senderos y escalas. Cobertura parcial.'],
+    monit:['#0f8b8d','Monitoreo geotécnico',()=>fmt(MT.monit_n,0)+' instrumentos; verde azulado activo, rojo fallado, gris sin dato.'],
+    estu:['#6a4c93','Estudios y diseños de gestión del riesgo',()=>fmt(MT.estu_n,0)+' polígonos; muestran dónde hay estudio, no obra.'],
+    alarm:['#b5179e','Alarmas (morado) y sensores de nivel (azul)',()=>fmt(MT.alarm_n,0)+' alarmas y '+fmt(MT.sens_n,0)+' sensores, en pocas quebradas.'],
+    enc:['#2a9d2a','Puntos de encuentro y rutas de evacuación',()=>fmt(MT.enc_n,0)+' puntos y '+fmt(MT.rutas_n,0)+' rutas.']
+  };
+  function legend(){
+    let h='';
+    if(on.multi){
+      const cb={};Object.keys(TOT.comb).forEach(k=>{const p=k.split('-').reduce((a,b)=>a*Number(b),1);(cb[p]=cb[p]||[]).push(k.replace(/-/g,'·'));});
+      h+='<div class="lg-t">Multiamenaza, índice 1 a 27 <span class="yr">(2026)</span> <span class="m6-star">*</span></div>'+
+        MV.filter(v=>TOT.multi_pct[v]>0).map(v=>'<div class="lg"><i style="background:'+MCOL[v]+'"></i><div><b>'+v+'</b> · '+fmt(TOT.multi_pct[v])+' % del Distrito ('+fmt(TOT.multi_ha[v],0)+' ha)<small>Clases (deslizamientos · inundación · torrenciales): '+cb[v].join(', ')+'</small></div></div>').join('')+
+        '<small style="color:var(--muted);font-size:11.5px">Cada cifra de la combinación es la clase de esa amenaza: 1 baja, 2 media, 3 alta. Fuera de la mancha de inundación o de avenidas torrenciales vale 1.</small>';
+    }
+    ['mm','inu','tor'].forEach(k=>{if(!on[k])return;
+      h+='<div class="lg-t">'+HZY[k]+' <span class="yr">(2026)</span> <span class="m6-star">*</span></div>'+
+        ['alta','media','baja'].map(c=>'<div class="lg"><i style="background:'+hazColor(k,c)+'"></i><div><b>Amenaza '+c+'</b> · '+fmt(TOT[k+'_'+c])+' % del Distrito ('+fmt(TOT[k+'_'+c+'_ha'],0)+' ha)<small>'+CRIT[k][c]+'</small></div></div>').join('');
+    });
+    if(on.inc){
+      const A=TOT.km2*100;
+      h+='<div class="lg-t">Incendios forestales <span class="yr">(plan municipal de gestión del riesgo)</span></div>'+
+        ['alta','media','baja'].map(c=>'<div class="lg"><i style="background:'+hazColor('inc',c)+'"></i><div><b>Amenaza '+c+'</b> · '+fmt(MT['inc_'+c+'_ha'],0)+' ha ('+fmt(MT['inc_'+c+'_ha']/A*100,1)+' % del Distrito)</div></div>').join('')+
+        '<small style="color:var(--muted);font-size:11.5px">Escenarios en zonas susceptibles de cobertura vegetal ('+fmt(MT.inc_n,0)+' polígonos; en '+fmt(MT.inc_pastos,0)+' la cobertura es de pastos enmalezados). No cubre todo el Distrito y la capa no trae fecha de corte.</small>';
+    }
+    if(lstCur!=='none'){
+      const lab=['< 26','26–28','28–30','30–32','32–34','≥ 34'];
+      h+='<div class="lg-t">Temperatura de la superficie, °C <span class="yr">(2013–2016)</span></div>'+
+        RAMP.map((c,i)=>'<div class="lg" style="margin:2px 0"><i style="background:'+c+'"></i><div>'+lab[i]+'</div></div>').join('')+'<div class="lg" style="margin:2px 0"><i style="background:#cfcfcf"></i><div>Sin dato</div></div><small style="color:var(--muted);font-size:11.5px">Mediana de imágenes Landsat de la mañana (30 m). '+(lstCur==='com'?'Valor crudo.':'Sin el efecto de la pendiente y la orientación de las laderas.')+'</small>';
+    }
+    if(arbCur!=='none'){
+      const k=ARBK[arbCur],e=MT[k[1]];
+      const lab=['< '+fmt(e[0],1)].concat(e.slice(0,-1).map((x,i)=>fmt(x,1)+'–'+fmt(e[i+1],1)),['≥ '+fmt(e[e.length-1],1)]);
+      h+='<div class="lg-t">'+k[2]+' <span class="yr">('+(arbCur==='arb'?'inventario vigente':'2019')+')</span></div>'+
+        GRN.map((c,i)=>'<div class="lg" style="margin:2px 0"><i style="background:'+c+'"></i><div>'+lab[i]+'</div></div>').join('')+
+        '<div class="lg" style="margin:2px 0"><i style="background:#d6d6d6"></i><div>No evaluado (veredas y barrios rurales: el inventario es urbano)</div></div>'+
+        '<small style="color:var(--muted);font-size:11.5px">Cinco clases por quintiles de los barrios urbanos. '+(arbCur==='arb'?'Árboles individuales del inventario; no cuenta bosques ni parques sin inventariar.':'Espacios verdes urbanos de 2019 (Área Metropolitana y Universidad Nacional).')+'</small>';
+    }
+    const mk=Object.keys(MEDLG).filter(k=>medOn[k]);
+    if(mk.length){
+      h+='<div class="lg-t">Medidas existentes <span class="yr">(presente)</span></div>'+mk.map(k=>'<div class="lg"><i style="background:'+MEDLG[k][0]+'"></i><div><b>'+MEDLG[k][1]+'</b><small>'+MEDLG[k][2]()+'</small></div></div>').join('');
+    }
+    if(breCur!=='none'){
+      h+='<div class="lg-t">Brecha: '+BRN[breCur]+' <span class="m6-star">*</span></div><div class="lg"><i style="background:'+BRE[breCur]+'4d;border:2px solid #111;outline:2px solid #fff"></i><div><b>'+fmt(MT['n_'+breCur],0)+' barrios marcados</b><small>'+MT.crit[breCur]+'</small></div></div>';
+    }
+    if(document.getElementById('m6-lim').checked)h+='<div class="lg-t">Límites <span class="yr">(2014)</span></div><div class="lg"><i style="background:transparent;border:2px solid #1E463D"></i><div>Comunas y corregimientos</div></div>';
+    if(!h)h='<span class="st" style="color:var(--muted)">Active una capa.</span>';
+    document.getElementById('m6-leg').innerHTML=h;
+  }
+
+  function legendInit(){legend();}
+  /* ---- punto en polígono para elegir territorio ---- */
+  function inRing(pt,ring){let c=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const xi=ring[i][0],yi=ring[i][1],xj=ring[j][0],yj=ring[j][1];if(((yi>pt[1])!==(yj>pt[1]))&&(pt[0]<(xj-xi)*(pt[1]-yi)/(yj-yi)+xi))c=!c;}return c;}
+  function inGeom(pt,g){const polys=g.type==='Polygon'?[g.coordinates]:g.coordinates;return polys.some(p=>inRing(pt,p[0])&&!p.slice(1).some(h=>inRing(pt,h)));}
+  function terrAt(ll){const pt=[ll.lng,ll.lat];const f=D.terr_geo.features.find(f=>inGeom(pt,f.geometry));return f?f.properties.codigo:null;}
+
+  /* ---- ficha ---- */
+  function bar(h,t){const c=['alta','media','baja'].map(k=>'<span title="'+k+': '+fmt(t[h+'_'+k])+' %" style="width:'+t[h+'_'+k]+'%;background:'+COL[k]+'"></span>').join('');return '<div class="m6-bar">'+c+'</div>';}
+  function ficha(t){
+    if(!t){document.getElementById('m6-sel').innerHTML='<span class="st">Haga clic en una comuna o corregimiento del mapa, o en una fila de la tabla.</span>';return;}
+    const r=h=>'<div class="m6-row"><div class="k">'+HZ[h]+' <span class="m6-star">*</span></div><div>'+bar(h,t)+'<span class="st">alta '+fmt(t[h+'_alta'])+' % · media '+fmt(t[h+'_media'])+' % · baja '+fmt(t[h+'_baja'])+' %</span></div></div>';
+    document.getElementById('m6-sel').innerHTML='<b>'+t.nombre+'</b><div class="st">'+t.tipo+(t.tipo==='Comuna'?' '+Number(t.codigo):'')+' · '+fmt(t.km2,1)+' km²</div>'+
+      r('mm')+r('inu')+r('tor')+
+      '<div class="m6-row"><div class="k">Multiamenaza <span class="m6-star">*</span></div><div><div class="m6-bar">'+MV.map(v=>'<span title="Índice '+v+': '+fmt(t.m_by[v])+' %" style="width:'+t.m_by[v]+'%;background:'+MCOL[v]+'"></span>').join('')+'</div><span class="st">mediana '+(t.m_med==null?'—':t.m_med)+' · '+fmt(t.m_hi)+' % del área con dos o más amenazas superpuestas (índice ≥ '+MTH+')</span></div></div>'+
+      '<div class="m6-row"><div class="k">Temperatura de la superficie</div><div><b>'+fmt(t.lst)+' °C</b> <span class="st">mediana · '+fmt(t.lst_n)+' °C sin el efecto de la pendiente</span></div></div>'+
+      '<div class="m6-row"><div class="k">Arbolado</div><div>'+(t.arb_ha==null?'<span class="st">el inventario es urbano: no se evalúa</span>':'<b>'+fmt(t.arb_ha,1)+'</b> árboles por ha <span class="st">· '+fmt(t.arboles,0)+' en el inventario</span>')+'</div></div>'+
+      '<div class="m6-row"><div class="k">Obras y alerta</div><div><span class="st">'+fmt(t.obras,0)+' obras de mitigación · '+fmt(t.monit,0)+' instrumentos de monitoreo · '+fmt(t.sat,0)+' elementos de alerta temprana</span></div></div>'+
+      '<div class="m6-row"><div class="k">Brechas <span class="m6-star">*</span></div><div><span class="st">barrios marcados: calor '+fmt(t.br_calor,0)+' · ladera '+fmt(t.br_ladera,0)+' · alerta '+fmt(t.br_alerta,0)+'</span></div></div>';
+  }
+  function select(cod,zoom){
+    sel=cod;const t=cod?byCod[cod]:null;ficha(t);
+    if(!map){pendingSel=cod;renderTab();return;}
+    selLayer.clearLayers();selLayer._second.clearLayers();
+    if(cod){const f=D.terr_geo.features.find(f=>f.properties.codigo===cod);selLayer.addData(f);selLayer._second.addData(f);selLayer.addTo(map);selLayer._second.addTo(map);
+      if(zoom)map.fitBounds(L.geoJSON(f).getBounds(),{padding:[30,30],maxZoom:14});}
+    renderTab();
+  }
+
+  /* ---- tabla ---- */
+  const COLS=[['nombre','Territorio <span class="yr">(2014)</span>',0],['km2','km²',1],['mm_alta','Deslizamientos alta (%)* <span class="yr">(2026)</span>',1],['inu_alta','Inundación alta (%)* <span class="yr">(2026)</span>',1],['tor_alta','Torrenciales alta (%)* <span class="yr">(2026)</span>',1],['m_hi','Dos o más amenazas superpuestas, índice ≥ 4 (% del área)* <span class="yr">(2026)</span>',1],['m_med','Multiamenaza mediana (1–27)* <span class="yr">(2026)</span>',1],['lst','Temp. superficie (°C) <span class="yr">(2013–2016)</span>',1],['lst_n','Temp. sin pendiente (°C) <span class="yr">(2013–2016)</span>',1],['arb_ha','Árboles por ha (inventario, comunas)',1],['br_tot','Barrios con brecha* (calor · ladera · alerta)',1]];
+  const MAXV={mm_alta:70,inu_alta:7,tor_alta:6,m_hi:Math.ceil(Math.max.apply(null,T.map(t=>t.m_hi))/5)*5,m_med:27,lst:37,lst_n:34,arb_ha:Math.ceil(Math.max.apply(null,T.map(t=>t.arb_ha||0))/5)*5,br_tot:Math.max.apply(null,T.map(t=>t.br_tot||0))};
+  const MINV={lst:22,lst_n:25,m_med:1};
+  function renderTab(){
+    const f=document.getElementById('m6-tf').value;
+    let rows=T.filter(t=>!f||t.tipo===f).slice();
+    rows.sort((a,b)=>{const x=a[sortKey],y=b[sortKey];if(x==null)return 1;if(y==null)return -1;return (typeof x==='string'?x.localeCompare(y,'es'):x-y)*sortDir;});
+    const head='<thead><tr>'+COLS.map(c=>'<th class="s" data-k="'+c[0]+'"'+(c[2]?' style="text-align:right"':'')+'>'+c[1]+(sortKey===c[0]?(sortDir>0?' ▲':' ▼'):'')+'</th>').join('')+'</tr></thead>';
+    const body='<tbody>'+rows.map(t=>{
+      const cell=(k,col)=>{const v=t[k];const mn=MINV[k]||0;const w=v==null?0:Math.max(0,Math.min(100,(v-mn)/(MAXV[k]-mn)*100));return '<td class="num m6-c"><span class="bar" style="width:'+w+'%;background:'+col+'"></span><span>'+fmt(v)+'</span></td>';};
+      return '<tr data-c="'+t.codigo+'"'+(t.codigo===sel?' class="m6-sel-row"':'')+'><td>'+t.nombre+' <span class="tag">'+t.tipo+'</span></td><td class="num">'+fmt(t.km2,1)+'</td>'+
+        cell('mm_alta',COL.alta)+cell('inu_alta',COL.alta)+cell('tor_alta',COL.alta)+cell('m_hi',MCOL[12])+cell('m_med',MCOL[12])+cell('lst','#ec6d2f')+cell('lst_n','#ec6d2f')+cell('arb_ha',GRN[3])+
+        '<td class="num m6-c"><span class="bar" style="width:'+(MAXV.br_tot?Math.min(100,(t.br_tot||0)/MAXV.br_tot*100):0)+'%;background:'+BRE.calor+'"></span><span>'+fmt(t.br_tot,0)+' <span class="st" style="color:var(--muted);font-size:11.5px">('+fmt(t.br_calor,0)+' · '+fmt(t.br_ladera,0)+' · '+fmt(t.br_alerta,0)+')</span></span></td></tr>';}).join('')+'</tbody>';
+    document.getElementById('m6-tab').innerHTML=head+body;
+  }
+  function csv(){
+    const h=['codigo','nombre','tipo','km2','mm_alta_pct','mm_media_pct','mm_baja_pct','inu_alta_pct','inu_media_pct','inu_baja_pct','tor_alta_pct','tor_media_pct','tor_baja_pct','multiamenaza_mediana','multiamenaza_ge4_pct'].concat(MV.map(v=>'multiamenaza_'+v+'_pct')).concat(['lst_mediana_C','lst_sin_pendiente_C','arboles_inventario','arboles_por_ha','obras_mitigacion','monitoreo_geotecnico','elementos_alerta','barrios_brecha_calor','barrios_brecha_ladera','barrios_brecha_alerta']);
+    const k=['codigo','nombre','tipo','km2','mm_alta','mm_media','mm_baja','inu_alta','inu_media','inu_baja','tor_alta','tor_media','tor_baja','m_med','m_hi'].concat(MV.map(v=>'mp_'+v)).concat(['lst','lst_n','arboles','arb_ha','obras','monit','sat','br_calor','br_ladera','br_alerta']);
+    const L2=[h.join(',')].concat(T.map(t=>k.map(x=>{const v=t[x];return v==null?'':(typeof v==='string'?'"'+v.replace(/"/g,'""')+'"':v);}).join(',')));
+    const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['﻿'+L2.join('\n')],{type:'text/csv;charset=utf-8'}));a.download='territorios_amenaza_temperatura_PAC.csv';a.click();
+  }
+  /* base por barrio y vereda: todos los indicadores del mapa, para compartir */
+  function csvB(){
+    const k=['codigo','nombre','comuna_cod','comuna','urbano','ha','lst_n','mm_alta','inu_alta','tor_alta','tor_alta_ha','inc_alta_ha','inc_media_ha','arboles','arb_ha','arb_sanos','arb_muertos','arb_enfermos','copa_pct','verde_pct','pot_n','pot_ha','techos_n','obras','monit','estudios','alarmas','sensores','encuentro','rutas','f_calor','f_ladera','f_alerta'];
+    const h=['codigo','barrio_o_vereda','comuna_o_corregimiento_codigo','comuna_o_corregimiento','urbano','area_ha','temp_superficie_sin_pendiente_C','deslizamientos_alta_pct','inundacion_alta_pct','torrenciales_alta_pct','torrenciales_alta_ha','incendios_alta_ha','incendios_media_ha','arboles_inventario','arboles_por_ha','arboles_sanos','arboles_muertos','arboles_enfermos','cobertura_arborea_pct_2019','espacios_verdes_pct_2019','zonas_verdes_potencial_n','zonas_verdes_potencial_ha','techos_verdes_marcados_n','obras_mitigacion','monitoreo_geotecnico','estudios','alarmas','sensores_nivel','puntos_encuentro','rutas_evacuacion','brecha_calor_poco_arbolado','brecha_ladera_sin_obra','brecha_torrencial_sin_alerta'];
+    const rows=M.barrios.map(b=>k.map(x=>{let v=x==='comuna_cod'?b.comuna:(x==='comuna'?nom(b.comuna):b[x]);if(typeof v==='boolean')v=v?1:0;return v==null?'':(typeof v==='string'?'"'+v.replace(/"/g,'""')+'"':v);}).join(','));
+    const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['﻿'+[h.join(',')].concat(rows).join('\n')],{type:'text/csv;charset=utf-8'}));a.download='barrios_veredas_medidas_amenaza_PAC.csv';a.click();
+  }
+
+  /* ---- multiamenaza: tabla de combinaciones y valor en un punto ---- */
+  function mtab(){
+    const A=TOT.km2*100;
+    const rows=Object.entries(TOT.comb).map(([k,v])=>{const q=k.split('-').map(Number);return {a:q[0],b:q[1],c:q[2],p:q[0]*q[1]*q[2],pct:v};}).sort((x,y)=>y.p-x.p||y.pct-x.pct);
+    const nm=(v,flood)=>(v===1&&flood?'baja o fuera de la mancha':MNM[v])+' ('+v+')';
+    const head='<thead><tr><th>Índice</th><th>Deslizamientos</th><th>Inundación</th><th>Avenidas torrenciales</th><th style="text-align:right">% del Distrito</th><th style="text-align:right">Hectáreas</th></tr></thead>';
+    const big=rows.filter(r=>r.pct/100*A>=1), small=rows.filter(r=>r.pct/100*A<1);
+    const body=big.map(r=>'<tr><td>'+chip(r.p)+'</td><td>'+nm(r.a,0)+'</td><td>'+nm(r.b,1)+'</td><td>'+nm(r.c,1)+'</td><td class="num">'+fmt(r.pct,2)+'</td><td class="num">'+fmt(r.pct/100*A,0)+'</td></tr>').join('');
+    const sm=small.reduce((a,r)=>a+r.pct,0), s=rows.reduce((a,r)=>a+r.pct,0);
+    document.getElementById('m6-mtab').innerHTML=head+'<tbody>'+body+'<tr><td colspan="4">'+small.length+' combinaciones de menos de 1 ha cada una</td><td class="num">'+fmt(sm,2)+'</td><td class="num">'+fmt(sm/100*A,0)+'</td></tr><tr><td colspan="4"><b>Total cubierto</b> (el resto son huecos de la reconstrucción de las capas)</td><td class="num"><b>'+fmt(s,1)+'</b></td><td class="num"><b>'+fmt(s/100*A,0)+'</b></td></tr></tbody>';
+  }
+  const mBox=f=>{let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;const w=c=>{if(typeof c[0]==='number'){x0=Math.min(x0,c[0]);x1=Math.max(x1,c[0]);y0=Math.min(y0,c[1]);y1=Math.max(y1,c[1]);}else c.forEach(w);};w(f.geometry.coordinates);return [x0,y0,x1,y1];};
+  const enBox=(pt,f)=>{const b=f._bb||(f._bb=mBox(f));return !(pt[0]<b[0]||pt[0]>b[2]||pt[1]<b[1]||pt[1]>b[3]);};
+  function multiAt(ll){
+    const pt=[ll.lng,ll.lat];
+    if(!terrAt(ll))return null;
+    for(const f of D.multi_geo.features){if(enBox(pt,f)&&inGeom(pt,f.geometry))return f.properties;}   /* dentro de una mancha de inundación o torrencial */
+    for(const f of D.haz_geo.mm.features){                                                            /* fuera de las manchas: índice = clase de deslizamientos */
+      if(f.properties.clase==='baja')continue;
+      if(enBox(pt,f)&&inGeom(pt,f.geometry)){const a=f.properties.clase==='alta'?3:2;return {a:a,b:1,c:1,p:a};}
+    }
+    return {a:1,b:1,c:1,p:1};
+  }
+  const barrioAt=ll=>{const pt=[ll.lng,ll.lat];for(const f of D.bar_geo.features){if(enBox(pt,f)&&inGeom(pt,f.geometry))return BT[f.properties.bid];}return null;};
+  const pill=k=>'<span class="m6-pill" style="background:'+BRE[k]+'">'+BRN[k]+'</span>';
+  /* al hacer clic: ficha del barrio o vereda y, si la capa está activa, el valor de la multiamenaza en ese punto */
+  function clickPopup(ll){
+    const b=barrioAt(ll), p=on.multi?multiAt(ll):null;
+    if(!b&&!p)return;
+    let h='<div class="m6-pop-t">';
+    if(b){
+      const fl=['calor','ladera','alerta'].filter(k=>b[FLAG[k]]);
+      h+='<b>'+b.nombre+'</b><br><span class="k">'+nom(b.comuna)+(b.urbano?'':' · rural')+' · '+fmt(b.ha,1)+' ha</span><br>'+
+        '<span class="k">Temperatura de superficie:</span> '+(b.lst_n!=null?fmt(b.lst_n)+' °C (sin pendiente)':'sin dato')+'<br>'+
+        '<span class="k">Deslizamientos alta:</span> '+fmt(b.mm_alta)+' % · <span class="k">torrenciales alta:</span> '+fmt(b.tor_alta)+' %<br>'+
+        (b.urbano?'<span class="k">Árboles:</span> '+fmt(b.arboles,0)+' ('+fmt(b.arb_ha,1)+' por ha) · <span class="k">cobertura arbórea:</span> '+fmt(b.copa_pct)+' %<br>':'')+
+        '<span class="k">Obras:</span> '+fmt(b.obras,0)+' · <span class="k">monitoreo:</span> '+fmt(b.monit,0)+' · <span class="k">alerta temprana:</span> '+fmt(b.alarmas+b.sensores+b.encuentro+b.rutas,0)+'<br>'+
+        (fl.length?'<div style="margin-top:4px">'+fl.map(pill).join('')+'</div>':'<span class="k">Sin brechas marcadas.</span>');
+    }
+    if(p)h+=(b?'<hr style="border:0;border-top:1px solid var(--line);margin:6px 0">':'')+'<b>Multiamenaza: '+chip(p.p)+'</b><br>Deslizamientos '+MNM[p.a]+' ('+p.a+') × inundación '+(p.b===1?'baja o fuera de la mancha':MNM[p.b])+' ('+p.b+') × avenidas torrenciales '+(p.c===1?'baja o fuera de la mancha':MNM[p.c])+' ('+p.c+')';
+    L.popup({className:'m6-pop',maxWidth:300}).setLatLng(ll).setContent(h+'</div>').openOn(map);
+  }
+
+  /* ---- parte 4: tres medidas, brechas y evidencia ---- */
+  function medCards(){
+    const top=k=>'<ol class="m6-top">'+(M.top[k]||[]).map(i=>{const b=BT[i];const d=k==='calor'?fmt(b.lst_n)+' °C · '+fmt(b.copa_pct)+' % de cobertura arbórea':(k==='ladera'?fmt(b.mm_alta)+' % en deslizamiento alto':fmt(b.tor_alta_ha,1)+' ha de torrencial alta');return '<li><b>'+b.nombre+'</b> <span class="st" style="color:var(--muted)">('+nom(b.comuna)+') · '+d+'</span></li>';}).join('')+'</ol>';
+    const card=(tag,cls,t,txt,k)=>'<div class="card"><span class="st-tag '+cls+'">'+tag+'</span><h3 style="margin-top:8px">'+t+'</h3>'+txt+
+      '<p><b>'+fmt(MT['n_'+k],0)+' barrios marcados</b> <span style="color:var(--muted)">(no son todos los que necesitan la medida; son donde el registro no la muestra)</span></p>'+
+      '<div class="st" style="color:var(--muted);font-size:12px">Los más críticos:</div>'+top(k)+'<button class="btn m6-cardbtn" data-act="'+k+'">Ver en el mapa</button></div>';
+    document.getElementById('m6-med').innerHTML=
+      card('Basada en la naturaleza','b','Arbolado y verde urbano',
+        '<p>'+fmt(MT.arboles,0)+' árboles inventariados en Medellín ('+fmt(MT.arb_sanos_pct,0)+' % sanos), '+fmt(MT.arb_urb_ha,1)+' por hectárea en los barrios urbanos. Espacios verdes urbanos de 2019: '+fmt(MT.evu_ha,0)+' ha dentro del Distrito; '+fmt(MT.techos_n,0)+' polígonos con cubierta verde marcada y '+fmt(MT.pot_n,0)+' zonas verdes con potencial verde ('+fmt(MT.pot_ha,0)+' ha).</p>','calor')+
+      card('Obra gris','g','Obras de ladera y quebrada',
+        '<p>'+fmt(MT.obras_n,0)+' obras de mitigación terminadas entre 2016 y 2022 (taludes, cunetas, muros, senderos y escalas), '+fmt(MT.monit_n,0)+' instrumentos de monitoreo geotécnico ('+fmt(MT.monit_act,0)+' activos) y '+fmt(MT.estu_n,0)+' polígonos de estudios y diseños. Las obras se concentran en Popular y Villa Hermosa: no son un inventario completo.</p>','ladera')+
+      card('No estructural','a','Alerta temprana y evacuación',
+        '<p>'+fmt(MT.alarm_n,0)+' alarmas, '+fmt(MT.sens_n,0)+' sensores de nivel, '+fmt(MT.enc_n,0)+' puntos de encuentro y '+fmt(MT.rutas_n,0)+' rutas de evacuación, en seis quebradas de respuesta rápida: Doña María, La Picacha, La Iguaná, Malpaso, Potreritos y Santa Elena.</p>','alerta');
+  }
+  const IMP=[
+    ['Arbolado y verde urbano','Calor (temperatura de superficie y sombra). Para agua de lluvia, el mecanismo es razonable pero no hay cifra local.','En el valle de Aburrá, barrios con arbolado quedan unos 2 °C más frescos que barrios comparables sin él (compacto de baja altura: 33,0 → 31,0 °C; abierto de mediana altura: 30,5 → 28,5 °C; Guzmán, 2018). Sobre superficies duras, la copa baja la temperatura de contacto de 8,5 a 11 °C frente a concreto y asfalto, pero eso no es el efecto en el barrio.','media','Media para el calor del barrio; alta para la superficie sombreada; sin cifra local para agua e incendios (depende de la especie y de la cobertura).'],
+    ['Parques y zonas verdes pequeñas','Temperatura del aire cerca del parque','Literatura de otros climas: 1 a 3 °C en parques de 0,5 a 2 ha, y hasta unos 350 a 400 m de alcance en parques grandes (Damarla y Chattopadhyay, 2025). Sin medición local.','baja','Media-baja; validar con un piloto en Medellín.'],
+    ['Obras de estabilización de ladera','Deslizamientos en el sitio donde se hacen','El Plan de Acción Climática 2020 fijó como línea base 14 % de obras de mitigación y protección ejecutadas, con meta de 22 % en 2023. No hay inventario completo de obras; el de esta página es parcial.','alta','Alta en el sitio; cobertura baja y sin medición de resultados.'],
+    ['Alerta temprana y evacuación','Víctimas y heridos, no daños materiales','Seis quebradas con alerta. La línea base del plan de 2020 fue de 24 heridos por desastres naturales, con meta de 18 en 2023 (año de la línea base sin confirmar). No hay tiempo de aviso medido.','media','Media: el efecto sobre vidas es conocido en general; no está medido en Medellín.'],
+    ['Corredores verdes','Calor','La Secretaría de Medio Ambiente declara que mejoran el microclima «hasta 2 °C», sin metodología publicada; la prensa reporta 3,5 a 5 °C en puntos con sombra.','baja','Baja: cifra oficial sin método.'],
+    ['Techos verdes y techos reflectantes','Calor exterior (limitado); agua lluvia y energía','En la campaña local no se midió ningún techo verde. El techo de PVC blanco no resultó más fresco que el gris (Guzmán, 2018). La literatura reporta más de 10 °C de enfriamiento interior en condiciones específicas y efecto exterior moderado.','baja','Baja: medir en un piloto antes de fijar metas.'],
+    ['Drenaje urbano sostenible','Inundación por lluvia intensa','No se encontró un inventario local. Solo hay obras en construcción (Parque Primavera Norte, cancha de Villa Niza, Gran Parque Medellín), anunciadas por la Alcaldía.','','Sin evidencia local.']
+  ];
+  function impTab(){
+    document.getElementById('m6-imp').innerHTML='<thead><tr><th>Medida</th><th>Qué reduce</th><th>Evidencia disponible</th><th>Confianza</th></tr></thead><tbody>'+IMP.map(r=>'<tr><td><b>'+r[0]+'</b></td><td>'+r[1]+'</td><td>'+r[2]+'</td><td><span class="m6-conf '+r[3]+'">'+r[4]+'</span></td></tr>').join('')+'</tbody>';
+  }
+  function brTxt(){
+    document.getElementById('m6-brtxt').innerHTML=
+      ['calor','ladera','alerta'].map(k=>'<p><b>'+BRN[k]+'.</b> '+MT.crit_long[k]+'</p>').join('')+
+      '<p><b>Qué no está en estos registros.</b></p><ul>'+
+      '<li>Alerta temprana: solo hay ubicación de alarmas, sensores y rutas; falta el tiempo de aviso y la cobertura real.</li>'+
+      '<li>Obras de mitigación: son las del programa 2016–2022 del gestor del riesgo; no incluyen obras de otras entidades ni la canalización de quebradas.</li>'+
+      '<li>Quebradas canalizadas o cubiertas: existe el inventario por tramo, pero sus códigos no traen diccionario; falta pedirlo a Medio Ambiente.</li>'+
+      '<li>Árboles: el inventario cuenta individuos en espacio público; bosques, parques sin inventariar y arbolado privado se miran con los espacios verdes urbanos de 2019.</li>'+
+      '<li>Drenaje urbano sostenible: no se encontró inventario ni capa.</li></ul>';
+  }
+  function abTxt(){
+    const U=MT.umb,C=MT.corr;
+    document.getElementById('m6-abtxt').innerHTML=
+      '<p>No hay un índice único de arbolado: hay tres lecturas por barrio y cada una responde una pregunta distinta. Todas se calculan con datos ya recopilados; no se pidió ni se midió nada nuevo.</p>'+
+      '<ol>'+
+      '<li><b>Árboles por hectárea (inventario).</b> Fuente: Sistema de Árbol Urbano de la Alcaldía, con '+fmt(MT.arboles,0)+' árboles individuales con coordenadas dentro de los barrios de Medellín (consulta de octubre de 2026). Se cuenta cuántos caen dentro del polígono de cada barrio y se divide por el área del barrio en hectáreas. No cuenta bosques, parques ni arbolado privado sin inventariar.</li>'+
+      '<li><b>% de cobertura arbórea (espacios verdes urbanos, 2019).</b> Fuente: inventario del Área Metropolitana y la Universidad Nacional, con polígonos dibujados sobre fotografías aéreas; cada polígono tiene una cobertura dominante (árboles, pasto, arbustos, jardín…). Cada polígono se recorta al límite de cada barrio, se suma el área de los que tienen árboles como cobertura dominante, se divide por el área del barrio y se multiplica por 100. Incluye parques, retiros de quebrada y lotes.</li>'+
+      '<li><b>% de espacios verdes.</b> Igual que la anterior, pero sumando todos los polígonos verdes (árboles, pasto, arbustos y jardín).</li></ol>'+
+      '<p><b>Mapas por barrio.</b> Cinco clases con la misma cantidad de barrios urbanos cada una (quintiles de los '+fmt(MT.n_urb,0)+' barrios urbanos de 5 ha o más). Las veredas y los barrios rurales aparecen sin evaluar porque el inventario es urbano.</p>'+
+      '<p><b>Marca de «poco arbolado».</b> Barrio urbano con '+fmt(U.copa)+' % de cobertura arbórea o menos (cuartil inferior) y temperatura de superficie de '+fmt(U.lst)+' °C o más (cuartil superior).</p>'+
+      '<p><b>Por qué la cobertura arbórea y no los árboles por hectárea.</b> Se compararon las tres lecturas con la temperatura de superficie de los '+fmt(MT.n_urb,0)+' barrios urbanos. La correlación es '+fmt(C.arb,2)+' con los árboles por hectárea, '+fmt(C.copa,2)+' con la cobertura arbórea y '+fmt(C.verde,2)+' con los espacios verdes en total (cuanto más negativa, más se asocia el verde con menos calor). El inventario cuenta árboles en el espacio público; la cobertura arbórea mide qué parte del barrio está bajo árboles.</p>'+
+      '<p><b>Límites.</b> Las fuentes son de fechas distintas (temperatura 2013–2016, espacios verdes 2019, inventario de árboles de 2026). El área del barrio incluye calles y edificios. Un cuartil es relativo: siempre marca la cuarta parte de los barrios. No mide altura, edad ni sombra real de la copa.</p>';
+  }
+  function teamTxt(){
+    document.getElementById('m6-teamtxt').innerHTML=
+      '<div class="m6-team"><b>Por decidir con el equipo.</b> Qué cuenta como «arbolado bajo» y como «calor alto» al cruzar las dos variables.</div><ul>'+
+      '<li>El criterio actual es relativo: toma el cuarto más caliente y el cuarto con menos cobertura arbórea de los barrios urbanos de toda la ciudad. Siempre marca barrios, aunque todos estuvieran bien, y deja por fuera barrios calientes que no llegan al cuartil.</li>'+
+      '<li>Hay comunas calientes en conjunto. Cuando todo un sector está caliente, un umbral relativo no dice qué tan peligrosa es esa temperatura. ¿La comparación debe ser contra la ciudad o dentro de cada comuna?</li>'+
+      '<li>Alternativa: definir el calor con un umbral de riesgo, es decir, la temperatura desde la cual el cuerpo o el contacto con una superficie empiezan a correr peligro (por ejemplo, el asfalto al mediodía). Para el cuerpo suele usarse la temperatura fisiológica equivalente; «biotemperatura», en sentido estricto, es otro concepto (promedio de temperaturas entre 0 y 30 °C, usado para zonas de vida). Valores locales ya recopilados: en la Unidad Deportiva Atanasio Girardot el asfalto tuvo una mediana de 37,5 °C y la grama sintética llegó a 60–70 °C al mediodía (vuelos con dron; Guzmán, 2018).</li>'+
+      '<li>Por tiempo, la definición se afina con los datos ya recopilados (temperatura de superficie, cobertura arbórea, espacios verdes); no se piden datos nuevos hasta decidirla.</li></ul>';
+  }
+  /* quitar todas las capas del mapa (queda el mapa base) */
+  function clearAll(){
+    Object.keys(on).forEach(k=>on[k]=false);medOn={};arbCur='none';breCur='none';lstCur='none';
+    syncUI();document.getElementById('m6-lim').checked=false;
+    if(map){map.closePopup();apply();}else legend();
+  }
+  /* los botones «Ver en el mapa» dejan el mapa listo para cada ejemplo */
+  const PRESET={
+    calor:()=>{on.mm=on.inu=on.tor=on.multi=on.inc=false;medOn={};arbCur='none';breCur='calor';lstCur='barrio';},
+    ladera:()=>{on.mm=true;on.inu=on.tor=on.multi=on.inc=false;medOn={obras:true,monit:true};arbCur='none';breCur='ladera';lstCur='none';},
+    alerta:()=>{on.tor=true;on.mm=on.inu=on.multi=on.inc=false;medOn={alarm:true,enc:true};arbCur='none';breCur='alerta';lstCur='none';}
+  };
+  function syncUI(){
+    document.querySelectorAll('input[data-h]').forEach(i=>i.checked=!!on[i.dataset.h]);
+    document.querySelectorAll('input[data-m]').forEach(i=>i.checked=!!medOn[i.dataset.m]);
+    document.querySelectorAll('input[name=m6-arb]').forEach(i=>i.checked=(i.value===arbCur));
+    document.querySelectorAll('input[name=m6-bre]').forEach(i=>i.checked=(i.value===breCur));
+    document.querySelectorAll('input[name=m6-lst]').forEach(i=>i.checked=(i.value===lstCur));
+  }
+  function preset(k){PRESET[k]();syncUI();if(map)apply();else legend();document.getElementById('m6-map').scrollIntoView({behavior:'smooth',block:'center'});}
+
+  /* ---- foto de la base y vacíos ---- */
+  function snap(){
+    const head='<thead><tr><th>Bloque</th><th class="num" style="text-align:right">Variables asignadas</th><th style="text-align:right">A escala de comuna</th><th style="text-align:right">De estación</th><th style="text-align:right">Municipio o ciudad</th><th style="text-align:right">Nombran el fenómeno</th><th>Qué suma este mapa</th></tr></thead>';
+    const add={A1:'Inundación* por comuna (% de área alta, media y baja)',A2:'Deslizamientos* por comuna y barrio (hoy ninguna variable los nombra); obras de mitigación y monitoreo por barrio',A4:'Avenidas torrenciales* por comuna y barrio; alarmas, sensores y puntos de encuentro en las quebradas con alerta',A5:'Temperatura de la superficie por comuna y barrio (satélite); árboles y espacios verdes por barrio'};
+    document.getElementById('m6-snap').innerHTML=head+'<tbody>'+D.snap.map(s=>'<tr><td><b>'+s.id+'</b> '+s.nombre+'</td><td class="num">'+s.asig+'</td><td class="num">'+s.comuna+'</td><td class="num">'+s.estacion+'</td><td class="num">'+s.municipio_ciudad+'</td><td class="num">'+s.especificas+'</td><td>'+add[s.id]+'</td></tr>').join('')+'</tbody>';
+  }
+  const GAPS=[
+    ['r','Por actualizar','Capas oficiales del POT 2026','Las amenazas de este mapa salen de láminas en PDF y, en inundación, parte de las quebradas conserva la zonificación del POT 2014. Cuando el Distrito publique las capas oficiales (shapefile o geodatabase), se reemplazan y se retira el asterisco.'],
+    ['a','Por solicitar','Temperatura del aire a 2 m medida','Hoy solo existe la serie del Aeropuerto Olaya Herrera (IDEAM) y las medias mensuales modeladas del convenio DAGRD–SIATA (1990, 2030, 2040; resolución gruesa). Falta la red de estaciones del SIATA: no hay descarga pública, se pide por solicitud formal (lista de estaciones con coordenadas, serie horaria o diaria, cruda o validada).'],
+    ['a','Por buscar','Exposición real','Cuántas personas y viviendas están dentro de cada clase de amenaza. Se cruza con población por manzana del Censo 2018 (DANE) y con predios del catastro.'],
+    ['b','En el mapa','Amenaza por incendios forestales','Ya está la amenaza: 409 polígonos del plan municipal de gestión del riesgo, con 296 ha en amenaza alta. Siguen faltando los eventos con coordenadas (1.357 eventos de la Universidad de Antioquia y el SIATA, o la capa del gestor del riesgo, que requiere autorización). El ráster de susceptibilidad del convenio no sirve (38 valores distintos).'],
+    ['b','En el mapa','Medidas con ubicación: tres ejemplos','Arbolado y verde urbano, obras de ladera y alerta temprana están en el mapa con su marca de brecha por barrio. Quedan por sumar los inventarios de espacio público por habitante, la red de colectores y los tramos de quebrada canalizados o cubiertos, que esperan el diccionario de códigos.'],
+    ['a','No encontrado','Sistemas urbanos de drenaje sostenible','No hay capa ni inventario con ese nombre en el servidor de mapas ni en el catálogo geográfico de la Alcaldía. Solo hay obras anunciadas o en construcción: el sistema del Parque Primavera Norte (tanques subterráneos que desaguan a la quebrada Juan Bobo), el de la cancha de Villa Niza y el del Gran Parque Medellín. Para ubicarlos hay que pedir la lista a la Empresa de Desarrollo Urbano y a Medio Ambiente.'],
+    ['a','Por pedir','Diccionario de los tramos de quebrada','El inventario de 10.312 tramos de quebrada trae tipo de tramo (códigos N, B y C) y material de lecho (T, C, P…), pero sin diccionario. Con él se calcularía qué porcentaje de cada comuna es quebrada canalizada o cubierta, la mejor aproximación a la obra gris de drenaje.'],
+    ['r','Por hacer','Anclaje a la normatividad nacional e internacional','Falta conectar las capas, las medidas y las cifras de esta página con la normatividad nacional e internacional en la que se sustenta la plataforma (por ejemplo, la Ley 1523 de 2012, el Decreto 1077 de 2015 y el Marco de Sendai, que ya están en el catálogo integrado de medidas). La hoja de cobertura documental de ese catálogo (nacional, internacional, regional y distrital) es el punto de partida; la conexión con cada capa todavía no está hecha.'],
+    ['a','Por pedir','Obras hidráulicas y red completa de alcantarillado','No hay inventario de tanques de retención ni de obras de control en quebradas. La red completa de alcantarillado y los sumideros son de EPM y no tienen descarga pública; solo está la red principal del POT 2014.'],
+    ['g','Pospuesto','Bases vectoriales de eventos','SIRMED (44.317 emergencias desde 2021) y el inventario de Geohazards quedan por ahora fuera del mapa, por decisión del equipo. SIRMED mide demanda de atención, no gravedad, y no se encadena con la serie del DAGRD de 2005–2018.'],
+    ['b','Candidato','Salud sensible al clima','Dengue y vulnerabilidad en salud por comuna del plan de salud (tablas del Tomo I y II); se suman cuando se defina el indicador.']
+  ];
+  function gaps(){document.getElementById('m6-gaps').innerHTML=GAPS.map(g=>'<div class="card"><span class="st-tag '+g[0]+'">'+g[1]+'</span><h3 style="margin-top:8px">'+g[2]+'</h3><p>'+g[3]+'</p></div>').join('');}
+
+  /* ---- arranque: la interfaz se pinta ya; el mapa se crea cuando su contenedor tiene tamaño (también sirve si la pestaña arranca oculta) ---- */
+  let pendingSel=null;
+  function buildMap(){
+    if(map)return;
+    map=L.map('m6-map',{preferCanvas:true,zoomControl:true,attributionControl:true,minZoom:9,maxZoom:17,center:[6.2518,-75.5636],zoom:11});
+    L.control.scale({imperial:false}).addTo(map);
+    mkBase();mkLayers();
+    const dark=document.documentElement.dataset.theme==='dark'||(!document.documentElement.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches);
+    setBase(dark?'oscuro':'claro');
+    apply();
+    map.fitBounds(L.geoJSON(D.terr_geo).getBounds(),{padding:[10,10]});
+    map.on('click',e=>{select(terrAt(e.latlng),false);clickPopup(e.latlng);});
+    if(pendingSel){select(pendingSel,true);pendingSel=null;}
+  }
+  function init(){
+    if(ready)return;ready=true;
+    kpis();snap();gaps();mtab();medCards();impTab();brTxt();abTxt();teamTxt();renderTab();ficha(null);legendInit();
+    const el=document.getElementById('m6-map');
+    const ro=new ResizeObserver(()=>{if(!map){if(el.clientWidth>0&&el.clientHeight>0)buildMap();}else map.invalidateSize();});
+    ro.observe(el);
+    document.querySelectorAll('input[data-h]').forEach(i=>i.addEventListener('change',()=>{on[i.dataset.h]=i.checked;if(map)apply();else legend();}));
+    document.querySelectorAll('.m6-hop').forEach(i=>i.addEventListener('input',()=>{if(map)apply();}));
+    document.querySelectorAll('input[name=m6-lst]').forEach(i=>i.addEventListener('change',()=>{if(i.checked){lstCur=i.value;if(map)apply();else legend();}}));
+    document.querySelectorAll('input[data-m]').forEach(i=>i.addEventListener('change',()=>{medOn[i.dataset.m]=i.checked;if(map)apply();else legend();}));
+    document.querySelectorAll('input[name=m6-arb]').forEach(i=>i.addEventListener('change',()=>{if(i.checked){arbCur=i.value;if(map)apply();else legend();}}));
+    document.querySelectorAll('input[name=m6-bre]').forEach(i=>i.addEventListener('change',()=>{if(i.checked){breCur=i.value;if(map)apply();else legend();}}));
+    document.getElementById('m6-med').addEventListener('click',e=>{const b=e.target.closest('button[data-act]');if(b)preset(b.dataset.act);});
+    document.getElementById('m6-csvb').addEventListener('click',csvB);
+    document.getElementById('m6-clear').addEventListener('click',clearAll);
+    document.querySelectorAll('a[data-open]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const d=document.getElementById(a.dataset.open);d.open=true;d.scrollIntoView({behavior:'smooth',block:'start'});}));
+    document.getElementById('m6-opl').addEventListener('input',()=>{if(map)apply();});
+    document.getElementById('m6-lim').addEventListener('change',()=>{if(map)apply();else legend();});
+    document.getElementById('m6-base').addEventListener('change',e=>{if(map)setBase(e.target.value);});
+    document.getElementById('m6-tf').addEventListener('change',renderTab);
+    document.getElementById('m6-csv').addEventListener('click',csv);
+    document.getElementById('m6-tab').addEventListener('click',e=>{
+      const th=e.target.closest('th.s');if(th){const k=th.dataset.k;if(sortKey===k)sortDir=-sortDir;else{sortKey=k;sortDir=(k==='nombre')?1:-1;}renderTab();return;}
+      const tr=e.target.closest('tr[data-c]');if(tr){select(tr.dataset.c,true);document.getElementById('m6-map').scrollIntoView({behavior:'smooth',block:'center'});}});
+    document.getElementById('thm').addEventListener('click',()=>{const r=document.documentElement;const isD=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches);r.dataset.theme=isD?'light':'dark';document.getElementById('thm').setAttribute('aria-pressed',String(!isD));if(map&&(baseCur===base.claro||baseCur===base.oscuro))setBase(isD?'claro':'oscuro');});
+  }
+  function show(){init();setTimeout(()=>{if(map&&map.getSize().x>0)map.invalidateSize();},120);}
+  return {init:init,show:show,select:select,preset:preset,map:()=>map,_state:()=>({on,lstCur,sel,medOn,arbCur,breCur})};
+})();
+document.addEventListener('DOMContentLoaded',()=>PAC_MAPA.show());
+/* ======================= FIN SCRIPT DEL MÓDULO 6 ======================= */
+</script>
+</body>
+</html>

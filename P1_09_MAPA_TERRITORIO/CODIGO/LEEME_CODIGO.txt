@@ -1,0 +1,35 @@
+CÓDIGO DEL PRODUCTO 9 - MAPA DEL TERRITORIO (versión 2)
+=======================================================
+Scripts en Python con los que se calcularon las cifras, las tablas, las marcas y la página.
+Las rutas dentro de los scripts son las del computador del autor (Drive del proyecto y carpeta
+de trabajo); hay que ajustarlas si se ejecutan en otro computador.
+
+Paquetes: geopandas, rasterio, shapely, pandas, numpy, pyarrow y openpyxl (en este trabajo se
+ejecutaron con «uv run --with ...»).
+
+ORDEN DE EJECUCIÓN
+  1. inventario_capas.py        lista las capas del servidor de mapas de la Alcaldía (2.608 capas)
+  2. descarga_medidas.py        descarga las capas de medidas en EPSG:9377, con paginación y reintentos
+                                (usar 3 hilos como máximo: con más, el servidor responde 503)
+  3. datos_mapa.py              amenazas, temperatura y multiamenaza por comuna y corregimiento
+     (parche_datos_v3.py        ya aplicado en datos_mapa.py; queda como registro del cambio)
+  4. medidas_calculo.py         estadísticas por barrio: amenazas, incendios, árboles, espacios verdes,
+                                obras, monitoreo y alerta temprana
+  5. medidas_json.py            umbrales, marcas de «dónde falta», resumen por comuna, geometrías
+                                para la página y la base en Excel
+  6. exporta_multiamenaza.py    piezas exactas de la multiamenaza (GeoPackage)
+     exporta_paquete_p9.py      tablas y capas SIG de 02_DATOS
+  7. fusiona.py                 une los datos de las dos fases en un solo JSON
+  8. armar_html_v2.py           arma la página con plantilla.html y Leaflet 1.9.4
+
+Inventario de datos (02_DATOS/Inventario_mapas_medidas_Distrito_v1.xlsx)
+  sonda_capas.py, estadisticas_capas.py, catalogo_geo.py, filtra_capas.py   conteos, campos y valores de
+                                las capas candidatas del servidor de mapas y del catálogo geográfico
+  build_inventario.py           arma el libro de Excel del inventario
+
+Otros archivos
+  plantilla.html                código de la página (estilos, estructura y funciones)
+  armar_html.py, parche_v2.py   versión 1 de la página (se conservan por trazabilidad)
+  filtra_multi.py               recorte de las piezas de multiamenaza para la web
+
+Qué hace cada cálculo y de dónde sale cada dato: 03_DOCUMENTACION/METODOS_Y_REFERENCIAS.md

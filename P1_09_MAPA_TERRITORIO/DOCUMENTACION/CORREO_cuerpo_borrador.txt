@@ -1,0 +1,47 @@
+BORRADOR DEL CORREO PARA EL EQUIPO (no enviado)
+===============================================
+Llenar los textos entre corchetes antes de enviar.
+
+PARA: [equipo del PAC, profesores y equipo de desarrollo de la plataforma]
+ASUNTO: Piloto de geovisor para el PAC: del diagnóstico (componente 1) al inventario de medidas (componente 3)
+ADJUNTO: ninguno. Mejor enviar el enlace (el HTML pesa unos 8 MB).
+
+
+---------------------------------------------------------------------------
+Buenos días, estimado equipo del PAC:
+
+Comparto una propuesta de geovisor, construida en parte a partir del trabajo que Daniel ha compartido. Es un piloto relativamente básico: muestra información del componente 1 (diagnóstico), como las amenazas contempladas en el POT 2026 (capas preliminares), junto con algunos inventarios de elementos que ayudan a la mitigación y a la adaptación. Es solo un ejemplo de lo que se podría hacer.
+
+La filosofía es: primero se tiene un problema y luego se ve qué elementos ayudan a mitigarlo. Lo que se intenta, en el fondo, es conectar la información del componente 1 (fase de diagnóstico) con la del componente 3 (inventario de medidas), y conviene que esa conexión sea explícita.
+
+La vegetación sirve de ejemplo. Los árboles son una de las medidas con evidencia local para el calor: en el valle de Aburrá, los barrios con arbolado quedan cerca de 2 °C más frescos que barrios comparables sin él. Por eso interesa ver juntos dónde están los problemas y dónde falta la infraestructura que ayuda a mitigarlos, para priorizar y no repartir las intervenciones parejo. En el piloto se muestra la cobertura arbórea por barrio y comuna, y se proponen análisis muy someros de los lugares con cobertura baja y temperaturas altas.
+
+También hay un análisis cualitativo de las zonas donde coincide más de una amenaza, algunas cifras resumen por territorio y un inventario de datos geoespaciales que se podrían usar para estas visuales.
+
+Los datos llevan trazabilidad temporal: cada capa indica entre paréntesis el año o el rango de años. Hay que ser claros con los posibles sesgos: muchos de los estudios que sustentan estos mapas tienen una década de existencia o más, y la variable temporal debe presentarse de forma explícita.
+
+PARA QUÉ LO COMPARTO
+La idea es compartir el piloto, en especial con el equipo que está desarrollando la plataforma, y pedirles a ustedes, profesores, retroalimentación sobre la forma en que se presenta y sobre el contenido. Dos puntos están por decidir: cómo definir «arbolado bajo» y «calor alto», y el criterio de multiamenaza (baja = 1, media = 2, alta = 3, y el índice es el producto de las tres). Los argumentos están en la página.
+
+DÓNDE ESTÁ
+Se comparte desde mi Drive ([ENLACE A LA CARPETA GEOVISOR]) y ya está cargado en el OneDrive del proyecto, en la carpeta del entregable 9 (P9_Gobierno_de_datos_climaticos_y_dashboard_MERL), dentro de 02_Documentos_en_elaboracion, en la carpeta GEOVISOR. Contiene la herramienta (un archivo HTML que se abre con Chrome o Edge), los datos y unos documentos que contextualizan lo que se presenta en este panel de control: una guía (LEEME) y un documento de métodos y referencias, en texto y en Markdown, pensados también como contexto para herramientas de inteligencia artificial. Empiecen por el LEEME.
+
+Este geovisor se presenta como la sexta pestaña de la base de variables; puede que no sea la sexta. Si resulta útil para el proyecto, para el equipo de tecnologías y para quienes están a cargo de los dashboards, por eso se comparten los datos y los contextualizadores.
+
+QUÉ FALTA
+Una falencia a señalar: todavía falta anclar esta información a la normatividad nacional e internacional con la que se está sustentando la plataforma. Esa conexión aún no está hecha.
+
+Falta explotar más la herramienta: se puede cargar mucha más información, pero primero conviene pensar bien su estructura y su utilidad. Cuanto más fácil e interactiva sea, mayor será su impacto en caso de implementarse; por eso agradezco comentarios sobre cómo facilitar los análisis.
+
+Quedo atento a sus comentarios.
+
+Saludos,
+Marcos Arango
+---------------------------------------------------------------------------
+
+
+NOTAS PARA QUIEN ENVÍA (borrar antes de enviar)
+- Compartir primero la carpeta con permiso de lector y copiar el enlace en [ENLACE A LA CARPETA GEOVISOR].
+- Las capas con asterisco (*) en la página son preliminares; el correo lo dice en la primera frase.
+- Cifras que se pueden agregar si se quiere un correo más concreto (versión 2, cortes del 8 y 9 de octubre de 2026): 37,8 % del Distrito en amenaza alta por deslizamientos; 534 ha con dos o más amenazas superpuestas; superficie 8,3 °C más caliente en comunas que en corregimientos; 237.384 árboles inventariados; 34 barrios con calor alto y poca cobertura arbórea, 51 con deslizamiento alto sin obra ni monitoreo y 50 con avenida torrencial alta sin alerta temprana.
+- Si las cifras o los datos cambian, se actualizan aquí y en el LEEME.
