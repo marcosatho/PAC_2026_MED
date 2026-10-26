@@ -1,0 +1,27 @@
+# Entorno de los mapas y figuras del P1 (numerales 7.1 y 8.1). Python 3.12.x, Windows 11.
+# Instalación:  python -m pip install -r requirements_mapas.txt
+# Versiones con las que se corrieron los scripts que usan rasterio (entorno «Codex + .mapdeps»).
+
+# --- geoespacial
+geopandas==1.1.4
+shapely==2.1.2
+pyogrio==0.13.0
+pyproj==3.8.0
+rasterio==1.5.1
+affine==3.0.1
+
+# --- cálculo y figuras
+numpy==2.5.3
+pandas==3.0.5
+matplotlib==3.11.2
+pillow==12.3.0
+
+# --- documentos (Excel y Word por XML) y PDF
+openpyxl==3.1.5
+lxml==6.1.1
+pypdf==6.10.0
+
+# Aparte (no se instala con pip): GDAL/OGR para Python (módulo osgeo) viene con QGIS 3.44.14 (GDAL 3.13.3). Lo usan solo
+#   - recortar_pomca_medellin.py (gdal.Warp) y
+#   - la lectura de las geodatabases del DAP y del EBA (zip y RAR) y de sus tablas de metadata.
+# Con pip, rasterio y pyogrio traen su propio GDAL (3.12.4 y 3.12.4 en el entorno Codex; 3.13.3 en pyogrio de QGIS).
