@@ -1,6 +1,6 @@
 # Estado del acompañamiento PAC 2026
 
-Actualizado: 2026-09-28.
+Actualizado: 2026-10-26.
 
 ## Relieve: DTM LiDAR oficial localizado
 
@@ -129,3 +129,10 @@ Numeral 15 (Anexos) del docx maestro: A (fuentes y trazabilidad) y B (variables 
 ## Numeral 8.6 — estado al 2026-09-28
 
 Subcapítulo de cierre del capítulo 8 (Análisis de riesgos y vulnerabilidades): "El Niño y La Niña como factor transversal del riesgo climático". Carpeta `P1_08_6_ENSO_TRANSVERSAL/TEXTOS/`, sin figuras ni datos propios. Sintetiza 8.1–8.5 y suma cuatro fuentes: Bedoya-Soto, Aristizábal, Carmona y Poveda (2019) sobre el ciclo diurno de la lluvia; IPCC AR6 (2021) sobre El Niño y La Niña como ciclo natural amplificado por el cambio climático; una estimación de prensa del Banco de la República sobre inflación (no verificada contra informe primario); y el Marco de Sendai (UNDRR, 2015) sobre entender el riesgo antes de que se materialice. Detalle completo en `BITACORA.md`, entrada del 2026-09-28.
+
+## Estado al 2026-10-26
+
+- **P1:** cerrado en lo que depende de este acompañamiento (95 %; el 5 % restante depende de las fechas de entrega). 7.1 y 8.1 con figuras reubicadas (piloto con ejes en km) y citas verificadas; 8.3 y 8.4 redactados; 8.5 y 8.6 redactados. Pendiente: capítulo «Amenazas con información limitada» al documento en línea.
+- **P2 (15 %):** `P2_07_ESCENARIOS_CLIMATICOS/` con el borrador v0.1 del capítulo 7 (el Word vive en el Drive; véase su `README.md`). Pendientes en su `LEEME_primero.md`.
+- **Producto 9:** `P1_09_MAPA_TERRITORIO/` (página «Mapa del territorio», v2).
+- **Bitácora de octubre:** entrada del 2026-10-26 en `BITACORA.md`.
