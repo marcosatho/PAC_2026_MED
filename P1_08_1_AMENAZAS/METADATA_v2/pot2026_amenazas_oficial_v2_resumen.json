@@ -1,0 +1,82 @@
+{
+  "input_zip": "C:/Users/marco/Downloads/YDRAY-GDB_Form_DiccTopolog.zip",
+  "input_sha256": "a5a80c402fb76313fb1c4d1d4ce11a573671b9e1962e8a578d4d95f1da2e0de2",
+  "gdb": "mj_rev_pot_2025_med.gdb",
+  "prepared_on": "2026-10-18",
+  "layers": {
+    "amenaza_inundacion": {
+      "source_layer": "gur_ar_amenaza_inundaciones",
+      "polygons": 1852,
+      "repaired": 2,
+      "total_ha": 1133.4,
+      "by_category": {
+        "Alta": {
+          "polygons": 238,
+          "ha": 575.13
+        },
+        "Baja": {
+          "polygons": 930,
+          "ha": 363.68
+        },
+        "Media": {
+          "polygons": 684,
+          "ha": 194.59
+        }
+      },
+      "by_fuente": {
+        "Estudio básico de amenazas - 2025": 1744,
+        "Estudio de detalle": 72,
+        "POT acuerdo 48 de 2014": 36
+      }
+    },
+    "amenaza_avenidas_torrenciales": {
+      "source_layer": "gur_ar_amenaza_avtorrenciales",
+      "polygons": 1332,
+      "repaired": 1,
+      "total_ha": 963.14,
+      "by_category": {
+        "Alta": {
+          "polygons": 94,
+          "ha": 586.72
+        },
+        "Baja": {
+          "polygons": 495,
+          "ha": 169.42
+        },
+        "Media": {
+          "polygons": 743,
+          "ha": 207.0
+        }
+      },
+      "by_fuente": {
+        "Estudio básico de amenazas - 2025": 1210,
+        "Estudio de detalle": 122
+      }
+    },
+    "amenaza_movimientos_masa": {
+      "source_layer": "gur_ar_amenaza_mov_masa",
+      "polygons": 13805,
+      "repaired": 44,
+      "total_ha": 37639.66,
+      "by_category": {
+        "Alta": {
+          "polygons": 5974,
+          "ha": 14025.68
+        },
+        "Baja": {
+          "polygons": 2450,
+          "ha": 18046.65
+        },
+        "Media": {
+          "polygons": 5381,
+          "ha": 5567.33
+        }
+      },
+      "by_fuente": {
+        "Estudio básico de amenazas - 2025": 13507,
+        "Estudio de detalle": 298
+      }
+    }
+  },
+  "output_gpkg": "G:/Mi unidad/2.Consultoria/01_PAC_MEDELLIN_2026/2.Ejecución/C1_01_EVIDENCIA_DIAGNOSTICO_PROSPECTIVA/P1_Caracterizacion_Socioeconomica_Ambiental/02_DOCUMENTOS_EN_ELABORACION/08_1_AMENAZAS/05_POT2026_AMENAZAS_OFICIAL_V2/02_DATOS_PREPARADOS/pot2026_amenazas_oficial_v2_9377.gpkg"
+}
